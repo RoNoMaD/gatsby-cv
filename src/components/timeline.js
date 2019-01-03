@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
 import TimelineItem from "./timeline-item";
-import SuitcaseIcon from "../images/suitcase.svg";
 
 const Timeline = ({ icon, timelineTitle, items }) => (
   <>
