@@ -1,7 +1,9 @@
 import React from "react";
-import AngularIcon from "../images/angular2.svg";
+
 import QuoteIcon from "../images/iconmonstr-quote-3.svg";
+
 import ReactIcon from "../images/React-icon.svg";
+import AngularIcon from "../images/angular2.svg";
 // import ReactIcon from "../images/react.svg";
 import JavaScriptIcon from "../images/Unofficial_JavaScript_logo.svg";
 import CSS3Icon from "../images/css3.svg";
@@ -9,6 +11,11 @@ import GitIcon from "../images/Git_icon.svg";
 import JestIcon from "../images/jest.svg";
 import ESLintIcon from "../images/eslint.svg";
 import StyleLintIcon from "../images/stylelint.svg";
+
+import SuitcaseIcon from "../images/suitcase.svg";
+import UniHatIcon from "../images/uni-hat.svg";
+import SpeechBubbleIcon from "../images/speech-bubble.svg";
+
 import UnitedKingdomIcon from "../images/united-kingdom.svg";
 import SpainIcon from "../images/spain.svg";
 
@@ -224,7 +231,7 @@ const IndexPage = () => (
           }}
         >
           <div style={{ display: "flex" }}>
-            <JestIcon style={{ height: "40px" }} />
+            <JestIcon style={{ height: "40px", width: "auto" }} />
             <ESLintIcon style={{ height: "40px" }} />
             <StyleLintIcon style={{ height: "40px" }} />
           </div>
@@ -252,6 +259,7 @@ const IndexPage = () => (
       }}
     >
       <Timeline
+        icon={<SuitcaseIcon style={{ height: "25px", width: "auto" }} />}
         timelineTitle={"Expériences professionnelles"}
         items={[
           {
@@ -304,6 +312,7 @@ const IndexPage = () => (
         ]}
       />
       <Timeline
+        icon={<UniHatIcon style={{ height: "25px", width: "auto" }} />}
         timelineTitle={"Formations"}
         items={[
           {
@@ -319,6 +328,7 @@ const IndexPage = () => (
         ]}
       />
       <Timeline
+        icon={<SpeechBubbleIcon style={{ height: "25px", width: "auto" }} />}
         timelineTitle={"Langues"}
         items={[
           {

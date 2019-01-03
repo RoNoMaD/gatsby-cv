@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
 import TimelineItem from "./timeline-item";
+import SuitcaseIcon from "../images/suitcase.svg";
 
-const Timeline = ({ timelineTitle, items }) => (
+const Timeline = ({ icon, timelineTitle, items }) => (
   <>
     <div
       style={{
@@ -11,10 +12,14 @@ const Timeline = ({ timelineTitle, items }) => (
         width: "50px",
         backgroundColor: "hsla(83, 60%, 45%, 1)",
         borderRadius: "50%",
-        display: "inline-block",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
         marginRight: "8px"
       }}
-    />
+    >
+      {icon}
+    </div>
     <h3 style={{ alignSelf: "center" }}>{timelineTitle}</h3>
     <div
       style={{
