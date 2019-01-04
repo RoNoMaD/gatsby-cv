@@ -8,6 +8,7 @@ const Skill = ({ skill }) => (
       flexDirection: "column",
       justifyContent: "space-between",
       width: "23.5%",
+      minWidth: "150px",
       background: skill.background,
       marginBottom: "0.5rem"
     }}
