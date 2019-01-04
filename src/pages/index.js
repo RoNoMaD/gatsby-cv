@@ -11,6 +11,8 @@ import GitIcon from "../images/Git_icon.svg";
 import JestIcon from "../images/jest.svg";
 import ESLintIcon from "../images/eslint.svg";
 import StyleLintIcon from "../images/stylelint.svg";
+import AgileIcon from "../images/agile.svg";
+import ContinuousIntegrationIcon from "../images/continuous-integration.svg";
 
 import SuitcaseIcon from "../images/suitcase.svg";
 import UniHatIcon from "../images/uni-hat.svg";
@@ -21,6 +23,7 @@ import SpainIcon from "../images/spain.svg";
 
 import Layout from "../components/layout";
 import Timeline from "../components/timeline";
+import Skills from "../components/skills";
 
 const IndexPage = () => (
   <Layout>
@@ -36,222 +39,81 @@ const IndexPage = () => (
       dans le développement de sites et d'applications web et mobile et une
       passion pour l'écosystème Front End
     </p>
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "space-around",
-        padding: "10px"
-      }}
-    >
-      <div
-        style={{
-          width: "23.5%",
-          backgroundColor: "#20232a",
-          marginBottom: "0.5rem"
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0.5rem"
-          }}
-        >
-          {/* <img
-            style={{ marginBottom: "0" }}
-            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
-            height="40px"
-          /> */}
-          <ReactIcon style={{ height: "40px" }} />
-          <h3 style={{ color: "#61dafb" }}>React</h3>
-        </div>
-        <div style={{ padding: "2px" }}>
-          <div style={{ backgroundColor: "#fff" }}>
-            <div
-              style={{
-                borderRadius: "4px",
-                backgroundColor: "#61dafb",
-                height: "24px",
-                width: "90%",
-                animation: "slide90 1.5s ease-in-out"
-              }}
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        style={{
-          width: "23.5%",
-          backgroundImage: "linear-gradient(145deg,#0d47a1,#42a5f5)",
-          marginBottom: "0.5rem"
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0.5rem"
-          }}
-        >
-          <AngularIcon style={{ height: "40px" }} />
-          <h3 style={{ color: "#FFF" }}>Angular</h3>
-        </div>
-        <div style={{ padding: "2px" }}>
-          <div style={{ backgroundColor: "#fff" }}>
-            <div
-              style={{
-                borderRadius: "0 4px 4px 0",
-                backgroundColor: "#B52E31",
-                height: "24px",
-                width: "75%",
-                animation: "slide75 1.5s ease-in-out"
-              }}
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        style={{
-          width: "23.5%",
-          backgroundColor: "#f7df1e",
-          marginBottom: "0.5rem"
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0.5rem"
-          }}
-        >
-          <JavaScriptIcon style={{ height: "40px" }} />
-          <h3>JavaScript</h3>
-        </div>
-        <div style={{ padding: "2px" }}>
-          <div style={{ backgroundColor: "#fff" }}>
-            <div
-              style={{
-                borderRadius: "0 4px 4px 0",
-                backgroundColor: "#000",
-                height: "24px",
-                width: "90%",
-                animation: "slide90 1.5s ease-in-out"
-              }}
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        style={{
-          width: "23.5%",
-          backgroundColor: "#28A7DE",
-          marginBottom: "0.5rem"
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0.5rem"
-          }}
-        >
-          <CSS3Icon style={{ height: "40px" }} />
-          <h3 style={{ color: "#FFF" }}>CSS 3</h3>
-        </div>
-        <div style={{ padding: "1px" }}>
-          <div style={{ backgroundColor: "#fff" }}>
-            <div
-              style={{
-                borderRadius: "0 4px 4px 0",
-                backgroundColor: "#0A71B9",
-                height: "24px",
-                width: "75%",
-                animation: "slide75 1.5s ease-in-out"
-              }}
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        style={{
-          width: "23.5%",
-          backgroundColor: "#f0efe7",
-          marginBottom: "0.5rem"
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0.5rem"
-          }}
-        >
-          <GitIcon style={{ height: "40px" }} />
-          <h3>git</h3>
-        </div>
-        <div style={{ padding: "1px" }}>
-          <div style={{ backgroundColor: "#fff" }}>
-            <div
-              style={{
-                borderRadius: "0 4px 4px 0",
-                backgroundColor: "#F05133",
-                height: "24px",
-                width: "75%",
-                animation: "slide75 1.5s ease-in-out"
-              }}
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        style={{
-          width: "23.5%",
-          backgroundColor: "#96737d",
-          marginBottom: "0.5rem"
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0.5rem"
-          }}
-        >
-          <div style={{ display: "flex" }}>
-            <JestIcon style={{ height: "40px", width: "auto" }} />
-            <ESLintIcon style={{ height: "40px" }} />
-            <StyleLintIcon style={{ height: "40px" }} />
-          </div>
-          <h3>Test & Qualité</h3>
-        </div>
-        <div style={{ padding: "1px" }}>
-          <div style={{ backgroundColor: "#fff" }}>
-            <div
-              style={{
-                borderRadius: "0 4px 4px 0",
-                backgroundColor: "#99425b",
-                height: "24px",
-                width: "75%",
-                animation: "slide75 1.5s ease-in-out"
-              }}
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+    <Skills
+      skills={[
+        {
+          icon: <ReactIcon style={{ height: "40px" }} />,
+          title: "React",
+          titleColor: "hsla(193, 95%, 68%, 1)",
+          background: "hsla(222, 14%, 15%, 1)",
+          progressBarColor: "hsla(193, 95%, 68%, 1)",
+          progressBarWidth: "90"
+        },
+        {
+          icon: <AngularIcon style={{ height: "40px" }} />,
+          title: "Angular",
+          titleColor: "hsla(0, 100%, 100%, 1)",
+          background:
+            "linear-gradient(145deg,hsla(216, 85%, 34%, 1),hsla(207, 90%, 61%, 1))",
+          progressBarColor: "hsla(359, 59%, 45%, 1)",
+          progressBarWidth: "75"
+        },
+        {
+          icon: <JavaScriptIcon style={{ height: "40px" }} />,
+          title: "JavaScript",
+          titleColor: "hsla(0, 0%, 0%, 1)",
+          background: "hsla(53, 93%, 54%, 1)",
+          progressBarColor: "hsla(0, 0%, 0%, 1)",
+          progressBarWidth: "90"
+        },
+        {
+          icon: <CSS3Icon style={{ height: "40px" }} />,
+          title: "CSS 3",
+          titleColor: "hsla(0, 100%, 100%, 1)",
+          background: "hsla(198, 73%, 51%, 1)",
+          progressBarColor: "hsla(205, 90%, 38%, 1)",
+          progressBarWidth: "75"
+        },
+        {
+          icon: <GitIcon style={{ height: "40px" }} />,
+          title: "git",
+          titleColor: "hsla(0, 0%, 0%, 1)",
+          background: "hsla(53, 23%, 92%, 1)",
+          progressBarColor: "hsla(10, 86%, 57%, 1)",
+          progressBarWidth: "75"
+        },
+        {
+          icon: (
+            <div style={{ display: "flex" }}>
+              <JestIcon style={{ height: "40px", width: "auto" }} />
+              <ESLintIcon style={{ height: "40px" }} />
+              <StyleLintIcon style={{ height: "40px" }} />
+            </div>
+          ),
+          title: "Test & Qualité",
+          titleColor: "hsla(0, 0%, 0%, 1)",
+          background: "hsla(343, 14%, 52%, 1)",
+          progressBarColor: "hsla(343, 40%, 43%, 1)",
+          progressBarWidth: "75"
+        },
+        {
+          icon: <AgileIcon style={{ height: "40px" }} />,
+          title: "Méthodes agiles",
+          titleColor: "hsla(0, 100%, 100%, 1)",
+          background: "hsla(168, 80%, 33%, 1)",
+          progressBarColor: "hsla(0, 0%, 20%, 1)",
+          progressBarWidth: "75"
+        },
+        {
+          icon: <ContinuousIntegrationIcon style={{ height: "40px" }} />,
+          title: "Intégration continue",
+          titleColor: "hsla(0, 100%, 100%, 1)",
+          background: "hsla(255, 33%, 40%, 1)",
+          progressBarColor: "hsla(14, 79%, 53%, 1)",
+          progressBarWidth: "75"
+        }
+      ]}
+    />
     <div
       style={{
         display: "grid",
