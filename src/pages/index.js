@@ -35,6 +35,7 @@ const IndexPage = () => (
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        padding: "0px 1.0875rem 1.45rem",
         background: "rgb(33,33,33)",
         background:
           "moz-linear-gradient(-45deg, rgba(33,33,33,1) 0%, rgba(48,48,48,1) 35%, rgba(66,66,66,1) 100%)",
@@ -156,7 +157,8 @@ const IndexPage = () => (
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "auto-fill, 50px, auto-fill"
+        gridTemplateColumns: "auto-fill, 50px, auto-fill",
+        padding: "0px 1.0875rem 1.45rem"
       }}
     >
       <Timeline

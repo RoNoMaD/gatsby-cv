@@ -4,7 +4,13 @@ import Skill from "./skill";
 import SuitcaseIcon from "../images/suitcase.svg";
 
 const Skills = ({ skills }) => (
-  <section style={{ marginTop: "16px", marginBottom: "16px" }}>
+  <section
+    style={{
+      marginTop: "16px",
+      marginBottom: "16px"
+      // padding: "0px 1.0875rem 1.45rem"
+    }}
+  >
     <div
       style={{
         display: "flex",
