@@ -1,7 +1,5 @@
 import React from "react";
 
-import QuoteIcon from "../images/iconmonstr-quote-3.svg";
-
 import ReactIcon from "../images/React-icon.svg";
 import AngularIcon from "../images/angular2.svg";
 // import ReactIcon from "../images/react.svg";
@@ -14,71 +12,16 @@ import StyleLintIcon from "../images/stylelint.svg";
 import AgileIcon from "../images/agile.svg";
 import ContinuousIntegrationIcon from "../images/continuous-integration.svg";
 
-import SuitcaseIcon from "../images/suitcase.svg";
-import UniHatIcon from "../images/uni-hat.svg";
-import SpeechBubbleIcon from "../images/speech-bubble.svg";
-
-import UnitedKingdomIcon from "../images/united-kingdom.svg";
-import SpainIcon from "../images/spain.svg";
-
 import Layout from "../components/layout";
-import Timeline from "../components/timeline";
+import Home from "../components/home";
 import Skills from "../components/skills";
+import WorkExperience from "../components/work-experience";
+import Education from "../components/education";
+import Languages from "../components/languages";
 
 const IndexPage = () => (
   <Layout>
-    <section
-      style={{
-        height: "100vh",
-        padding: "0 10px",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "0px 1.0875rem 1.45rem",
-        background: "rgb(33,33,33)",
-        background:
-          "moz-linear-gradient(-45deg, rgba(33,33,33,1) 0%, rgba(48,48,48,1) 35%, rgba(66,66,66,1) 100%)",
-        background:
-          "linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(48,48,48,1) 35%, rgba(66,66,66,1) 100%)"
-      }}
-    >
-      <h2>Bonjour je suis </h2>
-      <div>
-        <h1
-          style={{
-            color: "hsla(83, 60%, 45%, 1)",
-            overflow:
-              "hidden" /* Ensures the content is not revealed until the animation */,
-            borderRight:
-              ".15em solid hsla(83, 60%, 45%, 1)" /* The typwriter cursor */,
-            whiteSpace: "nowrap" /* Keeps the content on a single line */,
-            margin:
-              "0 auto 1.45rem auto" /* Gives that scrolling effect as the typing happens */,
-            // letterSpacing: ".15em" /* Adjust as needed */,
-            animation:
-              "typing 2.5s steps(30, end),    blink-caret .5s step-end infinite"
-          }}
-        >
-          {"<Romain Lebascle />"}
-        </h1>
-      </div>
-      <h2 style={{ textAlign: "center" }}>
-        Développeur Web Full Stack basé à Nantes.
-      </h2>
-      <div style={{ display: "flex" }}>
-        <QuoteIcon style={{ width: "50px", fill: "hsla(83, 60%, 45%, 1)" }} />
-        <p
-          style={{
-            padding: "8px"
-          }}
-        >
-          Avec 5 ans d'expérience dans le développement de sites et
-          d'applications web et mobile et une passion pour l'écosystème Front
-          End.
-        </p>
-      </div>
-    </section>
+    <Home />
     <Skills
       skills={[
         {
@@ -161,92 +104,9 @@ const IndexPage = () => (
         padding: "0px 1.0875rem 1.45rem"
       }}
     >
-      <Timeline
-        icon={<SuitcaseIcon style={{ height: "25px", width: "auto" }} />}
-        timelineTitle={"Expériences professionnelles"}
-        items={[
-          {
-            startDate: "2017-06",
-            title: "Développeur Front End",
-            subtitle: "ADDOCK",
-            description:
-              "Développeur Front End (P)react / AngularJS sur des supports Web, borne tactile, Widget d’un outil de numérisation des acteurs de loisirs."
-          },
-          {
-            startDate: "2016-09",
-            endDate: "2015-03",
-            title: "Développeur Front End / Mobile",
-            subtitle: "Renault / Accenture Technology Solutions",
-            description:
-              "Développeur senior sur une application mobile hybride Javascript destinée au grand public pour la gestion de véhicule connecté."
-          },
-          {
-            startDate: "2016-07",
-            endDate: "2016-07",
-            title: "Développeur AngularJS",
-            subtitle: "GRTGaz / Accenture Technology Solutions",
-            description:
-              "Apport d'une expertise JavaScript et support à une équipe de développement d'une application web."
-          },
-          {
-            startDate: "2015-02",
-            endDate: "2015-02",
-            title: "Développeur JavaScript",
-            subtitle: "GRTGaz / Accenture Technology Solutions",
-            description:
-              "Expertise JavaScript et résolution de problèmes dans l'urgence au vu d'une mise en production imminente."
-          },
-          {
-            startDate: "2014-08",
-            endDate: "2015-02",
-            title: "Développeur J2EE",
-            subtitle: "ErDF / Accenture Technology Solutions",
-            description:
-              "Développeur sur une application web J2EE Spring de gestion des incidents."
-          },
-          {
-            startDate: "2008-01",
-            endDate: "2009-12",
-            title: "Développeur J2EE",
-            subtitle: "Sylis / Groupe Open",
-            description:
-              "Développeur J2EE et responsable intégration continue pour le compte de clients du secteur automobile et bancaire."
-          }
-        ]}
-      />
-      <Timeline
-        icon={<UniHatIcon style={{ height: "25px", width: "auto" }} />}
-        timelineTitle={"Formations"}
-        items={[
-          {
-            endDate: "2007",
-            title: "Ingénieur informatique",
-            subtitle: "3iL Institut d'Ingénierie Informatique de Limoges"
-          },
-          {
-            endDate: "2004",
-            title: "DUT Informatique",
-            subtitle: "IUT de Nantes"
-          }
-        ]}
-      />
-      <Timeline
-        icon={<SpeechBubbleIcon style={{ height: "25px", width: "auto" }} />}
-        timelineTitle={"Langues"}
-        items={[
-          {
-            title: "Anglais",
-            subtitle: "Courant",
-            description: "Plus de 3 années en pays anglophones.",
-            icon: <UnitedKingdomIcon style={{ width: "45px" }} />
-          },
-          {
-            title: "Espagnol",
-            subtitle: "Courant",
-            icon: <SpainIcon style={{ width: "35px" }} />
-          }
-        ]}
-      />
+      <WorkExperience />
+      <Education />
+      <Languages />
     </div>
   </Layout>
 );

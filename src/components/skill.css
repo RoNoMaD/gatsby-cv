@@ -1,0 +1,19 @@
+@keyframes slide90 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes slide75 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 75%;
+  }
+}
