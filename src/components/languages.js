@@ -22,7 +22,7 @@ const Languages = ({ children }) => (
     render={data => (
       <Timeline
         icon={<SpeechBubbleIcon style={{ height: "25px", width: "auto" }} />}
-        timelineTitle={"Formations"}
+        timelineTitle={"Langues"}
         items={data.allLanguagesJson.edges.map(edge => edge.node)}
       />
     )}
