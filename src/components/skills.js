@@ -1,21 +1,22 @@
 import PropTypes from "prop-types";
 import React from "react";
 import Skill from "./skill";
-import SuitcaseIcon from "../images/suitcase.svg";
+import SkillsIcon from "../images/skills.svg";
 
 const Skills = ({ skills }) => (
   <section
     style={{
       marginTop: "16px",
-      marginBottom: "16px"
-      // padding: "0px 1.0875rem 1.45rem"
+      marginBottom: "16px",
+      padding: "0px 1.0875rem 1.45rem"
     }}
   >
     <div
       style={{
         display: "flex",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        marginBottom: "1.45rem"
       }}
     >
       <div
@@ -31,7 +32,7 @@ const Skills = ({ skills }) => (
           marginRight: "8px"
         }}
       >
-        <SuitcaseIcon style={{ height: "25px", width: "auto" }} />
+        <SkillsIcon style={{ height: "25px", width: "auto" }} />
       </div>
       <h3 style={{ alignSelf: "center" }}>Compétences</h3>
     </div>
