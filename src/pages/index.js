@@ -13,6 +13,7 @@ import AgileIcon from "../images/agile.svg";
 import ContinuousIntegrationIcon from "../images/continuous-integration.svg";
 
 import Layout from "../components/layout";
+import Contact from "../components/contact";
 import Home from "../components/home";
 import Skills from "../components/skills";
 import WorkExperience from "../components/work-experience";
@@ -108,6 +109,7 @@ const IndexPage = () => (
       <Education />
       <Languages />
     </div>
+    <Contact />
   </Layout>
 );
 
