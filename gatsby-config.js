@@ -24,8 +24,8 @@ module.exports = {
         name: "romain-lebascle-cv",
         short_name: "romain-lebascle",
         start_url: "/",
-        background_color: "rgba(33,33,33,1)",
-        theme_color: "rgba(33,33,33,1)",
+        background_color: "#212121",
+        theme_color: "#83b82e",
         display: "minimal-ui",
         icon: "src/images/gatsby-icon.png" // This path is relative to the root of the site.
       }
