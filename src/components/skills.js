@@ -40,8 +40,8 @@ const Skills = ({ skills }) => (
       style={{
         display: "grid",
         gridGap: "15px",
-        gridTemplateColumns: "repeat(auto-fit, minmax(150px,1fr)",
-        gridTemplateRows: "repeat(auto-fit, minmax(150px,1fr)",
+        gridTemplateColumns: "repeat(auto-fit, minmax(150px,1fr))",
+        // gridTemplateRows: "repeat(auto-fit, minmax(150px,1fr))",
         padding: "10px"
       }}
     >
