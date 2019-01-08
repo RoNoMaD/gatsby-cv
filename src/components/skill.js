@@ -42,7 +42,7 @@ const Skill = ({ skill }) => (
       style={{
         margin: "2px",
         backgroundColor: "hsla(0, 100%, 100%, 1)",
-        alignSelf: "stretch",
+        alignSelf: "end",
         height: "24px"
       }}
     >
