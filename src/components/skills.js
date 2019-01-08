@@ -38,9 +38,10 @@ const Skills = ({ skills }) => (
     </div>
     <div
       style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "space-around",
+        display: "grid",
+        gridGap: "15px",
+        gridTemplateColumns: "repeat(auto-fit, minmax(150px,1fr)",
+        gridTemplateRows: "repeat(auto-fit, minmax(150px,1fr)",
         padding: "10px"
       }}
     >
