@@ -28,7 +28,7 @@ const IndexPage = () => (
         {
           icon: <ReactIcon style={{ height: "40px" }} />,
           title: "React",
-          titleColor: "hsla(193, 95%, 68%, 1)",
+          titleColor: "hsla(0, 100%, 100%, 1)",
           background: "hsla(222, 14%, 15%, 1)",
           progressBarColor: "hsla(193, 95%, 68%, 1)",
           progressBarWidth: "90"
@@ -45,7 +45,7 @@ const IndexPage = () => (
         {
           icon: <JavaScriptIcon style={{ height: "40px" }} />,
           title: "JavaScript",
-          titleColor: "hsla(0, 0%, 0%, 1)",
+          titleColor: "hsla(0, 100%, 100%, 1)",
           background: "hsla(53, 93%, 54%, 1)",
           progressBarColor: "hsla(0, 0%, 0%, 1)",
           progressBarWidth: "90"
@@ -61,21 +61,15 @@ const IndexPage = () => (
         {
           icon: <GitIcon style={{ height: "40px" }} />,
           title: "git",
-          titleColor: "hsla(0, 0%, 0%, 1)",
+          titleColor: "hsla(0, 100%, 100%, 1)",
           background: "hsla(53, 23%, 92%, 1)",
           progressBarColor: "hsla(10, 86%, 57%, 1)",
           progressBarWidth: "75"
         },
         {
-          icon: (
-            <div style={{ display: "flex" }}>
-              <JestIcon style={{ height: "40px", width: "auto" }} />
-              <ESLintIcon style={{ height: "40px" }} />
-              <StyleLintIcon style={{ height: "40px" }} />
-            </div>
-          ),
+          icon: <JestIcon style={{ height: "40px", width: "auto" }} />,
           title: "Test & Qualité",
-          titleColor: "hsla(0, 0%, 0%, 1)",
+          titleColor: "hsla(0, 100%, 100%, 1)",
           background: "hsla(343, 14%, 52%, 1)",
           progressBarColor: "hsla(343, 40%, 43%, 1)",
           progressBarWidth: "75"
