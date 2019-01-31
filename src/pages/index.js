@@ -94,6 +94,8 @@ const IndexPage = () => (
     />
     <div
       style={{
+        maxWidth: "960px",
+        margin: "16px auto",
         display: "grid",
         gridTemplateColumns: "auto-fill, 50px, auto-fill",
         padding: "0px 1.0875rem 1.45rem"
