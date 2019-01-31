@@ -6,8 +6,8 @@ import SkillsIcon from "../images/skills.svg";
 const Skills = ({ skills }) => (
   <section
     style={{
-      marginTop: "16px",
-      marginBottom: "16px",
+      maxWidth: "960px",
+      margin: "16px auto",
       padding: "0px 1.0875rem 1.45rem"
     }}
   >
