@@ -3,6 +3,7 @@ module.exports = {
     title: "Romain Lebascle"
   },
   plugins: [
+    "gatsby-plugin-eslint",
     "gatsby-plugin-linaria",
     "gatsby-plugin-react-helmet",
     {

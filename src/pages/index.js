@@ -2,13 +2,10 @@ import React from "react";
 
 import ReactIcon from "../images/React-icon.svg";
 import AngularIcon from "../images/angular2.svg";
-// import ReactIcon from "../images/react.svg";
 import JavaScriptIcon from "../images/Unofficial_JavaScript_logo.svg";
 import CSS3Icon from "../images/css3.svg";
 import GitIcon from "../images/Git_icon.svg";
 import JestIcon from "../images/jest.svg";
-import ESLintIcon from "../images/eslint.svg";
-import StyleLintIcon from "../images/stylelint.svg";
 import AgileIcon from "../images/agile.svg";
 import ContinuousIntegrationIcon from "../images/continuous-integration.svg";
 

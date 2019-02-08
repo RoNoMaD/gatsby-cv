@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby";
 import Timeline from "./timeline";
 import SpeechBubbleIcon from "../images/speech-bubble.svg";
 
-const Languages = ({ children }) => (
+const Languages = () => (
   <StaticQuery
     query={graphql`
       query {

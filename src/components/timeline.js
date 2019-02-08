@@ -40,6 +40,7 @@ const Timeline = ({ icon, timelineTitle, items }) => (
 );
 
 Timeline.propTypes = {
+  icon: PropTypes.object,
   timelineTitle: PropTypes.string,
   items: PropTypes.array
 };
