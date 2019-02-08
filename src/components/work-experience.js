@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby";
 import Timeline from "./timeline";
 import SuitcaseIcon from "../images/suitcase.svg";
 
-const WorkExperience = ({ children }) => (
+const WorkExperience = () => (
   <StaticQuery
     query={graphql`
       query {

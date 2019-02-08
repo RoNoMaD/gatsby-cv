@@ -23,7 +23,7 @@ const TimelineItem = ({ item, last }) => {
             <time dateTime="2017-06">{item.endDate}</time>
           </div>
         )}
-        {item.startDate && !item.endDate && <div>aujourd'hui</div>}
+        {item.startDate && !item.endDate && <div>{"aujourd'hui"}</div>}
       </div>
       <div
         style={{

@@ -81,7 +81,7 @@ export default class Contact extends React.Component {
             textAlign: "center"
           }}
         >
-          Si mon profil vous interesse, n'hésitez pas à me contacter.
+          {"Si mon profil vous interesse, n'hésitez pas à me contacter."}
         </p>
         <form
           style={{
@@ -159,11 +159,7 @@ export default class Contact extends React.Component {
               onChange={this.handleChange}
             />
           </label>
-          <Recaptcha
-            ref="recaptcha"
-            sitekey={RECAPTCHA_KEY}
-            onChange={this.handleRecaptcha}
-          />
+          <Recaptcha sitekey={RECAPTCHA_KEY} onChange={this.handleRecaptcha} />
           <p>
             <button
               style={{

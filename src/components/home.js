@@ -14,9 +14,6 @@ const Home = () => (
       alignItems: "center",
       justifyContent: "center",
       padding: "0px 1.0875rem 1.45rem",
-      background: "rgb(33,33,33)",
-      background:
-        "moz-linear-gradient(-45deg, rgba(33,33,33,1) 0%, rgba(48,48,48,1) 35%, rgba(66,66,66,1) 100%)",
       background:
         "linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(48,48,48,1) 35%, rgba(66,66,66,1) 100%)"
     }}
@@ -51,8 +48,9 @@ const Home = () => (
           padding: "8px"
         }}
       >
-        Avec 5 ans d'expérience dans le développement de sites et d'applications
-        web et mobile et une passion pour l'écosystème Front End.
+        {
+          "Avec 5 ans d'expérience dans le développement de sites et d'applications web et mobile et une passion pour l'écosystème Front End."
+        }
       </p>
     </div>
   </section>

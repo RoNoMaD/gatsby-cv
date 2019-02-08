@@ -1,0 +1,12 @@
+{
+  "presets": [
+    [
+      "linaria/babel",
+      {
+        "evaluate": true,
+        "displayName": false
+      }
+    ],
+    "babel-preset-gatsby"
+  ]
+}
