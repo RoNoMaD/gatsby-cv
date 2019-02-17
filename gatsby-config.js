@@ -23,8 +23,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "romain-lebascle-cv",
-        short_name: "romain-lebascle",
+        name: "Romain Lebascle CV",
+        short_name: "R. Lebascle",
         start_url: "/",
         background_color: "#212121",
         theme_color: "#83b82e",
