@@ -35,13 +35,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <div
-          style={{
-            paddingTop: 0
-          }}
-        >
-          {children}
-        </div>
+        <div>{children}</div>
       </>
     )}
   />

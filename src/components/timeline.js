@@ -1,34 +1,37 @@
 import PropTypes from "prop-types";
 import React from "react";
+import { css } from "linaria";
 import TimelineItem from "./timeline-item";
 
-const Timeline = ({ icon, timelineTitle, items }) => (
+const timelineTitleIcon = css`
+  grid-column-start: 2;
+  height: 50px;
+  width: 50px;
+  background-color: hsla(83, 60%, 45%, 1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+`;
+
+const timelineTitle = css`
+  align-self: center;
+`;
+
+const timelineItemsContainer = css`
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  margin-left: 24px;
+  border-left: 2px solid black;
+  height: 1.45rem;
+`;
+
+const Timeline = ({ icon, title, items }) => (
   <>
-    <div
-      style={{
-        gridColumnStart: "2",
-        height: "50px",
-        width: "50px",
-        backgroundColor: "hsla(83, 60%, 45%, 1)",
-        borderRadius: "50%",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        marginRight: "8px"
-      }}
-    >
-      {icon}
-    </div>
-    <h3 style={{ alignSelf: "center" }}>{timelineTitle}</h3>
-    <div
-      style={{
-        gridColumnStart: "2",
-        gridColumnEnd: "span 2",
-        marginLeft: "24px",
-        borderLeft: "2px solid black",
-        height: "1.45rem"
-      }}
-    />
+    <div className={timelineTitleIcon}>{icon}</div>
+    <h3 className={timelineTitle}>{title}</h3>
+    <div className={timelineItemsContainer} />
     {items.map((item, index) => (
       <TimelineItem
         key={item.title + index.toString()}
@@ -41,12 +44,12 @@ const Timeline = ({ icon, timelineTitle, items }) => (
 
 Timeline.propTypes = {
   icon: PropTypes.object,
-  timelineTitle: PropTypes.string,
+  title: PropTypes.string,
   items: PropTypes.array
 };
 
 Timeline.defaultProps = {
-  timelineTitle: "",
+  title: "",
   items: []
 };
 
