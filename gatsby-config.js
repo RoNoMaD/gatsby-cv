@@ -42,6 +42,7 @@ module.exports = {
           include: `${__dirname}/src/images`
         }
       }
-    }
+    },
+    "gatsby-plugin-stylelint"
   ]
 };

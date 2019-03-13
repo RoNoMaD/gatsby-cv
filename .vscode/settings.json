@@ -1,6 +1,12 @@
 {
-    "files.watcherExclude": {
-        "**/.cache/**": true,
-        "**/.linaria-cache/**": true
-    }
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.cache/**": true,
+    "**/.linaria-cache/**": true
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
 }

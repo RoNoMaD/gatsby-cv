@@ -21,7 +21,7 @@ const Languages = () => {
   return (
     <Timeline
       icon={<SpeechBubbleIcon style={{ height: "25px", width: "auto" }} />}
-      timelineTitle={"Langues"}
+      title={"Langues"}
       items={allLanguagesJson.edges.map(edge => edge.node)}
     />
   );
