@@ -1,20 +1,18 @@
 import React from "react";
 import { render } from "react-testing-library";
-import { StaticQuery } from "gatsby"; // mocked
+import { useStaticQuery } from "gatsby"; // mocked
 
 import Layout from "../layout";
 
-// mock StaticQuery to return title in siteMetadata
+// mock useStaticQuery to return title in siteMetadata
 beforeEach(() => {
-  StaticQuery.mockImplementationOnce(({ render }) =>
-    render({
-      site: {
-        siteMetadata: {
-          title: `GatsbyJS`
-        }
+  useStaticQuery.mockReturnValueOnce({
+    site: {
+      siteMetadata: {
+        title: `GatsbyJS`
       }
-    })
-  );
+    }
+  });
 });
 
 describe(`Layout`, () => {
