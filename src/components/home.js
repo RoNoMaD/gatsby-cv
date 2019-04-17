@@ -20,10 +20,11 @@ const homeSection = css`
 `;
 
 const homeAnimatedName = css`
+  height: 45px;
   color: hsla(83, 60%, 45%, 1);
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid hsla(83, 60%, 45%, 1); /* The typwriter cursor */
-  white-pace: nowrap; /* Keeps the content on a single line */
+  white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto 1.45rem auto; /* Gives that scrolling effect as the typing happens */
   animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
 
@@ -50,7 +51,7 @@ const homeAnimatedName = css`
 `;
 
 const homeSubtitle = css`
-  textalign: center;
+  text-align: center;
 `;
 
 const quoteContainer = css`
