@@ -2,6 +2,7 @@ import React from "react";
 import { navigate } from "gatsby";
 import Recaptcha from "react-google-recaptcha";
 import SkillsIcon from "../images/skills.svg";
+import { css } from "linaria";
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
@@ -10,6 +11,68 @@ function encode(data) {
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
 }
+
+const contactSection = css`
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 0px 1.0875rem 1.45rem;
+`;
+
+const contactTitleContainer = css`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.45rem;
+`;
+
+const contactIcon = css`
+  grid-column-start: 2;
+  height: 50px;
+  width: 50px;
+  background-color: hsla(83, 60%, 45%, 1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+`;
+
+const contactTitle = css`
+  align-self: center;
+`;
+
+const contactSubtitle = css`
+  padding: 8px;
+  text-align: center;
+`;
+
+const contactForm = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const contactFormInput = css`
+  padding: 10px 15px;
+  width: 300px;
+  background: rgba(33, 33, 33, 1);
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 1px rgba(255, 255, 255, 0.06);
+`;
+
+const formButton = css`
+  float: right;
+  margin: 5px 0 0 0;
+  font-size: 12pt;
+  padding: 10px 30px;
+  color: #fff;
+  background: transparent;
+  outline: 0;
+`;
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -42,54 +105,19 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <section
-        style={{
-          marginTop: "16px",
-          marginBottom: "16px",
-          padding: "0px 1.0875rem 1.45rem"
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            marginBottom: "1.45rem"
-          }}
-        >
-          <div
-            style={{
-              gridColumnStart: "2",
-              height: "50px",
-              width: "50px",
-              backgroundColor: "hsla(83, 60%, 45%, 1)",
-              borderRadius: "50%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              marginRight: "8px"
-            }}
-          >
+      <section className={contactSection}>
+        <div className={contactTitleContainer}>
+          <div className={contactIcon}>
             <SkillsIcon style={{ height: "25px", width: "auto" }} />
           </div>
-          <h3 style={{ alignSelf: "center" }}>Contact</h3>
+          <h3 className={contactTitle}>Contact</h3>
         </div>
 
-        <p
-          style={{
-            padding: "8px",
-            textAlign: "center"
-          }}
-        >
+        <p className={contactSubtitle}>
           {"Si mon profil vous interesse, n'hésitez pas à me contacter."}
         </p>
         <form
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center"
-          }}
+          className={contactForm}
           name="contact-recaptcha"
           method="post"
           action="/thanks/"
@@ -106,16 +134,7 @@ export default class Contact extends React.Component {
             Votre nom
             <br />
             <input
-              style={{
-                padding: "10px 15px",
-                width: " 300px",
-                background: "rgba(33,33,33,1)",
-                border: "0",
-                color: "white",
-                borderRadius: "5px",
-                boxShadow:
-                  "inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06)"
-              }}
+              className={contactFormInput}
               type="text"
               name="name"
               onChange={this.handleChange}
@@ -125,16 +144,7 @@ export default class Contact extends React.Component {
             Votre email
             <br />
             <input
-              style={{
-                padding: "10px 15px",
-                width: " 300px",
-                background: "rgba(33,33,33,1)",
-                border: "0",
-                color: "white",
-                borderRadius: "5px",
-                boxShadow:
-                  "inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06)"
-              }}
+              className={contactFormInput}
               type="email"
               name="email"
               onChange={this.handleChange}
@@ -161,18 +171,7 @@ export default class Contact extends React.Component {
           </label>
           <Recaptcha sitekey={RECAPTCHA_KEY} onChange={this.handleRecaptcha} />
           <p>
-            <button
-              style={{
-                float: "right",
-                margin: "5px 0 0 0",
-                fontSize: "12pt",
-                padding: "10px 30px",
-                color: "#fff",
-                background: "transparent",
-                outline: "0"
-              }}
-              type="submit"
-            >
+            <button className={formButton} type="submit">
               ENVOYER
             </button>
           </p>
