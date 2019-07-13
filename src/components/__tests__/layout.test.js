@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "react-testing-library";
+import { render } from "@testing-library/react";
 import { useStaticQuery } from "gatsby"; // mocked
 
 import Layout from "../layout";
