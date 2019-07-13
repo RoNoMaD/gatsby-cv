@@ -32,8 +32,7 @@
     "format": "yarn prettier -- --write",
     "test": "jest",
     "lint": "eslint src",
-    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql)\"",
-    "precommit": "lint-staged"
+    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql)\""
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.0.0",
