@@ -51,45 +51,45 @@ const scaleOutCenter = css`
 `;
 
 const Card = styled.div`
-  background-color: rgba(66, 66, 66, 1);
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: auto auto minmax(24px, auto);
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
   padding-top: 0.5rem;
+  background-color: rgba(66, 66, 66, 1);
 `;
 
 const CardIcon = styled.div`
-  height: 60px;
-  width: 60px;
-  justify-self: center;
   display: grid;
   align-items: center;
   justify-content: center;
+  justify-self: center;
+  width: 60px;
+  height: 60px;
   background: ${props => props.background};
   border-radius: 50%;
 `;
 
 const CardTitle = styled.h3`
   margin: 0.5rem;
-  text-align: center;
   color: ${props => props.titleColor};
+  text-align: center;
 `;
 
 const ProgressBarContainer = styled.div`
-  margin: 2px;
-  background-color: hsla(0, 100%, 100%, 1);
   align-self: end;
   height: 24px;
+  margin: 2px;
+  background-color: hsla(0, 100%, 100%, 1);
 `;
 
 const ProgressBar = styled.div`
-  border-radius: 0 4px 4px 0;
-  background-color: ${props => props.progressBarColor};
-  height: 24px;
   width: ${props => props.progressBarWidth}%;
   max-width: ${props => props.progressBarWidth}%;
+  height: 24px;
+  background-color: ${props => props.progressBarColor};
+  border-radius: 0 4px 4px 0;
 `;
 
 const Skill = ({ skill }) => (

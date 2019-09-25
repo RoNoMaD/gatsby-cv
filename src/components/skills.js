@@ -18,20 +18,20 @@ const skillsTitleContainer = css`
 `;
 
 const skillsTitleIconContainer = css`
-  grid-column-start: 2;
-  height: 50px;
-  width: 50px;
-  background-color: hsla(83, 60%, 45%, 1);
-  border-radius: 50%;
   display: flex;
+  grid-column-start: 2;
   align-items: center;
   justify-content: center;
+  width: 50px;
+  height: 50px;
   margin-right: 8px;
+  background-color: hsla(83, 60%, 45%, 1);
+  border-radius: 50%;
 `;
 
 const skillsIcon = css`
-  height: 25px;
   width: auto;
+  height: 25px;
 `;
 
 const skillsTitle = css`

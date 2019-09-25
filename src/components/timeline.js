@@ -4,15 +4,15 @@ import { css } from "linaria";
 import TimelineItem from "./timeline-item";
 
 const timelineTitleIcon = css`
-  grid-column-start: 2;
-  height: 50px;
-  width: 50px;
-  background-color: hsla(83, 60%, 45%, 1);
-  border-radius: 50%;
   display: flex;
+  grid-column-start: 2;
   align-items: center;
   justify-content: center;
+  width: 50px;
+  height: 50px;
   margin-right: 8px;
+  background-color: hsla(83, 60%, 45%, 1);
+  border-radius: 50%;
 `;
 
 const timelineTitle = css`
@@ -22,9 +22,9 @@ const timelineTitle = css`
 const timelineItemsContainer = css`
   grid-column-start: 2;
   grid-column-end: span 2;
+  height: 1.45rem;
   margin-left: 24px;
   border-left: 2px solid black;
-  height: 1.45rem;
 `;
 
 const Timeline = ({ icon, title, items }) => (
