@@ -4,12 +4,11 @@ import { css } from "linaria";
 import QuoteIcon from "../images/iconmonstr-quote-3.svg";
 
 const homeSection = css`
-  height: 100vh;
-  /* padding: "0 10px",*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
   padding: 0px 1.0875rem 1.45rem;
   background: linear-gradient(
     135deg,
@@ -21,11 +20,11 @@ const homeSection = css`
 
 const homeAnimatedName = css`
   height: 45px;
-  color: hsla(83, 60%, 45%, 1);
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid hsla(83, 60%, 45%, 1); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto 1.45rem auto; /* Gives that scrolling effect as the typing happens */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  color: hsla(83, 60%, 45%, 1);
+  white-space: nowrap; /* Keeps the content on a single line */
+  border-right: 0.15em solid hsla(83, 60%, 45%, 1); /* The typwriter cursor */
   animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
 
   /* The typing effect */

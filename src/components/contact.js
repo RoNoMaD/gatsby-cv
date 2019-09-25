@@ -26,15 +26,15 @@ const contactTitleContainer = css`
 `;
 
 const contactIcon = css`
-  grid-column-start: 2;
-  height: 50px;
-  width: 50px;
-  background-color: hsla(83, 60%, 45%, 1);
-  border-radius: 50%;
   display: flex;
+  grid-column-start: 2;
   align-items: center;
   justify-content: center;
+  width: 50px;
+  height: 50px;
   margin-right: 8px;
+  background-color: hsla(83, 60%, 45%, 1);
+  border-radius: 50%;
 `;
 
 const contactTitle = css`
@@ -49,16 +49,16 @@ const contactSubtitle = css`
 const contactForm = css`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 `;
 
 const contactFormInput = css`
-  padding: 10px 15px;
   width: 300px;
+  padding: 10px 15px;
+  color: white;
   background: rgba(33, 33, 33, 1);
   border: 0;
-  color: white;
   border-radius: 5px;
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3),
     0 1px rgba(255, 255, 255, 0.06);
@@ -67,9 +67,9 @@ const contactFormInput = css`
 const formButton = css`
   float: right;
   margin: 5px 0 0 0;
-  font-size: 12pt;
   padding: 10px 30px;
   color: #fff;
+  font-size: 12pt;
   background: transparent;
   outline: 0;
 `;

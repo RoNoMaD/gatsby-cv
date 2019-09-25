@@ -9,23 +9,23 @@ const timelineItemDates = css`
 `;
 
 const timelineItemIconContainer = css`
-  margin-right: 8px;
   display: flex;
   flex-direction: column;
-  align-self: stretch;
   align-items: center;
+  align-self: stretch;
   width: 50px;
+  margin-right: 8px;
 `;
 
 const timelineItemTopLine = css`
-  border-left: 2px solid black;
   height: 8px;
+  border-left: 2px solid black;
 `;
 
 const timelineItemDefaultIcon = css`
   display: inline-block;
-  height: 10px;
   width: 10px;
+  height: 10px;
   background-color: hsla(83, 60%, 45%, 1);
   border-radius: 50%;
 `;
@@ -36,8 +36,8 @@ const timelineItemIcon = css`
 `;
 
 const timelineItemBottomLine = css`
-  border-left: 2px solid black;
   height: calc(100% - 18px);
+  border-left: 2px solid black;
 `;
 
 const timelineItemText = css`

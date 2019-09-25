@@ -43,6 +43,9 @@ module.exports = {
         }
       }
     },
-    "gatsby-plugin-stylelint"
+    {
+      resolve: "gatsby-plugin-stylelint",
+      options: { files: ["src/**/*.{js,jsx,css}"] }
+    }
   ]
 };
