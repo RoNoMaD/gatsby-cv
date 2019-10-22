@@ -55,7 +55,7 @@
     "jest-watch-typeahead": "^0.4.0",
     "lint-staged": "^9.2.4",
     "prettier": "^1.15.2",
-    "react-test-renderer": "^16.8.2",
+    "react-test-renderer": "^16.10.2",
     "stylelint": "^11.0.0",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-recommended": "^3.0.0",
