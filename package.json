@@ -10,7 +10,7 @@
     "gatsby-plugin-linaria": "^1.0.2",
     "gatsby-plugin-manifest": "^2.2.9",
     "gatsby-plugin-offline": "^3.0.9",
-    "gatsby-plugin-react-helmet": "^3.1.5",
+    "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-react-svg": "^2.0.0",
     "gatsby-source-filesystem": "^2.1.18",
     "gatsby-transformer-json": "^2.2.6",
