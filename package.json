@@ -13,7 +13,7 @@
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-react-svg": "^2.0.0",
     "gatsby-source-filesystem": "^2.1.33",
-    "gatsby-transformer-json": "^2.2.6",
+    "gatsby-transformer-json": "^2.2.15",
     "linaria": "1.3.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
