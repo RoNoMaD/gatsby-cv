@@ -13,7 +13,7 @@
     "gatsby-plugin-offline": "^3.0.22",
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-react-svg": "^2.0.0",
-    "gatsby-source-filesystem": "^2.1.38",
+    "gatsby-source-filesystem": "^2.1.39",
     "gatsby-transformer-json": "^2.2.19",
     "linaria": "1.4.0-alpha.1",
     "netlify-cms-app": "^2.9.7",
