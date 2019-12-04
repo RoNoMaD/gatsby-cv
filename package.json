@@ -8,7 +8,7 @@
     "gatsby": "^2.18.2",
     "gatsby-image": "^2.2.29",
     "gatsby-plugin-linaria": "^2.0.0",
-    "gatsby-plugin-manifest": "^2.2.29",
+    "gatsby-plugin-manifest": "^2.2.30",
     "gatsby-plugin-netlify-cms": "^4.1.26",
     "gatsby-plugin-offline": "^3.0.22",
     "gatsby-plugin-react-helmet": "^3.1.13",
@@ -39,8 +39,8 @@
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@storybook/addon-actions": "^5.2.8",
+    "@babel/core": "^7.7.4",
+    "@storybook/addon-actions": "^5.2.6",
     "@storybook/addon-docs": "^5.2.6",
     "@storybook/addon-links": "^5.2.6",
     "@storybook/addons": "^5.2.6",
@@ -52,7 +52,7 @@
     "eslint": "^6.6.0",
     "eslint-config-react-app": "^5.0.2",
     "eslint-loader": "^3.0.2",
-    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-flowtype": "^4.5.2",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
