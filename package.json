@@ -33,6 +33,7 @@
     "start": "yarn run develop",
     "format": "yarn prettier -- --write",
     "test": "jest",
+    "stylelint": "stylelint src",
     "lint": "eslint src",
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql)\"",
     "storybook": "start-storybook -p 6006",
@@ -77,6 +78,6 @@
     "url": "https://github.com/RoNoMaD/gatsby-cv.git"
   },
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=12.13.1"
   }
 }

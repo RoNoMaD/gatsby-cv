@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:12.13.0
+      - image: circleci/node:12.13.1
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -33,5 +33,18 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      # run formatter
+      - run: yarn prettier
+      # run linter
+      - run: yarn stylelint
+      - run: yarn lint
       # run tests!
       - run: yarn test
+      # build the website
+      - run: npm run build
+      # install lighthouse-ci
+      - run: sudo npm install -g @lhci/cli@0.3.x
+      # run lighthouse analysis
+      - run:
+          name: lhci autorun
+          command: lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
