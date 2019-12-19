@@ -6,7 +6,7 @@
   "dependencies": {
     "babel-preset-gatsby": "^0.2.26",
     "gatsby": "^2.18.13",
-    "gatsby-image": "^2.2.29",
+    "gatsby-image": "^2.2.37",
     "gatsby-plugin-linaria": "^2.0.0",
     "gatsby-plugin-manifest": "^2.2.33",
     "gatsby-plugin-offline": "^3.0.29",
