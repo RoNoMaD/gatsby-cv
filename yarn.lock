@@ -3600,7 +3600,7 @@ blob@0.0.5:
   resolved "https://registry.yarnpkg.com/blob/-/blob-0.0.5.tgz#d680eeef25f8cd91ad533f5b01eed48e64caf683"
   integrity sha512-gaqbzQPqOoamawKg0LGVd7SzLgXS+JH61oWprSLH+P+abTczqJbhTR8CmJ2u9/bUYNmHTGJx/UEmn6doAvvuig==
 
-bluebird@^3.3.5, bluebird@^3.5.5, bluebird@^3.7.1, bluebird@^3.7.2:
+bluebird@^3.3.5, bluebird@^3.5.5, bluebird@^3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
@@ -7024,7 +7024,7 @@ gatsby-cli@^2.8.19:
     ink "^2.6.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.22, gatsby-core-utils@^1.0.24:
+gatsby-core-utils@^1.0.24:
   version "1.0.24"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.24.tgz#b2b39440ad4f717de1b68f02d139130f844bdb32"
   integrity sha512-2GPJVnqVTDO1xyZWR2lITilGTzw/hP3EE5Lq/QEjvmOPX6sLes1Gd3mTewd0PpOVZkjzn93u7kZKWEGidQO2vw==
@@ -7131,6 +7131,13 @@ gatsby-plugin-page-creator@^2.1.36:
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"
+
+gatsby-plugin-preact@^3.1.24:
+  version "3.1.24"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-3.1.24.tgz#adc765c29da2923b7597bc12602b181d33585e48"
+  integrity sha512-gKzfYGH/nvY33LSDICO7fSPWWGJldm1yJPC0vaGXm2i5dtP8+YHGKSOtnBELII/aF5J4055NY5zWudm2R2JQ0g==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
 
 gatsby-plugin-react-helmet@^3.1.18:
   version "3.1.18"
@@ -13023,6 +13030,11 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.13, postcss@^7.0.14, postcss@^7.0.1
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+preact@^10.1.1:
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.1.1.tgz#1fd12e3ed6b74993ed8805f68e9d953cc914889a"
+  integrity sha512-mKW7Cdn68XMhdes0FjyIbA8+IVPsj3aIuAEQlZVkj9E2VhujWcXZEfwirBoXK6qZYfj1djaTBDCFKjAu1sK93w==
+
 prebuild-install@^5.3.3:
   version "5.3.3"
   resolved "https://registry.yarnpkg.com/prebuild-install/-/prebuild-install-5.3.3.tgz#ef4052baac60d465f5ba6bf003c9c1de79b9da8e"
@@ -17705,7 +17717,7 @@ xmlhttprequest-ssl@~1.5.4:
   resolved "https://registry.yarnpkg.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.5.5.tgz#c2876b06168aadc40e57d97e81191ac8f4398b3e"
   integrity sha1-wodrBhaKrcQOV9l+gRkayPQ5iz4=
 
-xstate@^4.6.7, xstate@^4.7.2:
+xstate@^4.7.2:
   version "4.7.3"
   resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.7.3.tgz#61d36c5f85609ab1e354c72fbaedf38d57525b69"
   integrity sha512-+1KyOB2JTv4kQQlZnEiDxSpEaIJnqslMa/479sc1KU3NMRP0caIV3p55Sr27GFS1EXQvnJ+n84bnWx77qplDWg==
