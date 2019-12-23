@@ -17,7 +17,7 @@
     "gatsby-source-filesystem": "^2.1.42",
     "gatsby-transformer-json": "^2.2.22",
     "linaria": "1.4.0-alpha.1",
-    "netlify-cms-app": "^2.9.7",
+    "netlify-cms-app": "^2.10.1",
     "preact": "^10.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
