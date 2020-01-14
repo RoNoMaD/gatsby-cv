@@ -8,7 +8,7 @@
     "gatsby": "^2.18.21",
     "gatsby-image": "^2.2.37",
     "gatsby-plugin-linaria": "^2.0.0",
-    "gatsby-plugin-manifest": "^2.2.33",
+    "gatsby-plugin-manifest": "^2.2.37",
     "gatsby-plugin-netlify-cms": "^4.1.33",
     "gatsby-plugin-offline": "^3.0.29",
     "gatsby-plugin-preact": "^3.1.24",
