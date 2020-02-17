@@ -19,7 +19,7 @@
     "gatsby-transformer-json": "^2.2.22",
     "gatsby-transformer-remark": "^2.6.50",
     "linaria": "1.4.0-beta.2",
-    "netlify-cms-app": "^2.11.14",
+    "netlify-cms-app": "^2.11.19",
     "preact": "^10.3.1",
     "prismjs": "^1.19.0",
     "react": "^16.11.0",
