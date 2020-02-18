@@ -129,14 +129,7 @@ module.exports = {
       resolve: "gatsby-plugin-stylelint",
       options: { files: ["src/**/*.{js,jsx,css}"] }
     },
-    {
-      resolve: "gatsby-plugin-recaptcha",
-      options: {
-        async: true,
-        defer: false,
-        args: "?onload=onloadCallback&render=explicit"
-      }
-    },
+    "gatsby-plugin-recaptcha",
     {
       resolve: "gatsby-plugin-webpack-bundle-analyzer",
       options: {
