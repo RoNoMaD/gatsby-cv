@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Romain Lebascle"
+    title: "Romain Lebascle",
+    siteUrl: "https://stoic-austin-186a1f.netlify.com"
   },
   plugins: [
     `gatsby-plugin-preact`,
@@ -128,6 +129,22 @@ module.exports = {
       resolve: "gatsby-plugin-stylelint",
       options: { files: ["src/**/*.{js,jsx,css}"] }
     },
-    `gatsby-plugin-recaptcha`
+    {
+      resolve: "gatsby-plugin-recaptcha",
+      options: {
+        async: true,
+        defer: false,
+        args: "?onload=onloadCallback&render=explicit"
+      }
+    },
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyzer",
+      options: {
+        analyzerPort: 3000,
+        production: true
+      }
+    },
+    `gatsby-plugin-webpack-size`,
+    `gatsby-plugin-sitemap`
   ]
 };
