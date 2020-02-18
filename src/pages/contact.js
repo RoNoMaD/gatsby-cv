@@ -174,6 +174,7 @@ export default class Contact extends React.Component {
             <Recaptcha
               sitekey={RECAPTCHA_KEY}
               onChange={this.handleRecaptcha}
+              theme="dark"
             />
             <p>
               <button className={formButton} type="submit">
