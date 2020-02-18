@@ -65,7 +65,7 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "gatsby-plugin-eslint": "^2.0.7",
     "gatsby-plugin-stylelint": "^3.2.0",
-    "husky": "^4.2.1",
+    "husky": "^4.2.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.1.0",
     "jest-watch-typeahead": "^0.4.0",
