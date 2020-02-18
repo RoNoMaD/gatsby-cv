@@ -1,6 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby";
-import Recaptcha from "react-google-recaptcha";
+import Recaptcha from "react-recaptcha";
 import SkillsIcon from "../images/skills.svg";
 import { css } from "linaria";
 
@@ -171,7 +171,7 @@ export default class Contact extends React.Component {
           </label>
           <Recaptcha
             sitekey={RECAPTCHA_KEY}
-            onChange={this.handleRecaptcha}
+            verifyCallback={this.handleRecaptcha}
             theme="dark"
           />
           <p>
