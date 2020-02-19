@@ -8,5 +8,21 @@
   },
   "css.validate": false,
   "less.validate": false,
-  "scss.validate": false
+  "scss.validate": false,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#9cd148",
+    "activityBar.activeBorder": "#2d7fb2",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#2d7fb2",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "titleBar.activeBackground": "#83b82e",
+    "titleBar.inactiveBackground": "#83b82e99",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveForeground": "#15202b99",
+    "statusBar.background": "#83b82e",
+    "statusBarItem.hoverBackground": "#668f24",
+    "statusBar.foreground": "#15202b"
+  },
+  "peacock.color": "hsla(83, 60%, 45%, 1)"
 }

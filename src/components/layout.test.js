@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import { useStaticQuery } from "gatsby"; // mocked
 
-import Layout from "../layout";
+import Layout from "./layout";
 
 // mock useStaticQuery to return title in siteMetadata
 beforeEach(() => {

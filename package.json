@@ -5,6 +5,7 @@
   "author": "Romain Lebascle<romain.lebascle@gmail.com>",
   "dependencies": {
     "babel-preset-gatsby": "^0.2.29",
+    "clsx": "^1.1.0",
     "gatsby": "2.19.18",
     "gatsby-image": "^2.2.41",
     "gatsby-plugin-linaria": "^2.0.0",
@@ -52,9 +53,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
+    "@storybook/addon-a11y": "^5.3.13",
     "@storybook/addon-actions": "^5.3.13",
     "@storybook/addon-docs": "5.3.13",
     "@storybook/addon-links": "^5.3.13",
+    "@storybook/addon-viewport": "^5.3.13",
     "@storybook/addons": "^5.2.6",
     "@storybook/react": "5.3.13",
     "@testing-library/jest-dom": "^5.1.1",
