@@ -77,7 +77,7 @@ const Home = () => (
       <QuoteIcon className={quoteIcon} />
       <p className={quoteText}>
         {
-          "Avec 5 ans d'expérience dans le développement de sites et d'applications web et mobile et une passion pour l'écosystème Front End."
+          "Avec 6 ans d'expérience dans le développement de sites et d'applications web, et une passion pour l'écosystème Front End."
         }
       </p>
     </div>

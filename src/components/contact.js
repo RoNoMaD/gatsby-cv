@@ -4,6 +4,8 @@ import Recaptcha from "react-recaptcha";
 import SkillsIcon from "../images/skills.svg";
 import { css } from "linaria";
 
+import Button from "./button/button";
+
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
 function encode(data) {
@@ -62,16 +64,6 @@ const contactFormInput = css`
   border-radius: 5px;
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3),
     0 1px rgba(255, 255, 255, 0.06);
-`;
-
-const formButton = css`
-  float: right;
-  margin: 5px 0 0 0;
-  padding: 10px 30px;
-  color: #fff;
-  font-size: 12pt;
-  background: transparent;
-  outline: 0;
 `;
 
 export default class Contact extends React.Component {
@@ -174,11 +166,7 @@ export default class Contact extends React.Component {
             verifyCallback={this.handleRecaptcha}
             theme="dark"
           />
-          <p>
-            <button className={formButton} type="submit">
-              ENVOYER
-            </button>
-          </p>
+          <Button type="submit">ENVOYER</Button>
         </form>
       </section>
     );
