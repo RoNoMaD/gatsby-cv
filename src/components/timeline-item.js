@@ -26,7 +26,7 @@ const timelineItemDefaultIcon = css`
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: hsla(83, 60%, 45%, 1);
+  background-color: var(--color-brand-green);
   border-radius: 50%;
 `;
 

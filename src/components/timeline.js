@@ -11,7 +11,7 @@ const timelineTitleIcon = css`
   width: 50px;
   height: 50px;
   margin-right: 8px;
-  background-color: hsla(83, 60%, 45%, 1);
+  background-color: var(--color-brand-green);
   border-radius: 50%;
 `;
 
@@ -24,7 +24,7 @@ const timelineItemsContainer = css`
   grid-column-end: span 2;
   height: 1.45rem;
   margin-left: 24px;
-  border-left: 2px solid black;
+  border-left: 2px solid var(--color-neutral-black);
 `;
 
 const Timeline = ({ icon, title, items }) => (

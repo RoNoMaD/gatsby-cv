@@ -57,7 +57,7 @@ const Card = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 0.5rem;
-  background-color: rgba(66, 66, 66, 1);
+  background-color: var(--color-brand-grey-light);
 `;
 
 const CardIcon = styled.div`
@@ -81,7 +81,7 @@ const ProgressBarContainer = styled.div`
   align-self: end;
   height: 24px;
   margin: 2px;
-  background-color: hsla(0, 100%, 100%, 1);
+  background-color: var(--color-neutral-white);
 `;
 
 const ProgressBar = styled.div`
