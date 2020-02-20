@@ -66,6 +66,11 @@ const contactFormInput = css`
     0 1px rgba(255, 255, 255, 0.06);
 `;
 
+const formButton = css`
+  float: right;
+  margin: 5px 0 0 0;
+`;
+
 export default class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -166,7 +171,9 @@ export default class Contact extends React.Component {
             verifyCallback={this.handleRecaptcha}
             theme="dark"
           />
-          <Button type="submit">ENVOYER</Button>
+          <Button type="submit" className={formButton}>
+            ENVOYER
+          </Button>
         </form>
       </section>
     );

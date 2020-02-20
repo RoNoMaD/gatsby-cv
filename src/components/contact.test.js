@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 
-import Contact from "./contact;
+import Contact from "./contact";
 
 jest.mock("react-google-recaptcha", () => () => "Recaptcha");
 
