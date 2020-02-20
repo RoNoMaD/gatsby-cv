@@ -1,9 +1,12 @@
 import React from "react";
 import { navigate } from "gatsby";
 import Recaptcha from "react-recaptcha";
-import Layout from "../components/layout";
-import SkillsIcon from "../images/skills.svg";
 import { css } from "linaria";
+
+import Layout from "../components/layout";
+import Button from "../components/button/button";
+
+import SkillsIcon from "../images/skills.svg";
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
@@ -68,11 +71,6 @@ const contactFormInput = css`
 const formButton = css`
   float: right;
   margin: 5px 0 0 0;
-  padding: 10px 30px;
-  color: #fff;
-  font-size: 12pt;
-  background: transparent;
-  outline: 0;
 `;
 
 export default class Contact extends React.Component {
@@ -177,9 +175,9 @@ export default class Contact extends React.Component {
               theme="dark"
             />
             <p>
-              <button className={formButton} type="submit">
+              <Button className={formButton} type="submit">
                 ENVOYER
-              </button>
+              </Button>
             </p>
           </form>
         </section>

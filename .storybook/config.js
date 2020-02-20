@@ -1,4 +1,4 @@
-import "../src/components/layout.css";
+import "../src/reset.css";
 import { configure } from "@storybook/react";
 
 // automatically import all files ending in *.stories.js

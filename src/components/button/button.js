@@ -4,32 +4,16 @@ import clsx from "clsx";
 import { css } from "linaria";
 
 const button = css`
-  font-family: inherit; /* For all browsers */
-  font-size: 100%; /* For all browsers */
-  line-height: 1.15; /* For all browsers */
-  margin: 0; /* Firefox and Safari have margin */
-  overflow: visible; /* Edge hides overflow */
-  text-transform: none; /* Firefox inherits text-transform */
-  -webkit-appearance: button; /* Safari otherwise prevents some styles */
-
-  &::-moz-focus-inner {
-    padding: 0;
-    border-style: none;
-  }
-
-  &:-moz-focusring {
-    outline: 1px dotted ButtonText;
-  }
-
   min-width: 44pt;
   min-height: 44pt;
   padding: 10px 30px;
-  border: 2px solid #fff;
-  border-radius: 40px;
   color: #fff;
   font-size: 12pt;
   background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
   outline: 0;
+  cursor: pointer;
   transition: all 0.5s ease;
 
   &[disabled] {
@@ -38,15 +22,14 @@ const button = css`
     cursor: not-allowed;
   }
 
+  &:focus {
+    outline: 0; /* Removes the default blue ring */
+    box-shadow: 0 0 5px #fff; /* our own focus style */
+  }
+
   &:hover:not([disabled]) {
     color: hsla(0, 0%, 19%, 1);
     background: #fff;
-  }
-
-  &:focus {
-    outline: 0; /* Removes the default blue ring */
-    /* Now, let's create our own focus style */
-    box-shadow: 0 0 5px #fff;
   }
 
   /* remove focus style on click */
