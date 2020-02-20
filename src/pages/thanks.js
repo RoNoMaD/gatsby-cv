@@ -1,24 +1,23 @@
 import React from "react";
+import { css } from "linaria";
 import Layout from "../components/layout";
+
+const notFound = css`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+`;
+
+const title = css`
+  color: var(--color-brand-green);
+`;
 
 const NotFoundPage = () => (
   <Layout>
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100vh"
-      }}
-    >
-      <h1
-        style={{
-          color: "hsla(83, 60%, 45%, 1)"
-        }}
-      >
-        MERCI
-      </h1>
+    <div className={notFound}>
+      <h1 className={title}>MERCI</h1>
       <p>Je reviendrais vers vous dans les plus brefs délais.</p>
     </div>
   </Layout>

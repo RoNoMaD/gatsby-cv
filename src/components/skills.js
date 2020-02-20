@@ -25,7 +25,7 @@ const skillsTitleIconContainer = css`
   width: 50px;
   height: 50px;
   margin-right: 8px;
-  background-color: hsla(83, 60%, 45%, 1);
+  background-color: var(--color-brand-green);
   border-radius: 50%;
 `;
 

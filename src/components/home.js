@@ -22,9 +22,9 @@ const homeAnimatedName = css`
   height: 45px;
   margin: 0 auto 1.45rem auto; /* Gives that scrolling effect as the typing happens */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  color: hsla(83, 60%, 45%, 1);
+  color: var(--color-brand-green);
   white-space: nowrap; /* Keeps the content on a single line */
-  border-right: 0.15em solid hsla(83, 60%, 45%, 1); /* The typwriter cursor */
+  border-right: 0.15em solid var(--color-brand-green); /* The typwriter cursor */
   animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
 
   /* The typing effect */
@@ -44,7 +44,7 @@ const homeAnimatedName = css`
       border-color: transparent;
     }
     50% {
-      border-color: hsla(83, 60%, 45%, 1);
+      border-color: var(--color-brand-green);
     }
   }
 `;
@@ -59,7 +59,7 @@ const quoteContainer = css`
 
 const quoteIcon = css`
   width: 50px;
-  fill: hsla(83, 60%, 45%, 1);
+  fill: var(--color-brand-green);
 `;
 
 const quoteText = css`
