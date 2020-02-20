@@ -137,7 +137,8 @@ module.exports = {
         production: true
       }
     },
-    `gatsby-plugin-webpack-size`,
-    `gatsby-plugin-sitemap`
+    "gatsby-plugin-webpack-size",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-netlify"
   ]
 };
