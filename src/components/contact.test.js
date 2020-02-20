@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 
 import Contact from "./contact";
 
-jest.mock("react-google-recaptcha", () => () => "Recaptcha");
+jest.mock("react-recaptcha", () => () => "Recaptcha");
 
 describe("Contact", () => {
   it("render a form with a name, email, description and submit", () => {

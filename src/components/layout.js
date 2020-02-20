@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
       >
         <html lang="fr" />
       </Helmet>
-      <div>{children}</div>
+      {children}
     </>
   );
 };
