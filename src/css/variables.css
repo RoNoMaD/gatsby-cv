@@ -2,7 +2,7 @@
     #DESIGN TOKENS / VARIABLES
 \*------------------------------------*/
 
-/**
+/*
  * CONTENTS
  *
  * COLORS
@@ -14,9 +14,6 @@
  * Font Families..............The fonts used in the design system
  * Sizing.....................Font sizing
  *
- * LAYOUT
- * Max-widths.................Maximum layout container width
- *
  * SPACING
  * Spacing defaults...........Spacing between elements
  *
@@ -24,31 +21,116 @@
  * Border Width...............Border thicknesses
  * Border Radius..............Border radius definitions
  *
- * ANIMATION
- * Animation Speed............Transition/animation speed variables
- * Animation easing...........Easing variables
- *
  * BREAKPOINTS
  * Breakpoints................Global breakpoint definitions
  */
+
 :root {
   /*------------------------------------*\
      #COLORS
- \*------------------------------------*/
+  \*------------------------------------*/
 
-  /**
- * Brand Colors
- * Brand specific colors
- */
+  /*
+   * Brand Colors
+   * Brand specific colors
+   */
   --color-brand-green: hsla(83, 60%, 45%, 1);
   --color-brand-grey: hsla(0, 0%, 19%, 1);
   --color-brand-grey-dark: rgba(33, 33, 33, 1);
   --color-brand-grey-light: rgba(66, 66, 66, 1);
 
-  /**
- * Neutral Colors
- * Neutral colors are grayscale values used throughout the UI
- */
+  /*
+   * Neutral Colors
+   * Neutral colors are grayscale values used throughout the UI
+   */
   --color-neutral-white: hsla(0, 100%, 100%, 1);
   --color-neutral-black: hsla(0, 0%, 0%, 1);
+
+  /*------------------------------------*\
+    #TYPOGRAPHY
+  \*------------------------------------*/
+
+  /*
+   * Font Family
+   */
+  --font-primary: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  /*
+   * Font Sizing
+   */
+  --font-size-xxs: 0.5rem; /* 8px */
+  --font-size-xs: 0.625rem; /* 10px */
+  --font-size-sm: 0.75rem; /* 12px */
+  --font-size-sm-1: 0.8125rem; /* 13px */
+  --font-size-sm-2: 0.875rem; /* 14px */
+  --font-size-med: 1rem; /* 16px */
+  --font-size-med-1: 1.125rem; /* 18px */
+  --font-size-med-2: 1.25rem; /* 20px */
+  --font-size-large: 1.5rem; /* 24px */
+  --font-size-large-1: 1.625rem; /* 26px */
+  --font-size-xl: 2rem; /* 32px */
+  --font-size-xl-number: 2.25rem; /* 36px */
+  --font-size-xxl-number: 3.375rem; /* 54px */
+
+  /*
+   * Font Weight
+   */
+  --bold: 700;
+  --bold-heavy: 1000;
+
+  /*
+   * Line Height
+   */
+  --line-height: 1.5;
+
+  /*------------------------------------*\
+    #SPACING
+  \*------------------------------------*/
+
+  /*
+  * Spacing and offsets
+  * Used to space grids and body padding
+  */
+  --spacing: 1rem; /* 16px */
+  --spacing-small: calc(0.5 * var(--spacing)); /* 8px */
+  --spacing-xs: calc(0.25 * var(--spacing)); /* 4px */
+  --spacing-large: calc(2 * var(--spacing)); /* 32px */
+  --spacing-xl: calc(4 * var(--spacing)); /* 64px */
+  --spacing-xxl: calc(8 * var(--spacing)); /* 128px */
+
+  /*------------------------------------*\
+    #BORDERS
+  \*------------------------------------*/
+
+  /*
+   * Border
+   */
+  --border-thickness: 2px;
+
+  /*
+   * Border radius
+   */
+  --border-radius: 4px;
+
+  /*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
+
+  /*
+ * Breakpoints used in media queries
+ * These are not the only breakpoints used, but they provide a few defaults
+ */
+
+  /* Mobile */
+  --bp-small: 28em; /* 448px */
+  /* Tablet */
+  --bp-med: 47em; /* 752px */
+  /* Laptop */
+  --bp-large: 60em; /* 960px */
+  /* Large screen */
+  --bp-xl: 70em; /* 1120px */
+
+  /* mobile minimun screen width (iPhone5) */
+  --min-screen-width: 20em; /* 320px */
 }

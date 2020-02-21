@@ -9,20 +9,26 @@ const homeSection = css`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 0px 1.0875rem 1.45rem;
+  padding: var(--spacing);
   background: linear-gradient(
     135deg,
     rgba(33, 33, 33, 1) 0%,
     rgba(48, 48, 48, 1) 35%,
     rgba(66, 66, 66, 1) 100%
   );
+
+  & > * + * {
+    margin-top: var(--spacing);
+  }
 `;
 
 const homeAnimatedName = css`
   height: 45px;
-  margin: 0 auto 1.45rem auto; /* Gives that scrolling effect as the typing happens */
+  margin: inherit auto inherit auto; /* Gives that scrolling effect as the typing happens */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   color: var(--color-brand-green);
+  font-size: var(--font-size-xl-number);
+  line-height: 1.1;
   white-space: nowrap; /* Keeps the content on a single line */
   border-right: 0.15em solid var(--color-brand-green); /* The typwriter cursor */
   animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
@@ -63,16 +69,14 @@ const quoteIcon = css`
 `;
 
 const quoteText = css`
-  padding: 8px;
+  padding: var(--spacing-small);
 `;
 
 const Home = () => (
   <section className={homeSection}>
     <h2>Bonjour je suis </h2>
-    <div>
-      <h1 className={homeAnimatedName}>{"<Romain Lebascle />"}</h1>
-    </div>
-    <h2 className={homeSubtitle}>Développeur Web Full Stack basé à Nantes.</h2>
+    <h1 className={homeAnimatedName}>{"<Romain Lebascle />"}</h1>
+    <h2 className={homeSubtitle}>Développeur Web Front End basé à Nantes.</h2>
     <div className={quoteContainer}>
       <QuoteIcon className={quoteIcon} />
       <p className={quoteText}>

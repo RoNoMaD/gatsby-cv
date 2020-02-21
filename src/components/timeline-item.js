@@ -37,11 +37,18 @@ const timelineItemIcon = css`
 
 const timelineItemBottomLine = css`
   height: calc(100% - 18px);
-  border-left: 2px solid black;
+  border-left: var(--border-thickness) solid var(--color-neutral-black);
+`;
+
+const timelineItemTitle = css`
+  color: var(--color-brand-green);
 `;
 
 const timelineItemText = css`
-  margin-right: 8px;
+  margin-right: var(--spacing-small);
+  & > *:last-child {
+    margin-top: var(--spacing-small);
+  }
 `;
 
 const TimelineItem = ({ item, last }) => {
@@ -69,7 +76,7 @@ const TimelineItem = ({ item, last }) => {
         {!last && <div className={timelineItemBottomLine} />}
       </div>
       <div className={timelineItemText}>
-        <h4>{item.title}</h4>
+        <h4 className={timelineItemTitle}>{item.title}</h4>
         <h5>{item.subtitle}</h5>
         <p>{item.description}</p>
       </div>
