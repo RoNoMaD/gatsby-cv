@@ -1,4 +1,5 @@
 ---
+path: /blog/writing-history
 title: Writing history
 date: '2020-02-02'
 description: Keep track of the changes in your code using Git
