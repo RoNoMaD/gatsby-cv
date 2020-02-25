@@ -73,7 +73,6 @@ const CardIcon = styled.div`
 
 const CardTitle = styled.h3`
   margin: 0.5rem;
-  color: ${props => props.titleColor};
   text-align: center;
 `;
 
@@ -98,7 +97,7 @@ const Skill = ({ skill }) => (
       <div>
         <Card className={isVisible ? scaleInCenter : scaleOutCenter}>
           <CardIcon background={skill.background}>{skill.icon}</CardIcon>
-          <CardTitle color={skill.titleColor}>{skill.title}</CardTitle>
+          <CardTitle>{skill.title}</CardTitle>
           <ProgressBarContainer>
             <ProgressBar
               className={isVisible && slideIn}

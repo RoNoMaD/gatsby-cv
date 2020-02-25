@@ -26,7 +26,7 @@ const header = css`
   z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   padding: var(--spacing) var(--spacing-large);
   color: var(--color-neutral-white);
   background-color: var(--color-brand-grey-dark);
@@ -75,6 +75,26 @@ const activeLink = css`
   color: var(--color-brand-green);
 `;
 
+const linkText = css`
+  @media (min-width: 47em) {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+  }
+
+  /* &:not(:focus):not(:active) { */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap; /* added line */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  /* } */
+`;
+
 const Layout = ({ children }) => {
   const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -111,11 +131,11 @@ const Layout = ({ children }) => {
         <nav className={nav}>
           <Link to="/blog" className={link} activeClassName={activeLink}>
             <NewspaperIcon className={newspaperIcon} />
-            <span>Blog</span>
+            <span className={linkText}>Blog</span>
           </Link>
           <Link to="/contact" className={link} activeClassName={activeLink}>
             <EnvelopeIcon className={newspaperIcon} />
-            <span>Contact</span>
+            <span className={linkText}>Contact</span>
           </Link>
         </nav>
       </header>

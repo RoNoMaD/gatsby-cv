@@ -134,4 +134,8 @@
 
   /* mobile minimun screen width (iPhone5) */
   --min-screen-width: 20em; /* 320px */
+
+  --header-height: calc(
+    var(--font-size-med) * var(--line-height) + var(--spacing) * 2
+  );
 }

@@ -4,8 +4,8 @@ module.exports = {
     siteUrl: "https://stoic-austin-186a1f.netlify.com"
   },
   plugins: [
-    `gatsby-plugin-preact`,
-    `gatsby-plugin-netlify-cms`,
+    "gatsby-plugin-preact",
+    "gatsby-plugin-netlify-cms",
     "gatsby-plugin-eslint",
     "gatsby-plugin-linaria",
     "gatsby-plugin-react-helmet",
