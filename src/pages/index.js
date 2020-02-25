@@ -21,9 +21,13 @@ import Languages from "../components/languages";
 const timelines = css`
   display: grid;
   grid-template-columns: auto-fill, 50px, auto-fill;
-  max-width: 960px;
+  max-width: var(--bp-med);
   margin: var(--spacing) auto;
   padding: 0px 1.0875rem 1.45rem;
+
+  @media (min-width: 47em) {
+    padding: 0px var(--spacing-xxl) 1.45rem;
+  }
 `;
 
 const IndexPage = () => (
@@ -75,7 +79,6 @@ const IndexPage = () => (
         {
           icon: <JestIcon style={{ height: "40px", width: "auto" }} />,
           title: "Test & Qualité",
-          titleColor: "hsla(0, 100%, 100%, 1)",
           background: "hsla(343, 14%, 52%, 1)",
           progressBarColor: "hsla(343, 40%, 43%, 1)",
           progressBarWidth: "75"
@@ -83,7 +86,6 @@ const IndexPage = () => (
         {
           icon: <AgileIcon style={{ height: "40px" }} />,
           title: "Méthodes agiles",
-          titleColor: "hsla(0, 100%, 100%, 1)",
           background: "hsla(168, 80%, 33%, 1)",
           progressBarColor: "hsla(0, 0%, 20%, 1)",
           progressBarWidth: "75"
@@ -91,7 +93,6 @@ const IndexPage = () => (
         {
           icon: <ContinuousIntegrationIcon style={{ height: "40px" }} />,
           title: "Intégration continue",
-          titleColor: "hsla(0, 100%, 100%, 1)",
           background: "hsla(255, 33%, 40%, 1)",
           progressBarColor: "hsla(14, 79%, 53%, 1)",
           progressBarWidth: "75"
@@ -99,7 +100,6 @@ const IndexPage = () => (
         {
           icon: <DesignSystemIcon style={{ height: "40px" }} />,
           title: "Design systems",
-          titleColor: "hsla(0, 100%, 100%, 1)",
           background: "#fccf00",
           progressBarColor: "#cdd824",
           progressBarWidth: "75"

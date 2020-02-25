@@ -1,4 +1,5 @@
 import React from "react";
+import LinkButton from "./link-button/link-button";
 import { css } from "linaria";
 
 import QuoteIcon from "../images/iconmonstr-quote-3.svg";
@@ -8,7 +9,7 @@ const homeSection = css`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: calc(100vh - var(--header-height));
   padding: var(--spacing);
   background: linear-gradient(
     135deg,
@@ -88,6 +89,7 @@ const Home = () => (
         }
       </p>
     </div>
+    <LinkButton to="/#competences">En savoir plus</LinkButton>
   </section>
 );
 
