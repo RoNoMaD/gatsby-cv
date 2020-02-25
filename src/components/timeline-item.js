@@ -6,6 +6,7 @@ const timelineItemDates = css`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: var(--spacing);
 `;
 
 const timelineItemIconContainer = css`
@@ -14,11 +15,13 @@ const timelineItemIconContainer = css`
   align-items: center;
   align-self: stretch;
   width: 50px;
+  margin-top: var(--spacing);
   margin-right: 8px;
 `;
 
 const timelineItemTopLine = css`
-  height: 8px;
+  height: calc(var(--spacing) + var(--spacing-small));
+  margin-top: calc(-1 * var(--spacing));
   border-left: 2px solid black;
 `;
 
@@ -45,7 +48,9 @@ const timelineItemTitle = css`
 `;
 
 const timelineItemText = css`
+  margin-top: var(--spacing);
   margin-right: var(--spacing-small);
+
   & > *:last-child {
     margin-top: var(--spacing-small);
   }
@@ -59,15 +64,15 @@ const TimelineItem = ({ item, last }) => {
   return (
     <>
       <div className={timelineItemDates}>
-        <div>
-          <time dateTime="2017-06">{item.startDate}</time>
-        </div>
+        {item.startDate && !item.endDate && <div>{"aujourd'hui"}</div>}
         {item.endDate && (
           <div>
             <time dateTime="2017-06">{item.endDate}</time>
           </div>
         )}
-        {item.startDate && !item.endDate && <div>{"aujourd'hui"}</div>}
+        <div>
+          <time dateTime="2017-06">{item.startDate}</time>
+        </div>
       </div>
       <div className={timelineItemIconContainer}>
         <div className={timelineItemTopLine} />

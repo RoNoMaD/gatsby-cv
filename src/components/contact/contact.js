@@ -1,10 +1,12 @@
 import React from "react";
 import { navigate } from "gatsby";
 import Recaptcha from "react-recaptcha";
-import SkillsIcon from "../images/skills.svg";
+import EnvelopeIcon from "../../images/envelope-regular.svg";
 import { css } from "linaria";
 
-import Button from "./button/button";
+import TextField from "../text-field/text-field";
+import Textarea from "../textarea/textarea";
+import Button from "../button/button";
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
@@ -53,17 +55,10 @@ const contactForm = css`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`;
 
-const contactFormInput = css`
-  width: 300px;
-  padding: 10px 15px;
-  color: white;
-  background: rgba(33, 33, 33, 1);
-  border: 0;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 1px rgba(255, 255, 255, 0.06);
+  & > * + * {
+    margin-top: var(--spacing);
+  }
 `;
 
 const formButton = css`
@@ -105,7 +100,7 @@ export default class Contact extends React.Component {
       <section className={contactSection}>
         <div className={contactTitleContainer}>
           <div className={contactIcon}>
-            <SkillsIcon style={{ height: "25px", width: "auto" }} />
+            <EnvelopeIcon style={{ height: "25px", width: "auto" }} />
           </div>
           <h3 className={contactTitle}>Contact</h3>
         </div>
@@ -127,45 +122,29 @@ export default class Contact extends React.Component {
             <p>This form won’t work with Javascript disabled</p>
           </noscript>
           <input type="hidden" name="bot-field" />
-          <label>
-            Votre nom
-            <br />
-            <input
-              className={contactFormInput}
-              type="text"
-              name="name"
-              onChange={this.handleChange}
-            />
-          </label>
-          <label>
-            Votre email
-            <br />
-            <input
-              className={contactFormInput}
-              type="email"
-              name="email"
-              onChange={this.handleChange}
-            />
-          </label>
-          <label>
-            Votre message
-            <br />
-            <textarea
-              style={{
-                padding: "10px 15px",
-                minHeight: "150px",
-                width: " 300px",
-                background: "rgba(33,33,33,1)",
-                border: "0",
-                color: "white",
-                borderRadius: "5px",
-                boxShadow:
-                  "inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06)"
-              }}
-              name="message"
-              onChange={this.handleChange}
-            />
-          </label>
+          <TextField
+            type="text"
+            id="name"
+            name="name"
+            required={true}
+            label="Votre nom *"
+            onChange={this.handleChange}
+          />
+          <TextField
+            type="email"
+            id="email"
+            name="email"
+            required={true}
+            label="Votre email *"
+            onChange={this.handleChange}
+          />
+          <Textarea
+            id="message"
+            name="message"
+            required={true}
+            label="Votre message *"
+            onChange={this.handleChange}
+          />
           <Recaptcha
             sitekey={RECAPTCHA_KEY}
             verifyCallback={this.handleRecaptcha}

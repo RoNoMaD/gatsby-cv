@@ -6,15 +6,14 @@ import SkillsIcon from "../images/skills.svg";
 
 const skillsSection = css`
   max-width: 960px;
-  margin: 16px auto;
-  padding: 0px 1.0875rem 1.45rem;
+  margin: 0 auto 0 auto;
+  padding: var(--spacing-medium);
 `;
 
 const skillsTitleContainer = css`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.45rem;
 `;
 
 const skillsTitleIconContainer = css`
@@ -42,8 +41,8 @@ const skillsCardsContainer = css`
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  /*grid-template-rows: repeat(auto-fit, minmax(150px,1fr));*/
-  padding: 10px;
+  margin-top: var(--spacing);
+  padding: var(--spacing-small);
 `;
 
 const Skills = ({ skills }) => (

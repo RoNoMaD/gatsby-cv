@@ -1,21 +1,30 @@
 import React from "react";
+import { css } from "linaria";
 
 import ReactIcon from "../images/React-icon.svg";
-import AngularIcon from "../images/angular2.svg";
+// import AngularIcon from "../images/angular2.svg";
 import JavaScriptIcon from "../images/Unofficial_JavaScript_logo.svg";
 import CSS3Icon from "../images/css3.svg";
 import GitIcon from "../images/Git_icon.svg";
 import JestIcon from "../images/jest.svg";
 import AgileIcon from "../images/agile.svg";
 import ContinuousIntegrationIcon from "../images/continuous-integration.svg";
+import DesignSystemIcon from "../images/eye.svg";
 
 import Layout from "../components/layout";
-import Contact from "../components/contact";
 import Home from "../components/home";
 import Skills from "../components/skills";
 import WorkExperience from "../components/work-experience";
 import Education from "../components/education";
 import Languages from "../components/languages";
+
+const timelines = css`
+  display: grid;
+  grid-template-columns: auto-fill, 50px, auto-fill;
+  max-width: 960px;
+  margin: var(--spacing) auto;
+  padding: 0px 1.0875rem 1.45rem;
+`;
 
 const IndexPage = () => (
   <Layout>
@@ -30,15 +39,15 @@ const IndexPage = () => (
           progressBarColor: "hsla(193, 95%, 68%, 1)",
           progressBarWidth: "90"
         },
-        {
-          icon: <AngularIcon style={{ height: "40px" }} />,
-          title: "Angular",
-          titleColor: "hsla(0, 100%, 100%, 1)",
-          background:
-            "linear-gradient(145deg,hsla(216, 85%, 34%, 1),hsla(207, 90%, 61%, 1))",
-          progressBarColor: "hsla(359, 59%, 45%, 1)",
-          progressBarWidth: "75"
-        },
+        // {
+        //   icon: <AngularIcon style={{ height: "40px" }} />,
+        //   title: "Angular",
+        //   titleColor: "hsla(0, 100%, 100%, 1)",
+        //   background:
+        //     "linear-gradient(145deg,hsla(216, 85%, 34%, 1),hsla(207, 90%, 61%, 1))",
+        //   progressBarColor: "hsla(359, 59%, 45%, 1)",
+        //   progressBarWidth: "75"
+        // },
         {
           icon: <JavaScriptIcon style={{ height: "40px" }} />,
           title: "JavaScript",
@@ -86,23 +95,22 @@ const IndexPage = () => (
           background: "hsla(255, 33%, 40%, 1)",
           progressBarColor: "hsla(14, 79%, 53%, 1)",
           progressBarWidth: "75"
+        },
+        {
+          icon: <DesignSystemIcon style={{ height: "40px" }} />,
+          title: "Design systems",
+          titleColor: "hsla(0, 100%, 100%, 1)",
+          background: "#fccf00",
+          progressBarColor: "#cdd824",
+          progressBarWidth: "75"
         }
       ]}
     />
-    <div
-      style={{
-        maxWidth: "960px",
-        margin: "16px auto",
-        display: "grid",
-        gridTemplateColumns: "auto-fill, 50px, auto-fill",
-        padding: "0px 1.0875rem 1.45rem"
-      }}
-    >
+    <div className={timelines}>
       <WorkExperience />
       <Education />
       <Languages />
     </div>
-    <Contact />
   </Layout>
 );
 
