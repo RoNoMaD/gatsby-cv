@@ -23,6 +23,7 @@ const homeSection = css`
 `;
 
 const homeAnimatedName = css`
+  max-width: 356px;
   height: 45px;
   margin: inherit auto inherit auto; /* Gives that scrolling effect as the typing happens */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -61,6 +62,7 @@ const homeSubtitle = css`
 
 const quoteContainer = css`
   display: flex;
+  max-width: 550px;
 `;
 
 const quoteIcon = css`
@@ -70,13 +72,14 @@ const quoteIcon = css`
 
 const quoteText = css`
   padding: var(--spacing-small);
+  text-align: center;
 `;
 
 const Home = () => (
   <section className={homeSection}>
     <h2>Bonjour je suis </h2>
     <h1 className={homeAnimatedName}>{"<Romain Lebascle />"}</h1>
-    <h2 className={homeSubtitle}>Développeur Web Front End basé à Nantes.</h2>
+    <h2 className={homeSubtitle}>Développeur Web Front End basé à Nantes</h2>
     <div className={quoteContainer}>
       <QuoteIcon className={quoteIcon} />
       <p className={quoteText}>

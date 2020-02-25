@@ -10,6 +10,7 @@ const timelineTitleIcon = css`
   justify-content: center;
   width: 50px;
   height: 50px;
+  margin-top: var(--spacing-xl);
   margin-right: 8px;
   background-color: var(--color-brand-green);
   border-radius: 50%;
@@ -17,6 +18,7 @@ const timelineTitleIcon = css`
 
 const timelineTitle = css`
   align-self: center;
+  margin-top: var(--spacing-xl);
 `;
 
 const timelineItemsContainer = css`

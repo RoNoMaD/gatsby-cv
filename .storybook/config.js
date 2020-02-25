@@ -1,3 +1,4 @@
+import "../src/css/variables.css";
 import "../src/css/reset.css";
 import { configure } from "@storybook/react";
 
