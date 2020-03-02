@@ -1,19 +1,33 @@
 import React from "react";
 import { graphql } from "gatsby";
-import PostLink from "../components/post-link";
+import { css } from "linaria";
 
 import Layout from "../components/layout";
+import PostLink from "../components/post-link";
+
+const main = css`
+  max-width: var(--bp-small);
+  margin-right: auto;
+  margin-left: auto;
+  padding: var(--spacing-large);
+`;
 
 const IndexPage = ({
   data: {
     allMarkdownRemark: { edges }
   }
 }) => {
-  const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
-
-  return <Layout>{Posts}</Layout>;
+  return (
+    <Layout>
+      <main className={main}>
+        {edges
+          .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+          .map(edge => (
+            <PostLink key={edge.node.id} post={edge.node} />
+          ))}
+      </main>
+    </Layout>
+  );
 };
 
 export default IndexPage;
@@ -29,6 +43,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
+            description
           }
         }
       }
