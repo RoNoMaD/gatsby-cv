@@ -11,7 +11,10 @@ When using modern Source Control Manager like Git, the changes are tracked via c
 
 # Commit conventions
 
-In order
+Commit message conventions allow your team to add more meaning to your git history.
+
+When setting up a convention remember to always present it to the team and to adapt it to the needs of your project.
+
 
 # Setup a commit template
 
@@ -26,7 +29,7 @@ where FILE_PATH is the path of the template file.
 If you want to explore more options read the official doc at :
 https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
 
-You can find an exemple based on [conventionalcommits.org](https://www.conventionalcommits.org) in this [gist](https://gist.github.com/adeekshith/cd4c95a064977cdc6c50). When setting up a template remember to always present it to the team and to adapt it to the needs of your project.
+You can find an exemple based on [conventionalcommits.org](https://www.conventionalcommits.org) in this [gist](https://gist.github.com/adeekshith/cd4c95a064977cdc6c50). 
 
 If you want to enforce the use of this template, you can use a ['prepare-commit-msg' git hook](https://git-scm.com/docs/githooks#_prepare_commit_msg).
 My recommendation is to use [husky](https://github.com/typicode/husky) and a script like [commit-template](https://github.com/lennym/commit-template) to achieve that.
