@@ -9,7 +9,12 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/99800f3e-5fb3-42cf-8e01-3da152843bcb/deploy-status)](https://app.netlify.com/sites/stoic-austin-186a1f/deploys)
 
-[![dependencies Status](https://david-dm.org/RoNoMaD/gatsby-cv/status.svg)](https://david-dm.org/bower/bower)
+
+[![dependencies Status](https://david-dm.org/RoNoMaD/gatsby-cv/status.svg)](https://david-dm.org/RoNoMaD/gatsby-cv)
+
+[![CircleCI](https://circleci.com/gh/RoNoMaD/gatsby-cv.svg?style=svg)](https://circleci.com/gh/RoNoMaD/gatsby-cv)
+
+
 
 Kick off your project with this default boilerplate ([live demo](https://gatsby-starter-default-demo.netlify.com/)). This barebones starter ships with the main Gatsby configuration files you might need.
 
