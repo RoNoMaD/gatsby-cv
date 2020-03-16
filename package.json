@@ -22,7 +22,7 @@
     "gatsby-plugin-webpack-bundle-analyzer": "^1.0.5",
     "gatsby-plugin-webpack-size": "^1.0.0",
     "gatsby-remark-prismjs": "^3.3.31",
-    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-source-filesystem": "^2.1.55",
     "gatsby-transformer-json": "^2.2.22",
     "gatsby-transformer-remark": "^2.6.53",
     "linaria": "1.4.0-beta.3",
