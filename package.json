@@ -54,7 +54,7 @@
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.6",
+    "@babel/core": "7.9.0",
     "@storybook/addon-a11y": "^5.3.14",
     "@storybook/addon-actions": "^5.3.17",
     "@storybook/addon-docs": "^5.3.14",
@@ -67,7 +67,7 @@
     "babel-eslint": "10.1.0",
     "babel-jest": "^25.1.0",
     "eslint": "^6.8.0",
-    "eslint-config-react-app": "^5.0.2",
+    "eslint-config-react-app": "5.2.1",
     "eslint-loader": "^3.0.2",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
