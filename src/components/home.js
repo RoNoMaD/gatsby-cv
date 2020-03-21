@@ -1,15 +1,16 @@
-import React from "react";
-import LinkButton from "./link-button/link-button";
-import { css } from "linaria";
+import React from 'react';
+import LinkButton from './link-button/link-button';
+import { css } from 'linaria';
 
-import QuoteIcon from "../images/iconmonstr-quote-3.svg";
+import QuoteIcon from '../images/iconmonstr-quote-3.svg';
 
 const homeSection = css`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - var(--header-height));
+  height: 100vh;
+  margin-top: calc(var(--header-height) * -1);
   padding: var(--spacing);
   background: linear-gradient(
     135deg,
@@ -79,7 +80,7 @@ const quoteText = css`
 const Home = () => (
   <section className={homeSection}>
     <h2>Bonjour je suis </h2>
-    <h1 className={homeAnimatedName}>{"<Romain Lebascle />"}</h1>
+    <h1 className={homeAnimatedName}>{'<Romain Lebascle />'}</h1>
     <h2 className={homeSubtitle}>Développeur Web Front End basé à Nantes</h2>
     <div className={quoteContainer}>
       <QuoteIcon className={quoteIcon} />
