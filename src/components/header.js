@@ -17,6 +17,11 @@ const header = css`
   justify-content: flex-end;
   padding: var(--spacing) var(--spacing-large);
   color: var(--color-neutral-white);
+  transform: translateY(0px);
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+  transition-property: transform;
 
   &::before {
     position: absolute;
@@ -27,7 +32,7 @@ const header = css`
     background-color: var(--color-brand-grey-dark);
     transition-delay: 0s;
     transition-timing-function: ease-in-out;
-    transition-duration: 150ms;
+    transition-duration: 200ms;
     transition-property: opacity;
     content: '';
   }
@@ -37,6 +42,10 @@ const headerTransparent = css`
   &::before {
     opacity: 0;
   }
+`;
+
+const headerHidden = css`
+  transform: translateY(-100%);
 `;
 
 const romain = css`
@@ -118,17 +127,19 @@ const linkText = css`
 `;
 
 const Header = () => {
+  const [isHidden, setIsHidden] = useState(false);
   const [isHeaderTransparent, setIsHeaderTransparent] = useState(true);
 
-  useDocumentScrollThrottled(callbackData => {
-    const { currentScrollTop } = callbackData;
+  useDocumentScrollThrottled(({ previousScrollTop, currentScrollTop }) => {
     setIsHeaderTransparent(currentScrollTop === 0);
+    setIsHidden(previousScrollTop < currentScrollTop);
   });
 
   return (
     <header
       className={clsx(header, {
         [headerTransparent]: isHeaderTransparent,
+        [headerHidden]: isHidden,
       })}
     >
       <Link to="/" className={romain}>
