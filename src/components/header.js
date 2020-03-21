@@ -121,7 +121,7 @@ const Header = () => {
   const [isHeaderTransparent, setIsHeaderTransparent] = useState(true);
 
   useDocumentScrollThrottled(callbackData => {
-    const { previousScrollTop, currentScrollTop } = callbackData;
+    const { currentScrollTop } = callbackData;
     setIsHeaderTransparent(currentScrollTop === 0);
   });
 
