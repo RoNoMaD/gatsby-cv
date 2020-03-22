@@ -60,6 +60,11 @@ const romain = css`
   &:hover {
     transform: scale(1.1);
   }
+
+  &:focus {
+    outline: 1px solid var(--color-brand-green);
+    outline-offset: 0.25rem;
+  }
 `;
 
 const nav = css`
@@ -95,6 +100,11 @@ const link = css`
 
   &:active {
     color: var(--color-brand-green);
+  }
+
+  &:focus {
+    outline: 1px solid var(--color-neutral-white);
+    outline-offset: 0.25rem;
   }
 `;
 
