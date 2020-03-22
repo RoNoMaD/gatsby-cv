@@ -19,7 +19,7 @@ function encode(data) {
 const contactSection = css`
   margin-top: 16px;
   margin-bottom: 16px;
-  padding: 0px 1.0875rem 1.45rem;
+  padding: 0px var(--spacing) var(--spacing-medium);
 `;
 
 const contactTitleContainer = css`
@@ -128,6 +128,7 @@ export default class Contact extends React.Component {
             name="name"
             required={true}
             label="Votre nom *"
+            placeholder="Bill Gates"
             onChange={this.handleChange}
           />
           <TextField
@@ -136,6 +137,7 @@ export default class Contact extends React.Component {
             name="email"
             required={true}
             label="Votre email *"
+            placeholder="billou@msft.com"
             onChange={this.handleChange}
           />
           <Textarea
@@ -143,6 +145,7 @@ export default class Contact extends React.Component {
             name="message"
             required={true}
             label="Votre message *"
+            placeholder="I want to hire you !"
             onChange={this.handleChange}
           />
           <Recaptcha
@@ -150,9 +153,7 @@ export default class Contact extends React.Component {
             verifyCallback={this.handleRecaptcha}
             theme="dark"
           />
-          <Button type="submit" className={formButton}>
-            ENVOYER
-          </Button>
+          <Button type="submit">ENVOYER</Button>
         </form>
       </section>
     );
