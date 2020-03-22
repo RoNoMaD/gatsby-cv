@@ -48,19 +48,20 @@ export default function BlogTemplate({
     <Layout>
       <article
         className={article}
-        itemscope
-        itemtype="http://schema.org/BlogPosting"
+        itemScope
+        itemType="http://schema.org/BlogPosting"
       >
-        <h1 className={title} itemprop="headline">
+        <h1 className={title} itemProp="headline">
           {frontmatter.title}
         </h1>
         <time
           datetime={frontmatter.date}
           className={date}
-          itemprop="datePublished"
+          itemProp="datePublished"
         >
           {frontmatter.date}
         </time>
+        <meta content="Romain Lebascle" itemProp="author" />
         <div className={content} dangerouslySetInnerHTML={{ __html: html }} />
       </article>
     </Layout>

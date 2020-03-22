@@ -42,22 +42,23 @@ const PostLink = ({ post }) => {
   return (
     <article
       className={article}
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
+      itemScope
+      itemType="http://schema.org/BlogPosting"
     >
       <header>
-        <h2 className={title} itemprop="headline">
+        <h2 className={title} itemProp="headline">
           {post.frontmatter.title}
         </h2>
         <time
           datetime={post.frontmatter.date}
           className={date}
-          itemprop="datePublished"
+          itemProp="datePublished"
         >
           {post.frontmatter.date}
         </time>
+        <meta content="Romain Lebascle" itemProp="author" />
       </header>
-      <p itemprop="description">{post.frontmatter.description}</p>
+      <p itemProp="description">{post.frontmatter.description}</p>
       <Link className={link} to={post.frontmatter.path}>
         Voir plus...
       </Link>
