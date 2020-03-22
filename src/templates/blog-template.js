@@ -55,7 +55,7 @@ export default function BlogTemplate({
           {frontmatter.title}
         </h1>
         <time
-          datetime={frontmatter.date}
+          datetime={frontmatter.rawDate}
           className={date}
           itemProp="datePublished"
         >
@@ -79,6 +79,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
+        rawDate: date
         path
         title
       }

@@ -37,9 +37,6 @@ const link = css`
 `;
 
 const PostLink = ({ post, location }) => {
-  console.log(location);
-  console.log(post);
-
   return (
     <article
       className={article}
@@ -51,7 +48,7 @@ const PostLink = ({ post, location }) => {
           {post.frontmatter.title}
         </h2>
         <time
-          datetime={post.frontmatter.date}
+          datetime={post.frontmatter.rawDate}
           className={date}
           itemProp="datePublished"
         >
