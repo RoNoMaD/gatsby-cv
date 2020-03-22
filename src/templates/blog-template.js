@@ -39,21 +39,34 @@ const content = css`
   }
 `;
 
-export default function Template({
+export default function BlogTemplate({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
-      <article className={article}>
-        <h1 className={title}>{frontmatter.title}</h1>
-        <div className={date}>{frontmatter.date}</div>
+      <article
+        className={article}
+        itemscope
+        itemtype="http://schema.org/BlogPosting"
+      >
+        <h1 className={title} itemprop="headline">
+          {frontmatter.title}
+        </h1>
+        <time
+          datetime={frontmatter.date}
+          className={date}
+          itemprop="datePublished"
+        >
+          {frontmatter.date}
+        </time>
         <div className={content} dangerouslySetInnerHTML={{ __html: html }} />
       </article>
     </Layout>
   );
 }
+
 export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
