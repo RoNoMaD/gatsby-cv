@@ -5,4 +5,4 @@
  */
 require("./src/css/variables.css");
 require("./src/css/reset.css");
-require("prismjs/themes/prism-solarizedlight.css");
+require("prismjs/themes/prism-okaidia.css");
