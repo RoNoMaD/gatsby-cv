@@ -48,7 +48,7 @@
     "test": "jest",
     "stylelint": "stylelint src",
     "lint": "eslint src",
-    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql)\"",
+    "prettier": "prettier \"src/**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql)\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -79,7 +79,7 @@
     "jest": "^25.1.0",
     "jest-watch-typeahead": "^0.4.0",
     "lint-staged": "10.0.8",
-    "prettier": "^1.15.2",
+    "prettier": "2.0.1",
     "react-test-renderer": "^16.13.0",
     "stylelint": "^13.2.0",
     "stylelint-config-rational-order": "^0.1.2",

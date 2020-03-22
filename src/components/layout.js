@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
-import Header from './header';
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
+import Header from "./header";
 
 const Layout = ({ children }) => {
   const { site } = useStaticQuery(graphql`
@@ -20,14 +20,14 @@ const Layout = ({ children }) => {
         title={site.siteMetadata.title}
         meta={[
           {
-            name: 'description',
+            name: "description",
             content:
-              'Romain Lebascle Développeur Web Full Stack Curiculum Vitae',
+              "Romain Lebascle Développeur Web Full Stack Curiculum Vitae",
           },
           {
-            name: 'keywords',
+            name: "keywords",
             content:
-              'romain, lebascle, développeur, web, front-end, front, react, javascript, css, graphql, gatsby',
+              "romain, lebascle, développeur, web, front-end, front, react, javascript, css, graphql, gatsby",
           },
         ]}
       >

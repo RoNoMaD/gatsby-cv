@@ -5,7 +5,7 @@ import TextField from "./text-field";
 
 export default {
   title: "Library / Text field",
-  decorators: [withA11y]
+  decorators: [withA11y],
 };
 
 export const textField = () => (

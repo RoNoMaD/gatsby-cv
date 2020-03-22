@@ -45,7 +45,7 @@ const LinkButton = ({ children, to, className, disabled = false }) => {
     <Link
       to={to}
       className={clsx(link, {
-        [className]: className
+        [className]: className,
       })}
       disabled={disabled}
     >
@@ -58,7 +58,7 @@ LinkButton.propTypes = {
   children: PropTypes.node.isRequired,
   to: PropTypes.string.isRequired,
   className: PropTypes.string,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
 };
 
 export default LinkButton;

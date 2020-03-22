@@ -23,7 +23,7 @@ const WorkExperience = () => {
     <Timeline
       icon={<SuitcaseIcon style={{ height: "25px", width: "auto" }} />}
       title={"Expériences professionnelles"}
-      items={allWorkExperienceJson.edges.map(edge => edge.node)}
+      items={allWorkExperienceJson.edges.map((edge) => edge.node)}
     />
   );
 };

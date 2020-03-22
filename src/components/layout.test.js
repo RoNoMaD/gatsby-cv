@@ -9,9 +9,9 @@ beforeEach(() => {
   useStaticQuery.mockReturnValueOnce({
     site: {
       siteMetadata: {
-        title: `GatsbyJS`
-      }
-    }
+        title: `GatsbyJS`,
+      },
+    },
   });
 });
 

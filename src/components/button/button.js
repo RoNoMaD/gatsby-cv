@@ -43,14 +43,14 @@ const Button = ({
   type = "submit",
   handleClick,
   className,
-  disabled = false
+  disabled = false,
 }) => {
   return (
     <button
       type={type}
       onClick={handleClick}
       className={clsx(button, {
-        [className]: className
+        [className]: className,
       })}
       disabled={disabled}
     >
@@ -64,7 +64,7 @@ Button.propTypes = {
   type: PropTypes.oneOf(["button", "submit", "reset"]),
   handleClick: PropTypes.func,
   className: PropTypes.string,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
 };
 
 export default Button;

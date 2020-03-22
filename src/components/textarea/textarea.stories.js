@@ -5,7 +5,7 @@ import Textarea from "./textarea";
 
 export default {
   title: "Library / Textarea",
-  decorators: [withA11y]
+  decorators: [withA11y],
 };
 
 export const textarea = () => (

@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from './link/link';
-import { css } from 'linaria';
+import React from "react";
+import Link from "./link/link";
+import { css } from "linaria";
 
 const article = css`
   position: relative;
@@ -27,7 +27,7 @@ const link = css`
     display: block;
     width: 100%;
     height: 100%;
-    content: '';
+    content: "";
   }
 
   &:focus::before {

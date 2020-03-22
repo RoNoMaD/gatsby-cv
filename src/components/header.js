@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import clsx from 'clsx';
-import { Link } from 'gatsby';
-import { css } from 'linaria';
+import React, { useState } from "react";
+import clsx from "clsx";
+import { Link } from "gatsby";
+import { css } from "linaria";
 
-import useDocumentScrollThrottled from './useDocumentScrollThrottled';
+import useDocumentScrollThrottled from "./useDocumentScrollThrottled";
 
-import NewspaperIcon from '../images/newspaper.svg';
-import EnvelopeIcon from '../images/envelope.svg';
+import NewspaperIcon from "../images/newspaper.svg";
+import EnvelopeIcon from "../images/envelope.svg";
 
 const header = css`
   position: sticky;
@@ -34,7 +34,7 @@ const header = css`
     transition-timing-function: ease-in-out;
     transition-duration: 200ms;
     transition-property: opacity;
-    content: '';
+    content: "";
   }
 `;
 

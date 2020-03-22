@@ -91,7 +91,7 @@ const TimelineItem = ({ item, last }) => {
 
 TimelineItem.propTypes = {
   item: PropTypes.object,
-  last: PropTypes.bool
+  last: PropTypes.bool,
 };
 
 export default TimelineItem;

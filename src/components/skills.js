@@ -5,6 +5,7 @@ import Skill from "./skill";
 import SkillsIcon from "../images/skills.svg";
 
 const skillsSection = css`
+  position: relative;
   max-width: var(--bp-med);
   margin: 0 auto 0 auto;
   padding: var(--spacing-medium);
@@ -47,8 +48,8 @@ const skillsCardsContainer = css`
 `;
 
 const Skills = ({ skills }) => (
-  <section className={skillsSection}>
-    <div id="competences" className={skillsTitleContainer}>
+  <section id="competences" className={skillsSection}>
+    <div className={skillsTitleContainer}>
       <div className={skillsTitleIconContainer}>
         <SkillsIcon className={skillsIcon} />
       </div>
@@ -63,11 +64,11 @@ const Skills = ({ skills }) => (
 );
 
 Skills.propTypes = {
-  skills: PropTypes.array
+  skills: PropTypes.array,
 };
 
 Skills.defaultProps = {
-  skills: []
+  skills: [],
 };
 
 export default Skills;
