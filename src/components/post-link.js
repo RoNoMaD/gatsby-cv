@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "./link/link";
-import { css } from "linaria";
+import React from 'react';
+import Link from './link/link';
+import { css } from 'linaria';
 
 const article = css`
   position: relative;
@@ -27,7 +27,7 @@ const link = css`
     display: block;
     width: 100%;
     height: 100%;
-    content: "";
+    content: '';
   }
 
   &:focus::before {
@@ -40,12 +40,24 @@ const PostLink = ({ post }) => {
   console.log(post);
 
   return (
-    <article className={article}>
+    <article
+      className={article}
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
       <header>
-        <h2 className={title}>{post.frontmatter.title}</h2>
-        <div className={date}>{post.frontmatter.date}</div>
+        <h2 className={title} itemprop="headline">
+          {post.frontmatter.title}
+        </h2>
+        <time
+          datetime={post.frontmatter.date}
+          className={date}
+          itemprop="datePublished"
+        >
+          {post.frontmatter.date}
+        </time>
       </header>
-      <p>{post.frontmatter.description}</p>
+      <p itemprop="description">{post.frontmatter.description}</p>
       <Link className={link} to={post.frontmatter.path}>
         Voir plus...
       </Link>
