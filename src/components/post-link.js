@@ -36,7 +36,8 @@ const link = css`
   }
 `;
 
-const PostLink = ({ post }) => {
+const PostLink = ({ post, location }) => {
+  console.log(location);
   console.log(post);
 
   return (
@@ -57,6 +58,11 @@ const PostLink = ({ post }) => {
           {post.frontmatter.date}
         </time>
         <meta content="Romain Lebascle" itemProp="author" />
+        <meta content="Romain Lebascle" itemProp="publisher" />
+        <link
+          itemProp="mainEntityOfPage"
+          href={location.origin + post.frontmatter.path}
+        />
       </header>
       <p itemProp="description">{post.frontmatter.description}</p>
       <Link className={link} to={post.frontmatter.path}>

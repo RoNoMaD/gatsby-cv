@@ -62,7 +62,12 @@ export default function BlogTemplate({
           {frontmatter.date}
         </time>
         <meta content="Romain Lebascle" itemProp="author" />
-        <div className={content} dangerouslySetInnerHTML={{ __html: html }} />
+        <meta content="Romain Lebascle" itemProp="publisher" />
+        <div
+          className={content}
+          dangerouslySetInnerHTML={{ __html: html }}
+          itemProp="articleBody"
+        />
       </article>
     </Layout>
   );
