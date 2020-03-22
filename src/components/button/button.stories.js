@@ -4,8 +4,8 @@ import { withA11y } from "@storybook/addon-a11y";
 import Button from "./button";
 
 export default {
-  title: 'Library / Button',
-  decorators: [withA11y]
+  title: "Library / Button",
+  decorators: [withA11y],
 };
 
 export const text = () => (

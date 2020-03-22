@@ -67,7 +67,7 @@ const CardIcon = styled.div`
   justify-self: center;
   width: 60px;
   height: 60px;
-  background: ${props => props.background};
+  background: ${(props) => props.background};
   border-radius: 50%;
 `;
 
@@ -84,10 +84,10 @@ const ProgressBarContainer = styled.div`
 `;
 
 const ProgressBar = styled.div`
-  width: ${props => props.progressBarWidth}%;
-  max-width: ${props => props.progressBarWidth}%;
+  width: ${(props) => props.progressBarWidth}%;
+  max-width: ${(props) => props.progressBarWidth}%;
   height: 24px;
-  background-color: ${props => props.progressBarColor};
+  background-color: ${(props) => props.progressBarColor};
   border-radius: 0 4px 4px 0;
 `;
 
@@ -112,7 +112,7 @@ const Skill = ({ skill }) => (
 );
 
 Skill.propTypes = {
-  skill: PropTypes.object
+  skill: PropTypes.object,
 };
 
 export default Skill;

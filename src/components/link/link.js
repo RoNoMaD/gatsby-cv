@@ -26,7 +26,7 @@ const Link = ({ children, to, className, disabled = false }) => {
     <GatsbyLink
       to={to}
       className={clsx(link, {
-        [className]: className
+        [className]: className,
       })}
       activeClassName={activeLink}
       disabled={disabled}
@@ -40,7 +40,7 @@ Link.propTypes = {
   children: PropTypes.node.isRequired,
   to: PropTypes.string.isRequired,
   className: PropTypes.string,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
 };
 
 export default Link;

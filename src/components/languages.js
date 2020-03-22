@@ -22,7 +22,7 @@ const Languages = () => {
     <Timeline
       icon={<SpeechBubbleIcon style={{ height: "25px", width: "auto" }} />}
       title={"Langues"}
-      items={allLanguagesJson.edges.map(edge => edge.node)}
+      items={allLanguagesJson.edges.map((edge) => edge.node)}
     />
   );
 };

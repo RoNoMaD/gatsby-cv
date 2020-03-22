@@ -23,7 +23,7 @@ const Textarea = ({
   required,
   label,
   placeholder,
-  onChange
+  onChange,
 }) => {
   return (
     <>
@@ -52,7 +52,7 @@ Textarea.propTypes = {
   required: PropTypes.bool,
   label: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
 };
 
 export default Textarea;

@@ -25,7 +25,7 @@ const InputText = ({
   required,
   label,
   placeholder,
-  onChange
+  onChange,
 }) => {
   return (
     <>
@@ -55,7 +55,7 @@ InputText.propTypes = {
     "tel",
     "password",
     "search",
-    "url"
+    "url",
   ]),
   inputMode: PropTypes.string,
   value: PropTypes.string.isRequired,
@@ -66,7 +66,7 @@ InputText.propTypes = {
   required: PropTypes.bool,
   label: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
 };
 
 export default InputText;

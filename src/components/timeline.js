@@ -47,12 +47,12 @@ const Timeline = ({ icon, title, items }) => (
 Timeline.propTypes = {
   icon: PropTypes.object,
   title: PropTypes.string,
-  items: PropTypes.array
+  items: PropTypes.array,
 };
 
 Timeline.defaultProps = {
   title: "",
-  items: []
+  items: [],
 };
 
 export default Timeline;
