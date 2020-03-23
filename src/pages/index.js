@@ -20,7 +20,6 @@ import Languages from "../components/languages";
 
 const timelines = css`
   display: grid;
-  grid-template-columns: auto-fill, 50px, auto-fill;
   max-width: var(--bp-med);
   margin: var(--spacing) auto;
   padding: 0px 1.0875rem 1.45rem;
