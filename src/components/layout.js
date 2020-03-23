@@ -1,8 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { css } from "linaria";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 import Header from "./header";
+import Footer from "./footer/footer";
+
+const main = css`
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  background-color: var(--color-brand-grey);
+`;
 
 const Layout = ({ children }) => {
   const { site } = useStaticQuery(graphql`
@@ -34,7 +43,8 @@ const Layout = ({ children }) => {
         <html lang="fr" />
       </Helmet>
       <Header />
-      {children}
+      <main className={main}>{children}</main>
+      <Footer />
     </>
   );
 };

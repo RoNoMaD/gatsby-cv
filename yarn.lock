@@ -11050,10 +11050,10 @@ lie@3.1.1:
   dependencies:
     immediate "~3.0.5"
 
-linaria@1.4.0-beta.3:
-  version "1.4.0-beta.3"
-  resolved "https://registry.yarnpkg.com/linaria/-/linaria-1.4.0-beta.3.tgz#aed44b5c2fa86830aee853d3504309fd95ab40d1"
-  integrity sha512-kH6pRfKnWGBJJmD1e9btapGR/TbI2cln7/xoo07875vQmNICjolwPLHZXL5j4H11EFnDemJmEsiWVvx29l2n9A==
+linaria@1.4.0-beta.4:
+  version "1.4.0-beta.4"
+  resolved "https://registry.yarnpkg.com/linaria/-/linaria-1.4.0-beta.4.tgz#ead766ce83443d5cc6c085482c5f7ee86ecf9453"
+  integrity sha512-WydaA+MYDBZObzig87tDQpj3Rk2AwnP8da+jCS9lhcxMf5kkhu13yF6M3qYjdDvfh+pixHns1rAYmcAQ/yEhgg==
   dependencies:
     "@babel/core" "^7.8.0"
     "@babel/generator" "^7.8.0"
@@ -11257,6 +11257,11 @@ lockfile@^1.0.4:
   integrity sha512-cvbTwETRfsFh4nHsL1eGWapU1XFi5Ot9E85sWAwia7Y7EgB7vfqcZhTKZ+l7hCGxSPoushMv5GKhT5PdLv03WA==
   dependencies:
     signal-exit "^3.0.2"
+
+lodash-es@^4.17.15:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
+  integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
 
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"

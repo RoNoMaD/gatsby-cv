@@ -5,4 +5,5 @@
  */
 require("./src/css/variables.css");
 require("./src/css/reset.css");
+require("./src/css/utils.css");
 require("prismjs/themes/prism-okaidia.css");
