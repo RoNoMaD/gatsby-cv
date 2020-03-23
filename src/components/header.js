@@ -11,7 +11,7 @@ import EnvelopeIcon from "../images/envelope.svg";
 const header = css`
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: flex-end;
