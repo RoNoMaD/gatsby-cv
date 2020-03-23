@@ -54,8 +54,9 @@ const Card = styled.div`
   display: grid;
   grid-template-rows: auto auto minmax(24px, auto);
   grid-template-columns: 1fr;
-  align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  height: 100%;
   padding-top: 0.5rem;
   background-color: var(--color-brand-grey-light);
 `;
