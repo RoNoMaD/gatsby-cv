@@ -69,6 +69,9 @@ const romain = css`
 
 const nav = css`
   position: relative;
+`;
+
+const navList = css`
   display: flex;
 
   & > * + * {
@@ -88,7 +91,8 @@ const link = css`
     margin-left: var(--spacing-small);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--color-brand-green);
     text-decoration: underline;
     transform: scale(1.1);
@@ -156,14 +160,20 @@ const Header = () => {
         Romain Lebascle
       </Link>
       <nav className={nav}>
-        <Link to="/blog" className={link} activeClassName={activeLink}>
-          <NewspaperIcon className={linkIcon} />
-          <span className={linkText}>Blog</span>
-        </Link>
-        <Link to="/contact" className={link} activeClassName={activeLink}>
-          <EnvelopeIcon className={linkIcon} />
-          <span className={linkText}>Contact</span>
-        </Link>
+        <ul className={navList}>
+          <li>
+            <Link to="/blog" className={link} activeClassName={activeLink}>
+              <NewspaperIcon className={linkIcon} />
+              <span className={linkText}>Blog</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className={link} activeClassName={activeLink}>
+              <EnvelopeIcon className={linkIcon} />
+              <span className={linkText}>Contact</span>
+            </Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );

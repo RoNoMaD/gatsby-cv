@@ -59,11 +59,15 @@ const contactForm = css`
   & > * + * {
     margin-top: var(--spacing);
   }
-`;
 
-const formButton = css`
-  float: right;
-  margin: 5px 0 0 0;
+  & > label {
+    align-self: flex-start;
+  }
+
+  & > input,
+  textarea {
+    margin-top: var(--spacing-small);
+  }
 `;
 
 export default class Contact extends React.Component {
