@@ -27,7 +27,7 @@ const homeSection = css`
 const homeAnimatedName = css`
   max-width: 356px;
   height: 45px;
-  margin: inherit auto inherit auto; /* Gives that scrolling effect as the typing happens */
+  margin: inherit auto; /* Gives that scrolling effect as the typing happens */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   color: var(--color-brand-green);
   font-size: var(--font-size-xl-number);
