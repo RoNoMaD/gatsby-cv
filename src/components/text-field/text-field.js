@@ -3,15 +3,19 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import { css } from "linaria";
 
+const container = css`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
 const inputText = css`
-  width: 300px;
-  padding: 10px 15px;
+  width: calc(320px - 64px);
+  margin-top: var(--spacing-small);
+  padding: var(--spacing-small) var(--spacing);
   color: white;
   background: rgba(33, 33, 33, 1);
   border: 0;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 1px rgba(255, 255, 255, 0.06);
 `;
 
 const InputText = ({
@@ -28,7 +32,7 @@ const InputText = ({
   onChange,
 }) => {
   return (
-    <>
+    <div className={container}>
       <label htmlFor={id}>{label}</label>
       <input
         type={type}
@@ -42,7 +46,7 @@ const InputText = ({
         placeholder={placeholder}
         onChange={onChange}
       />
-    </>
+    </div>
   );
 };
 

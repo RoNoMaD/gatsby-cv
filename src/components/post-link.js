@@ -62,7 +62,11 @@ const PostLink = ({ post, location }) => {
         />
       </header>
       <p itemProp="description">{post.frontmatter.description}</p>
-      <Link className={link} to={post.frontmatter.path}>
+      <Link
+        className={link}
+        to={post.frontmatter.path}
+        aria-label={post.frontmatter.title}
+      >
         Voir plus...
       </Link>
     </article>
