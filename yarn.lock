@@ -11050,10 +11050,10 @@ lie@3.1.1:
   dependencies:
     immediate "~3.0.5"
 
-linaria@1.4.0-beta.3:
-  version "1.4.0-beta.3"
-  resolved "https://registry.yarnpkg.com/linaria/-/linaria-1.4.0-beta.3.tgz#aed44b5c2fa86830aee853d3504309fd95ab40d1"
-  integrity sha512-kH6pRfKnWGBJJmD1e9btapGR/TbI2cln7/xoo07875vQmNICjolwPLHZXL5j4H11EFnDemJmEsiWVvx29l2n9A==
+linaria@1.4.0-beta.4:
+  version "1.4.0-beta.4"
+  resolved "https://registry.yarnpkg.com/linaria/-/linaria-1.4.0-beta.4.tgz#ead766ce83443d5cc6c085482c5f7ee86ecf9453"
+  integrity sha512-WydaA+MYDBZObzig87tDQpj3Rk2AwnP8da+jCS9lhcxMf5kkhu13yF6M3qYjdDvfh+pixHns1rAYmcAQ/yEhgg==
   dependencies:
     "@babel/core" "^7.8.0"
     "@babel/generator" "^7.8.0"
