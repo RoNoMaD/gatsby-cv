@@ -81,7 +81,7 @@
     "lint-staged": "10.0.10",
     "prettier": "2.0.1",
     "react-test-renderer": "^16.13.0",
-    "stylelint": "^13.2.0",
+    "stylelint": "^13.3.2",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^4.0.0",
