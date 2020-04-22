@@ -17,7 +17,7 @@ const textarea = css`
   border: 0;
 
   &:focus {
-    box-shadow: 0 0 5px #fff; /* our own focus style */
+    box-shadow: 0 0 5px var(--color-neutral-white); /* our own focus style */
   }
 `;
 

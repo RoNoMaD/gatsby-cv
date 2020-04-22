@@ -7,10 +7,10 @@ const button = css`
   min-width: 44pt;
   min-height: 44pt;
   padding: 10px 30px;
-  color: #fff;
+  color: var(--color-neutral-white);
   font-size: 12pt;
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid var(--color-neutral-white);
   border-radius: 40px;
   outline: 0;
   cursor: pointer;
@@ -24,12 +24,12 @@ const button = css`
 
   &:focus {
     outline: 0; /* Removes the default blue ring */
-    box-shadow: 0 0 5px #fff; /* our own focus style */
+    box-shadow: 0 0 5px var(--color-neutral-white); /* our own focus style */
   }
 
   &:hover:not([disabled]) {
     color: hsla(0, 0%, 19%, 1);
-    background: #fff;
+    background: var(--color-neutral-white);
   }
 
   /* remove focus style on click */
