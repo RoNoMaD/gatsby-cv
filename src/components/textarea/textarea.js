@@ -15,6 +15,10 @@ const textarea = css`
   color: white;
   background: rgba(33, 33, 33, 1);
   border: 0;
+
+  &:focus {
+    box-shadow: 0 0 5px #fff; /* our own focus style */
+  }
 `;
 
 const Textarea = ({

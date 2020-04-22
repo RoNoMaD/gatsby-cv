@@ -16,6 +16,11 @@ const inputText = css`
   color: white;
   background: rgba(33, 33, 33, 1);
   border: 0;
+
+  &:focus {
+    outline: 0; /* Removes the default blue ring */
+    box-shadow: 0 0 5px #fff; /* our own focus style */
+  }
 `;
 
 const InputText = ({
