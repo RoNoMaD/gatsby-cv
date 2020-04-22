@@ -17294,6 +17294,14 @@ stylehacks@^4.0.0:
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
+stylelint-color-format@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/stylelint-color-format/-/stylelint-color-format-1.1.0.tgz#f24c4f70d5b78299e885c6c297b9fecd4a4c630b"
+  integrity sha512-3VLzcNjspKuUcZJz6MsIrwf3cQfR1HPXf+skZ11ayvhTQscgmwRz6gVgiqxkbz6TLGMkkVsqP7UkVdBqznkMcQ==
+  dependencies:
+    color "^3.0.0"
+    style-search "^0.1.0"
+
 stylelint-config-rational-order@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/stylelint-config-rational-order/-/stylelint-config-rational-order-0.1.2.tgz#4e98e390783d437f0ec41fb73bc41992e78d02a0"
