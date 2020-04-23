@@ -9,10 +9,12 @@ const Languages = () => {
       allLanguagesJson {
         edges {
           node {
-            title
-            subtitle
-            description
-            icon
+            languages {
+              title
+              subtitle
+              description
+              icon
+            }
           }
         }
       }
@@ -22,7 +24,7 @@ const Languages = () => {
     <Timeline
       icon={<SpeechBubbleIcon style={{ height: "25px", width: "auto" }} />}
       title={"Langues"}
-      items={allLanguagesJson.edges.map((edge) => edge.node)}
+      items={allLanguagesJson.edges[0].node.languages}
     />
   );
 };
