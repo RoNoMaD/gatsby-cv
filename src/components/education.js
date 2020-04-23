@@ -22,7 +22,7 @@ const Education = () => {
   return (
     <Timeline
       icon={<UniHatIcon style={{ height: "25px", width: "auto" }} />}
-      title={"Formations"}
+      title="Formations"
       items={allEducationJson.edges[0].node.titles}
     />
   );
