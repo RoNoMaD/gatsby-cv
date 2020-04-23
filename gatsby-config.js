@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: "Romain Lebascle",
-    siteUrl: "https://stoic-austin-186a1f.netlify.com"
+    siteUrl: "https://stoic-austin-186a1f.netlify.com",
   },
   plugins: [
     "gatsby-plugin-preact",
-    "gatsby-plugin-netlify-cms",
     "gatsby-plugin-eslint",
     "gatsby-plugin-linaria",
     "gatsby-plugin-react-helmet",
@@ -13,22 +12,22 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/data/`
-      }
+        path: `${__dirname}/src/data/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/content/blog`
-      }
+        path: `${__dirname}/content/blog`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -77,30 +76,30 @@ module.exports = {
                   language: "superscript",
                   extend: "javascript",
                   definition: {
-                    superscript_types: /(SuperType)/
+                    superscript_types: /(SuperType)/,
                   },
                   insertBefore: {
                     function: {
-                      superscript_keywords: /(superif|superelse)/
-                    }
-                  }
-                }
+                      superscript_keywords: /(superif|superelse)/,
+                    },
+                  },
+                },
               ],
               // Customize the prompt used in shell output
               // Values below are default
               prompt: {
                 user: "root",
                 host: "localhost",
-                global: false
+                global: false,
               },
               // By default the HTML entities <>&'" are escaped.
               // Add additional HTML escapes by providing a mapping
               // of HTML entities and their escape value IE: { '}': '&#123;' }
-              escapeEntities: {}
-            }
-          }
-        ]
-      }
+              escapeEntities: {},
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -111,8 +110,8 @@ module.exports = {
         background_color: "#212121",
         theme_color: "#83b82e",
         display: "minimal-ui",
-        icon: "src/images/gatsby-icon.png" // This path is relative to the root of the site.
-      }
+        icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
@@ -121,24 +120,34 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: `${__dirname}/src/images`
-        }
-      }
+          include: `${__dirname}/src/images`,
+        },
+      },
     },
     {
       resolve: "gatsby-plugin-stylelint",
-      options: { files: ["src/**/*.{js,jsx,css}"] }
+      options: { files: ["src/**/*.{js,jsx,css}"] },
     },
     "gatsby-plugin-recaptcha",
     {
       resolve: "gatsby-plugin-webpack-bundle-analyzer",
       options: {
         analyzerPort: 3000,
-        production: true
-      }
+        production: true,
+      },
     },
     "gatsby-plugin-webpack-size",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-netlify"
-  ]
+    "gatsby-plugin-netlify",
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        /**
+         * One convention is to place your Netlify CMS customization code in a
+         * `src/cms` directory.
+         */
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+  ],
 };
