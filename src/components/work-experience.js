@@ -24,7 +24,7 @@ const WorkExperience = () => {
   return (
     <Timeline
       icon={<SuitcaseIcon style={{ height: "25px", width: "auto" }} />}
-      title={"Expériences professionnelles"}
+      title="Expériences professionnelles"
       items={allWorkExperienceJson.edges[0].node.workExperience}
     />
   );
