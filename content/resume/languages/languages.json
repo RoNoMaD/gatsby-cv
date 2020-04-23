@@ -1,0 +1,15 @@
+{
+  "languages": [
+    {
+      "title": "Anglais",
+      "subtitle": "Courant",
+      "description": "Plus de 3 années en pays anglophones.",
+      "icon": "united-kingdom.svg"
+    },
+    {
+      "title": "Espagnol",
+      "subtitle": "Courant",
+      "icon": "spain.svg"
+    }
+  ]
+}

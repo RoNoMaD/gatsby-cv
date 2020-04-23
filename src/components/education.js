@@ -9,9 +9,11 @@ const Education = () => {
       allEducationJson {
         edges {
           node {
-            endDate
-            title
-            subtitle
+            titles {
+              endDate
+              subtitle
+              title
+            }
           }
         }
       }
@@ -21,7 +23,7 @@ const Education = () => {
     <Timeline
       icon={<UniHatIcon style={{ height: "25px", width: "auto" }} />}
       title={"Formations"}
-      items={allEducationJson.edges.map((edge) => edge.node)}
+      items={allEducationJson.edges[0].node.titles}
     />
   );
 };

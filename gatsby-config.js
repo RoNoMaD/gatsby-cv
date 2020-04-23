@@ -19,13 +19,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/data/`,
+        name: "resume",
+        path: `${__dirname}/content/resume/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-pages`,
+        name: `blog`,
         path: `${__dirname}/content/blog`,
       },
     },

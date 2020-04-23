@@ -20,9 +20,22 @@ collections:
   - label: "Resume"
     name: "resume"
     files:
+      - label: "Work experience"
+        name: "work-experience"
+        file: "content/resume/work-experience/work-experience.json"
+        fields:
+          - label: "Work experience"
+            name: "work-experience"
+            widget: "list"
+            fields:
+              - { label: "Start date", name: "startDate", widget: "string" }
+              - { label: "End date", name: "endDate", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
       - label: "Education"
         name: "education"
-        file: "content/resume/education.json"
+        file: "content/resume/education/education.json"
         fields:
           - label: "Titles"
             name: "titles"
@@ -31,3 +44,15 @@ collections:
               - { label: "End date", name: "endDate", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - label: "Languages"
+        name: "languages"
+        file: "content/resume/languages/languages.json"
+        fields:
+          - label: "Languages"
+            name: "languages"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "string" }

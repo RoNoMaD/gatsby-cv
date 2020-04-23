@@ -9,11 +9,13 @@ const WorkExperience = () => {
       allWorkExperienceJson {
         edges {
           node {
-            startDate
-            endDate
-            title
-            subtitle
-            description
+            workExperience {
+              startDate
+              endDate
+              title
+              subtitle
+              description
+            }
           }
         }
       }
@@ -23,7 +25,7 @@ const WorkExperience = () => {
     <Timeline
       icon={<SuitcaseIcon style={{ height: "25px", width: "auto" }} />}
       title={"Expériences professionnelles"}
-      items={allWorkExperienceJson.edges.map((edge) => edge.node)}
+      items={allWorkExperienceJson.edges[0].node.workExperience}
     />
   );
 };
