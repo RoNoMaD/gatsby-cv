@@ -25,7 +25,7 @@ collections:
         file: "content/resume/work-experience/work-experience.json"
         fields:
           - label: "Work experience"
-            name: "work-experience"
+            name: "workExperience"
             widget: "list"
             fields:
               - { label: "Start date", name: "startDate", widget: "string" }
