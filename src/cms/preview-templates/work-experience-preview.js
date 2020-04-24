@@ -1,19 +1,8 @@
 import React from "react";
-import { css } from "linaria";
 import PropTypes from "prop-types";
+import TimelineContainer from "../../components/timeline-container";
 import Timeline from "../../components/timeline";
 import SuitcaseIcon from "../../images/suitcase.svg";
-
-const timelines = css`
-  display: grid;
-  max-width: var(--bp-med);
-  margin: var(--spacing) auto;
-  padding: 0px 1.0875rem 1.45rem;
-
-  @media (min-width: 47em) {
-    padding: 0px var(--spacing-xxl) 1.45rem;
-  }
-`;
 
 const WorkExperiencePreview = ({ entry, widgetFor, widgetsFor }) => {
   const workExperience = widgetsFor("workExperience").map(function (
@@ -30,13 +19,13 @@ const WorkExperiencePreview = ({ entry, widgetFor, widgetsFor }) => {
   });
 
   return (
-    <div className={timelines}>
+    <TimelineContainer>
       <Timeline
         icon={<SuitcaseIcon style={{ height: "25px", width: "auto" }} />}
         title="Expériences professionnelles"
         items={workExperience}
       />
-    </div>
+    </TimelineContainer>
   );
 };
 
