@@ -1,19 +1,8 @@
 import React from "react";
-import { css } from "linaria";
 import PropTypes from "prop-types";
+import TimelineContainer from "../../components/timeline-container";
 import Timeline from "../../components/timeline";
 import SpeechBubbleIcon from "../../images/speech-bubble.svg";
-
-const timelines = css`
-  display: grid;
-  max-width: var(--bp-med);
-  margin: var(--spacing) auto;
-  padding: 0px 1.0875rem 1.45rem;
-
-  @media (min-width: 47em) {
-    padding: 0px var(--spacing-xxl) 1.45rem;
-  }
-`;
 
 const LanguagesPreview = ({ entry, widgetFor, widgetsFor }) => {
   const languages = widgetsFor("languages").map(function (language, index) {
@@ -26,13 +15,13 @@ const LanguagesPreview = ({ entry, widgetFor, widgetsFor }) => {
   });
 
   return (
-    <div className={timelines}>
+    <TimelineContainer>
       <Timeline
         icon={<SpeechBubbleIcon style={{ height: "25px", width: "auto" }} />}
         title="Langues"
         items={languages}
       />
-    </div>
+    </TimelineContainer>
   );
 };
 

@@ -1,8 +1,6 @@
 import React from "react";
-import { css } from "linaria";
 
 import ReactIcon from "../images/React-icon.svg";
-// import AngularIcon from "../images/angular2.svg";
 import JavaScriptIcon from "../images/Unofficial_JavaScript_logo.svg";
 import CSS3Icon from "../images/css3.svg";
 import GitIcon from "../images/Git_icon.svg";
@@ -14,20 +12,10 @@ import DesignSystemIcon from "../images/eye.svg";
 import Layout from "../components/layout";
 import Home from "../components/home";
 import Skills from "../components/skills";
+import TimelineContainer from "../components/timeline-container";
 import WorkExperience from "../components/work-experience";
 import Education from "../components/education";
 import Languages from "../components/languages";
-
-const timelines = css`
-  display: grid;
-  max-width: var(--bp-med);
-  margin: var(--spacing) auto;
-  padding: 0px 1.0875rem 1.45rem;
-
-  @media (min-width: 47em) {
-    padding: 0px var(--spacing-xxl) 1.45rem;
-  }
-`;
 
 const IndexPage = () => (
   <Layout>
@@ -96,11 +84,11 @@ const IndexPage = () => (
         },
       ]}
     />
-    <div className={timelines}>
+    <TimelineContainer>
       <WorkExperience />
       <Education />
       <Languages />
-    </div>
+    </TimelineContainer>
   </Layout>
 );
 

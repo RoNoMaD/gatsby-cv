@@ -1,19 +1,8 @@
 import React from "react";
-import { css } from "linaria";
 import PropTypes from "prop-types";
+import TimelineContainer from "../../components/timeline-container";
 import Timeline from "../../components/timeline";
 import UniHatIcon from "../../images/uni-hat.svg";
-
-const timelines = css`
-  display: grid;
-  max-width: var(--bp-med);
-  margin: var(--spacing) auto;
-  padding: 0px 1.0875rem 1.45rem;
-
-  @media (min-width: 47em) {
-    padding: 0px var(--spacing-xxl) 1.45rem;
-  }
-`;
 
 const EducationPreview = ({ entry, widgetFor, widgetsFor }) => {
   const titles = widgetsFor("titles").map(function (language, index) {
@@ -25,13 +14,13 @@ const EducationPreview = ({ entry, widgetFor, widgetsFor }) => {
   });
 
   return (
-    <div className={timelines}>
+    <TimelineContainer>
       <Timeline
         icon={<UniHatIcon style={{ height: "25px", width: "auto" }} />}
         title="Formations"
         items={titles}
       />
-    </div>
+    </TimelineContainer>
   );
 };
 
