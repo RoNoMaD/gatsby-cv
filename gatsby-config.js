@@ -130,13 +130,7 @@ module.exports = {
       options: { files: ["src/**/*.{js,jsx,css}"] },
     },
     "gatsby-plugin-recaptcha",
-    {
-      resolve: "gatsby-plugin-webpack-bundle-analyzer",
-      options: {
-        analyzerPort: 3000,
-        production: true,
-      },
-    },
+    "gatsby-plugin-webpack-bundle-analyser-v2",
     "gatsby-plugin-webpack-size",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-netlify",
