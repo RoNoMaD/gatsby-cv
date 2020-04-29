@@ -129,7 +129,6 @@ module.exports = {
       resolve: "gatsby-plugin-stylelint",
       options: { files: ["src/**/*.{js,jsx,css}"] },
     },
-    "gatsby-plugin-recaptcha",
     "gatsby-plugin-webpack-bundle-analyser-v2",
     "gatsby-plugin-webpack-size",
     "gatsby-plugin-sitemap",
