@@ -1,14 +1,11 @@
 import React from "react";
 import { navigate } from "gatsby";
-import Recaptcha from "react-recaptcha";
 import EnvelopeIcon from "../../images/envelope-regular.svg";
 import { css } from "linaria";
 
 import TextField from "../text-field/text-field";
 import Textarea from "../textarea/textarea";
 import Button from "../button/button";
-
-const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
 function encode(data) {
   return Object.keys(data)
@@ -70,21 +67,14 @@ const contactForm = css`
   }
 `;
 
-export default class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+export default function Contact(props) {
+  const [state, setState] = React.useState({});
 
-  handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value });
   };
 
-  handleRecaptcha = (value) => {
-    this.setState({ "g-recaptcha-response": value });
-  };
-
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     fetch("/", {
@@ -92,74 +82,66 @@ export default class Contact extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        ...this.state,
+        ...state,
       }),
     })
       .then(() => navigate(form.getAttribute("action")))
       .catch((error) => alert(error));
   };
 
-  render() {
-    return (
-      <section className={contactSection}>
-        <div className={contactTitleContainer}>
-          <div className={contactIcon}>
-            <EnvelopeIcon style={{ height: "25px", width: "auto" }} />
-          </div>
-          <h3 className={contactTitle}>Contact</h3>
+  const Heading = `h${props.level || 1}`;
+  return (
+    <section className={contactSection}>
+      <div className={contactTitleContainer}>
+        <div className={contactIcon}>
+          <EnvelopeIcon style={{ height: "25px", width: "auto" }} />
         </div>
+        <Heading className={contactTitle}>Contact</Heading>
+      </div>
 
-        <p className={contactSubtitle}>
-          {"Si mon profil vous interesse, n'hésitez pas à me contacter."}
-        </p>
-        <form
-          className={contactForm}
-          name="contact-recaptcha"
-          method="post"
-          action="/thanks/"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
-        >
-          <noscript>
-            <p>This form won’t work with Javascript disabled</p>
-          </noscript>
-          <input type="hidden" name="bot-field" />
-          <TextField
-            type="text"
-            id="name"
-            name="name"
-            required={true}
-            label="Votre nom *"
-            placeholder="Bill Gates"
-            onChange={this.handleChange}
-          />
-          <TextField
-            type="email"
-            id="email"
-            name="email"
-            required={true}
-            label="Votre email *"
-            placeholder="billou@msft.com"
-            onChange={this.handleChange}
-          />
-          <Textarea
-            id="message"
-            name="message"
-            required={true}
-            label="Votre message *"
-            placeholder="I want to hire you !"
-            onChange={this.handleChange}
-          />
-          <Recaptcha
-            sitekey={RECAPTCHA_KEY}
-            verifyCallback={this.handleRecaptcha}
-            theme="dark"
-          />
-          <Button type="submit">ENVOYER</Button>
-        </form>
-      </section>
-    );
-  }
+      <p className={contactSubtitle}>
+        {"Si mon profil vous interesse, n'hésitez pas à me contacter."}
+      </p>
+      <form
+        className={contactForm}
+        name="contact"
+        method="post"
+        action="/thanks/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
+      >
+        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
+        <TextField
+          type="text"
+          id="name"
+          name="name"
+          required={true}
+          label="Votre nom *"
+          placeholder="Bill Gates"
+          onChange={handleChange}
+        />
+        <TextField
+          type="email"
+          id="email"
+          name="email"
+          required={true}
+          label="Votre email *"
+          placeholder="billou@msft.com"
+          onChange={handleChange}
+        />
+        <Textarea
+          id="message"
+          name="message"
+          required={true}
+          label="Votre message *"
+          placeholder="I want to hire you !"
+          onChange={handleChange}
+        />
+        <Button type="submit">ENVOYER</Button>
+      </form>
+    </section>
+  );
 }

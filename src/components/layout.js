@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { css } from "linaria";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import { SkipNavLink, SkipNavContent } from "@reach/skip-nav";
+import "@reach/skip-nav/styles.css";
 import Header from "./header";
 import Footer from "./footer/footer";
 
@@ -11,6 +13,16 @@ const main = css`
   z-index: 1;
   min-height: 100vh;
   background-color: var(--color-brand-grey);
+`;
+
+const skipNavContent = css`
+  outline: 0;
+  &::-moz-focus-inner {
+    border: 0;
+  }
+  &:focus {
+    outline: none;
+  }
 `;
 
 const Layout = ({ children }) => {
@@ -42,7 +54,9 @@ const Layout = ({ children }) => {
       >
         <html lang="fr" />
       </Helmet>
+      <SkipNavLink />
       <Header />
+      <SkipNavContent className={skipNavContent} />
       <main className={main}>{children}</main>
       <Footer />
     </>
