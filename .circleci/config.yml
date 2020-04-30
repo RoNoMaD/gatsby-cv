@@ -35,8 +35,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 
-      # build the website
-      - run: yarn build
       # run formatter
       - run: yarn prettier
       # run linter
@@ -44,6 +42,8 @@ jobs:
       - run: yarn lint
       # run tests!
       - run: yarn test
+      # build the website
+      - run: yarn build
       # install lighthouse-ci
       - run: sudo npm install -g @lhci/cli@0.3.x
       # run lighthouse analysis
