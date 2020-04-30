@@ -24,6 +24,13 @@ const homeSection = css`
   }
 `;
 
+const heading = css`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
 const homeAnimatedName = css`
   max-width: 356px;
   height: 45px;
@@ -79,9 +86,13 @@ const quoteText = css`
 
 const Home = () => (
   <section className={homeSection}>
-    <h2>Bonjour je suis </h2>
-    <h1 className={homeAnimatedName}>{"<Romain Lebascle />"}</h1>
-    <h2 className={homeSubtitle}>Développeur Web Front End basé à Nantes</h2>
+    <h1 className={heading}>
+      <div>Bonjour je suis </div>
+      <div className={homeAnimatedName}>{"<Romain Lebascle />"}</div>
+      <div className={homeSubtitle}>
+        Développeur Web Front End basé à Nantes
+      </div>
+    </h1>
     <div className={quoteContainer}>
       <QuoteIcon className={quoteIcon} />
       <p className={quoteText}>

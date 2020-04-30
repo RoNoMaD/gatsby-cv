@@ -32,7 +32,7 @@ const timelineItemsContainer = css`
 const Timeline = ({ icon, title, items }) => (
   <>
     <div className={timelineTitleIcon}>{icon}</div>
-    <h3 className={timelineTitle}>{title}</h3>
+    <h2 className={timelineTitle}>{title}</h2>
     <div className={timelineItemsContainer} />
     {items.map((item, index) => (
       <TimelineItem

@@ -72,7 +72,7 @@ const CardIcon = styled.div`
   border-radius: 50%;
 `;
 
-const CardTitle = styled.h3`
+const CardTitle = styled.div`
   margin: 0.5rem;
   text-align: center;
 `;

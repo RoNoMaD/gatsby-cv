@@ -81,8 +81,8 @@ const TimelineItem = ({ item, last }) => {
         {!last && <div className={timelineItemBottomLine} />}
       </div>
       <div className={timelineItemText}>
-        <h4 className={timelineItemTitle}>{item.title}</h4>
-        <h5>{item.subtitle}</h5>
+        <h3 className={timelineItemTitle}>{item.title}</h3>
+        <p>{item.subtitle}</p>
         <p>{item.description}</p>
       </div>
     </>
