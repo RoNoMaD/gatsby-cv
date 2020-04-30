@@ -34,7 +34,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # build the website
-      - run: npm run build
+      - run: yarn build
       # run formatter
       - run: yarn prettier
       # run linter
