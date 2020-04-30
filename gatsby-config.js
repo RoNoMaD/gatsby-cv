@@ -129,7 +129,10 @@ module.exports = {
       resolve: "gatsby-plugin-stylelint",
       options: { files: ["src/**/*.{js,jsx,css}"] },
     },
-    "gatsby-plugin-webpack-bundle-analyser-v2",
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: { analyzerMode: process.env.NETLIFY ? "disabled" : "server" },
+    },
     "gatsby-plugin-webpack-size",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-netlify",
