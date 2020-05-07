@@ -18,7 +18,7 @@ const footer = css`
   box-sizing: border-box;
   width: 100%;
   padding: var(--spacing-large);
-  background-color: var(--color-brand-grey-dark);
+  background-color: var(--color-background-secondary);
 `;
 
 const socialMedias = css`
@@ -37,9 +37,9 @@ const socialMediaIcon = css`
 `;
 
 const socialMediaLink = css`
-  color: var(--color-neutral-white);
+  color: var(--color-text-primary);
   &:hover {
-    color: var(--color-brand-green);
+    color: var(--color-brand-primary);
   }
 `;
 

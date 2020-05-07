@@ -3,104 +3,91 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+
+# Romain Lebascle
+
+> Resume, portofolio and blog
+
+Website presenting my experience and realisations aswell as my technical writings.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/99800f3e-5fb3-42cf-8e01-3da152843bcb/deploy-status)](https://app.netlify.com/sites/stoic-austin-186a1f/deploys)
-
 
 [![dependencies Status](https://david-dm.org/RoNoMaD/gatsby-cv/status.svg)](https://david-dm.org/RoNoMaD/gatsby-cv)
 
 [![CircleCI](https://circleci.com/gh/RoNoMaD/gatsby-cv.svg?style=svg)](https://circleci.com/gh/RoNoMaD/gatsby-cv)
 
+## Developing
 
+### Built With
 
-Kick off your project with this default boilerplate ([live demo](https://gatsby-starter-default-demo.netlify.com/)). This barebones starter ships with the main Gatsby configuration files you might need.
+We list here the main js dependencies.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+#### Front (UI) dependencies
 
-## 🚀 Quick start
+- [Gatsby](https://www.gatsbyjs.org/) : A free and open source framework based on React that helps developers build blazing fast SSG websites.
+- [Preact](https://preactjs.com/) : Fast 3kB alternative to React with the same modern API.
+- [linaria](https://linaria.now.sh/) : Zero-Runtime CSS in JS
+- [Netlify CMS](https://www.netlifycms.org/) : Open source content management for your Git workflow
 
-1.  **Create a Gatsby site.**
+#### Formatting/Linting/Testing dev dependencies
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+- [Prettier](https://prettier.io/) : An opinionated code formatter.
+- [ESLint](https://eslint.org/) : A pluggable linting utility for JavaScript and JSX.
+- [Stylelint](https://stylelint.io/) : A mighty, modern linter that helps you avoid errors and enforce conventions in your styles.
+- [Jest](https://jestjs.io/) : is a delightful JavaScript Testing Framework with a focus on simplicity.
+- [testing-library](https://testing-library.com/) : Simple and complete testing utilities that encourage good testing practices
 
-    ```sh
-    # create a new Gatsby site using the default starter
-    npx gatsby new my-default-starter
-    ```
+### Prerequisites
 
-1.  **Start developing.**
+Install the following tools :
 
-    Navigate into your new site’s directory and start it up.
+- [Git](https://git-scm.com/downloads) : A distributed version control system.
 
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
+- [NodeJS](https://nodejs.org/en/download/) : a JavaScript runtime built on Chrome's V8 JavaScript engine. It includes [npm](https://www.npmjs.com/) as a package manager for JavaScript.
 
-1.  **Open the source code and start editing!**
+- [Yarn]() :
 
-    Your site is now running at `http://localhost:8000`!
+### Setting up Dev
 
-    \_Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).\_
+Here's a brief intro about what a developer must do in order to start developing
+the project further:
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+```shell
+git clone git@github.com:RoNoMaD/gatsby-cv.git
+cd gatsby-cv/
+yarn install
+yarn start
+```
 
-## 🧐 What's inside?
+### Building
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+```shell
+yarn build
+```
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    ├── README.md
-    └── yarn.lock
+## Tests
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+As this website is mainly static, we are not doing so much tests.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+The only thing we really test is the Contact form as it implies user interactions, front and back end validations.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+Run the following command to run the tests :
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+```shell
+yarn test
+```
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+## CI
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+[CircleCI Dashboard](https://app.circleci.com/pipelines/github/RoNoMaD/gatsby-cv)
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+CI is running the following steps on every PR :
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-13. **`yarn.lock`**: [Yarn](https://yarnpkg.com/) is a package manager alternative to npm. You can use either yarn or npm, though all of the Gatsby docs reference npm. This file serves essentially the same purpose as `package-lock.json`, just for a different package management system.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+- check formatting (via Prettier)
+- linting (via ESLint and Stylelint)
+- run unit and integration tests (via Jest and testing-library)
+- run performance audit (via Lighthouse CI)
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default) [![Greenkeeper badge](https://badges.greenkeeper.io/RoNoMaD/gatsby-cv.svg)](https://greenkeeper.io/)
+Everything merged on master branch on Github is automatically deployed on [Netlify](https://app.netlify.com/sites/stoic-austin-186a1f/overview).

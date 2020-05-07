@@ -58,7 +58,7 @@ const Card = styled.div`
   box-sizing: border-box;
   height: 100%;
   padding-top: 0.5rem;
-  background-color: var(--color-brand-grey-light);
+  background-color: var(--color-background-light);
 `;
 
 const CardIcon = styled.div`

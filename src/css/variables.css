@@ -27,26 +27,6 @@
 
 :root {
   /*------------------------------------*\
-     #COLORS
-  \*------------------------------------*/
-
-  /*
-   * Brand Colors
-   * Brand specific colors
-   */
-  --color-brand-green: hsla(83, 60%, 45%, 1);
-  --color-brand-grey: hsla(0, 0%, 19%, 1);
-  --color-brand-grey-dark: rgba(33, 33, 33, 1);
-  --color-brand-grey-light: rgba(66, 66, 66, 1);
-
-  /*
-   * Neutral Colors
-   * Neutral colors are grayscale values used throughout the UI
-   */
-  --color-neutral-white: hsla(0, 100%, 100%, 1);
-  --color-neutral-black: hsla(0, 0%, 0%, 1);
-
-  /*------------------------------------*\
     #TYPOGRAPHY
   \*------------------------------------*/
 

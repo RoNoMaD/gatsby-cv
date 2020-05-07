@@ -1,0 +1,17 @@
+{
+  "gradient": {
+    "dark": {
+      "primary": {
+        "value": "linear-gradient(-45deg, rgba(33, 33, 33, 1) 0%,rgba(48, 48, 48, 1) 40%,rgba(66, 66, 66, 1) 100%)"
+      }
+    },
+    "light": {
+      "primary": {
+        "value": "rgba(255, 255, 255, 1)"
+      }
+    },
+    "primary": {
+      "value": "rgba(255, 255, 255, 1)"
+    }
+  }
+}

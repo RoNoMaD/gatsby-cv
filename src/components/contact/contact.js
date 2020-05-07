@@ -34,7 +34,8 @@ const contactIcon = css`
   width: 50px;
   height: 50px;
   margin-right: 8px;
-  background-color: var(--color-brand-green);
+  color: var(--color-neutral-white);
+  background-color: var(--color-brand-primary);
   border-radius: 50%;
 `;
 

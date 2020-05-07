@@ -1,0 +1,46 @@
+/**
+ * Do not edit directly
+ * Generated on Thu, 07 May 2020 14:29:55 GMT
+ */
+
+:root {
+  --color-dark-semantic-error: hsl(0, 100%, 41%);
+  --color-dark-semantic-success: hsl(83, 60%, 45%);
+  --color-dark-background-secondary: hsl(0, 0%, 13%);
+  --color-dark-background-primary: hsl(0, 0%, 19%);
+  --color-dark-text-disabled: hsl(0, 0%, 80%);
+  --color-dark-text-secondary: hsl(0, 0%, 100%);
+  --color-dark-text-primary: hsl(0, 0%, 100%);
+  --color-dark-neutral-grey: hsl(0, 0%, 46%);
+  --color-dark-neutral-black: hsl(0, 0%, 0%);
+  --color-dark-neutral-white: hsl(0, 0%, 100%);
+  --color-dark-brand-accent: hsl(65, 82%, 59%);
+  --color-dark-brand-primary: hsl(83, 60%, 45%);
+  --color-light-semantic-error: hsl(0, 100%, 41%);
+  --color-light-semantic-success: hsl(83, 60%, 45%);
+  --color-light-background-secondary: hsl(0, 0%, 100%);
+  --color-light-background-primary: hsl(0, 0%, 100%);
+  --color-light-text-disabled: hsl(0, 0%, 80%);
+  --color-light-text-secondary: hsl(0, 0%, 46%);
+  --color-light-text-primary: hsl(0, 0%, 0%);
+  --color-light-neutral-grey: hsl(0, 0%, 46%);
+  --color-light-neutral-black: hsl(0, 0%, 0%);
+  --color-light-neutral-white: hsl(0, 0%, 100%);
+  --color-light-brand-accent: hsl(65, 82%, 59%);
+  --color-light-brand-primary: hsl(83, 60%, 45%);
+  --color-semantic-error: hsl(0, 100%, 41%);
+  --color-semantic-success: hsl(83, 60%, 45%);
+  --color-background-secondary: hsl(0, 0%, 100%);
+  --color-background-primary: hsl(0, 0%, 100%);
+  --color-text-disabled: hsl(0, 0%, 80%);
+  --color-text-secondary: hsl(0, 0%, 46%);
+  --color-text-primary: hsl(0, 0%, 0%);
+  --color-neutral-grey: hsl(0, 0%, 46%);
+  --color-neutral-black: hsl(0, 0%, 0%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-brand-accent: hsl(65, 82%, 59%);
+  --color-brand-primary: hsl(83, 60%, 45%);
+  --gradient-dark-primary: linear-gradient(-45deg, rgba(33, 33, 33, 1) 0%,rgba(48, 48, 48, 1) 40%,rgba(66, 66, 66, 1) 100%);
+  --gradient-light-primary: rgba(255, 255, 255, 1);
+  --gradient-primary: rgba(255, 255, 255, 1);
+}
