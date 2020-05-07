@@ -29,14 +29,17 @@ dd {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  color: var(--color-neutral-white);
-  background-color: var(--color-brand-grey);
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
   font-family: var(--font-primary);
   line-height: var(--line-height);
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
 

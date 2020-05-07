@@ -12,12 +12,12 @@ const container = css`
 const textarea = css`
   width: calc(320px - 64px);
   padding: var(--spacing-small) var(--spacing);
-  color: white;
-  background: rgba(33, 33, 33, 1);
-  border: 0;
+  color: var(--color-text-primary);
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-text-secondary);
 
   &:focus {
-    box-shadow: 0 0 5px var(--color-neutral-white); /* our own focus style */
+    box-shadow: 0 0 5px var(--color-text-primary); /* our own focus style */
   }
 `;
 

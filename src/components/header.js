@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import { css } from "linaria";
 
 import useDocumentScrollThrottled from "./useDocumentScrollThrottled";
+import ThemeToggle from "./theme-toggle";
 
 import NewspaperIcon from "../images/newspaper.svg";
 import EnvelopeIcon from "../images/envelope.svg";
@@ -16,7 +17,7 @@ const header = css`
   align-items: center;
   justify-content: flex-end;
   padding: var(--spacing) var(--spacing-large);
-  color: var(--color-neutral-white);
+  color: var(--color-text-primary);
   transform: translateY(0px);
   transition-delay: 0s;
   transition-timing-function: ease-in-out;
@@ -29,7 +30,7 @@ const header = css`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--color-brand-grey-dark);
+    background-color: var(--color-background-secondary);
     transition-delay: 0s;
     transition-timing-function: ease-in-out;
     transition-duration: 200ms;
@@ -51,7 +52,7 @@ const headerHidden = css`
 const romain = css`
   position: relative;
   margin-right: auto;
-  color: var(--color-brand-green);
+  color: var(--color-brand-primary);
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -62,7 +63,7 @@ const romain = css`
   }
 
   &:focus {
-    outline: 1px solid var(--color-brand-green);
+    outline: 1px solid var(--color-brand-primary);
     outline-offset: 0.25rem;
   }
 `;
@@ -82,7 +83,7 @@ const navList = css`
 const link = css`
   display: flex;
   align-items: center;
-  color: var(--color-neutral-white);
+  color: var(--color-text-primary);
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -93,7 +94,7 @@ const link = css`
 
   &:hover,
   &:focus {
-    color: var(--color-brand-green);
+    color: var(--color-brand-primary);
     text-decoration: underline;
     transform: scale(1.1);
 
@@ -103,17 +104,17 @@ const link = css`
   }
 
   &:active {
-    color: var(--color-brand-green);
+    color: var(--color-brand-primary);
   }
 
   &:focus {
-    outline: 1px solid var(--color-neutral-white);
+    outline: 1px solid var(--colortext);
     outline-offset: 0.25rem;
   }
 `;
 
 const activeLink = css`
-  color: var(--color-brand-green);
+  color: var(--color-brand-primary);
 `;
 
 const linkIcon = css`
@@ -172,6 +173,9 @@ const Header = () => {
               <EnvelopeIcon className={linkIcon} />
               <span className={linkText}>Contact</span>
             </Link>
+          </li>
+          <li>
+            <ThemeToggle />
           </li>
         </ul>
       </nav>

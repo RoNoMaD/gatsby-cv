@@ -7,11 +7,11 @@ const article = css`
   display: flex;
   flex-direction: column;
   padding: var(--spacing);
-  background: var(--color-brand-grey-light);
+  background: var(--color-background-light);
 `;
 
 const title = css`
-  color: var(--color-brand-green);
+  color: var(--color-brand-primary);
 `;
 
 const date = css`

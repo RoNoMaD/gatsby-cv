@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 import { SkipNavLink, SkipNavContent } from "@reach/skip-nav";
 import "@reach/skip-nav/styles.css";
+
 import Header from "./header";
 import Footer from "./footer/footer";
 
@@ -12,7 +13,7 @@ const main = css`
   position: relative;
   z-index: 1;
   min-height: 100vh;
-  background-color: var(--color-brand-grey);
+  background-color: var(--color-background-primary);
 `;
 
 const skipNavContent = css`

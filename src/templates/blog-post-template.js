@@ -16,17 +16,17 @@ const article = css`
     text-decoration: underline;
 
     &:hover {
-      color: var(--color-brand-green);
+      color: var(--color-brand-primary);
     }
 
     &:active {
-      color: var(--color-brand-green);
+      color: var(--color-brand-primary);
     }
   }
 `;
 
 const titleClass = css`
-  color: var(--color-brand-green);
+  color: var(--color-brand-primary);
 `;
 
 const dateClass = css`
