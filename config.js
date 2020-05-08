@@ -8,10 +8,6 @@ module.exports = {
         {
           format: "css/variables",
           destination: "colors.css",
-          filter: (props) => {
-            console.log(props);
-            return !props.type || props.type !== "gradient";
-          },
         },
       ],
     },

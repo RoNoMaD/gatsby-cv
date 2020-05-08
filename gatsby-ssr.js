@@ -11,7 +11,7 @@ const MagicScriptTag = () => {
 (function() {
   function getInitialColorMode() {
     const persistedColorPreference =
-      window.localStorage.getItem('color-mode');
+      window.localStorage.getItem('color-mode');    
     const hasPersistedPreference =
       typeof persistedColorPreference === 'string';
     // If the user has explicitly chosen light or dark,
@@ -32,39 +32,7 @@ const MagicScriptTag = () => {
   }
   const colorMode = getInitialColorMode();
   const root = document.documentElement;
-  root.style.setProperty(
-    '--color-text-primary',
-    colorMode === 'light'
-      ? getComputedStyle(root).getPropertyValue("--color-light-text-primary")
-      : getComputedStyle(root).getPropertyValue("--color-dark-text-primary")
-  );
-  root.style.setProperty(
-    "--color-text-secondary",
-    colorMode === "light"
-      ? getComputedStyle(root).getPropertyValue(
-          "--color-light-text-secondary"
-        )
-      : getComputedStyle(root).getPropertyValue("--color-dark-text-secondary")
-  );
-  root.style.setProperty(
-    '--color-background-primary',
-    colorMode === 'light'
-      ? getComputedStyle(root).getPropertyValue("--color-light-background-primary")
-      : getComputedStyle(root).getPropertyValue("--color-dark-background-primary")
-  );
-  root.style.setProperty(
-    '--color-background-secondary',
-    colorMode === 'light'
-      ? getComputedStyle(root).getPropertyValue("--color-light-background-secondary")
-      : getComputedStyle(root).getPropertyValue("--color-dark-background-secondary")
-  );
-  root.style.setProperty(
-    '--gradient-primary',
-    colorMode === 'light'
-      ? getComputedStyle(root).getPropertyValue("--gradient-light-primary")
-      : getComputedStyle(root).getPropertyValue("--gradient-dark-primary")
-  );
-  root.style.setProperty('--initial-color-mode', colorMode);
+  root.dataset.theme = colorMode;
 })()
   `;
   // eslint-disable-next-line react/no-danger
