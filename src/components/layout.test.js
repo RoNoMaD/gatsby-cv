@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import { useStaticQuery } from "gatsby"; // mocked
 
+import { ThemeProvider } from "./theme";
 import Layout from "./layout";
 
 // mock useStaticQuery to return title in siteMetadata
@@ -19,11 +20,11 @@ describe(`Layout`, () => {
   it(`renders children`, () => {
     const text = `__Hello world__`;
     const { getByText } = render(
-      <Layout>
-        <main>
+      <ThemeProvider>
+        <Layout>
           <h1>{text}</h1>
-        </main>
-      </Layout>
+        </Layout>
+      </ThemeProvider>
     );
 
     const child = getByText(text);

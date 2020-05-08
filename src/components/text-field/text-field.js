@@ -67,7 +67,7 @@ TextField.propTypes = {
     "url",
   ]),
   inputMode: PropTypes.string,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   className: PropTypes.string,
