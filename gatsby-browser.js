@@ -9,6 +9,7 @@ import React from "react";
 import { ThemeProvider } from "./src/components/theme";
 
 import "./design-tokens/css/colors.css";
+import "./src/css/theme.css";
 import "./src/css/variables.css";
 import "./src/css/reset.css";
 import "./src/css/utils.css";

@@ -71,7 +71,6 @@ const genTokens = (apikey, id, outDir) => {
               color: {
                 dark: darkTheme,
                 light: lightTheme,
-                ...lightTheme,
               },
             },
             outDir
@@ -86,7 +85,6 @@ const genTokens = (apikey, id, outDir) => {
               gradient: {
                 dark: darkThemeGradient.gradient,
                 light: lightThemeGradient.gradient,
-                ...lightThemeGradient.gradient,
               },
             },
             outDir
