@@ -7,7 +7,7 @@
     "@reach/skip-nav": "^0.10.1",
     "babel-preset-gatsby": "^0.4.0",
     "clsx": "^1.1.0",
-    "gatsby": "2.21.7",
+    "gatsby": "2.22.9",
     "gatsby-plugin-linaria": "^2.0.0",
     "gatsby-plugin-manifest": "2.4.1",
     "gatsby-plugin-netlify": "2.3.0",
