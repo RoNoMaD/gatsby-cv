@@ -8301,10 +8301,10 @@ gatsby-plugin-preact@3.3.0:
   dependencies:
     "@babel/runtime" "^7.9.2"
 
-gatsby-plugin-react-axe@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-axe/-/gatsby-plugin-react-axe-0.4.0.tgz#3af6e62c7f4664a0f641c965f20116de198056bf"
-  integrity sha512-5irEyGRy1zYn1dif57+l3XLTcfAyYpSpThBTFFoQ/Z4VOqEMm9CFAVal2rbLRWBpWKIGUpzVpdVrzMJNa++h6Q==
+gatsby-plugin-react-axe@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-axe/-/gatsby-plugin-react-axe-0.4.1.tgz#fe3be5f5bbe111639a1328969d7699bbaa185f1d"
+  integrity sha512-JV/waKoj/e94Z2SmaVFlmvBrbxRppxzvlUA8r5ko13yciajhYaIOtivM9rwG2ojp5jqEa9QnLYNBoROHqCikIA==
   dependencies:
     react-axe "^3.4.1"
 
