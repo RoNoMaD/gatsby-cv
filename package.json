@@ -7,7 +7,7 @@
     "@reach/skip-nav": "^0.10.4",
     "babel-preset-gatsby": "^0.4.9",
     "clsx": "^1.1.0",
-    "gatsby": "2.23.4",
+    "gatsby": "2.23.20",
     "gatsby-plugin-linaria": "^2.0.0",
     "gatsby-plugin-manifest": "2.4.11",
     "gatsby-plugin-netlify": "2.3.5",
@@ -17,7 +17,7 @@
     "gatsby-plugin-react-axe": "^0.4.1",
     "gatsby-plugin-react-helmet": "3.3.4",
     "gatsby-plugin-react-svg": "^3.0.0",
-    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-robots-txt": "^1.5.1",
     "gatsby-plugin-sitemap": "2.4.5",
     "gatsby-plugin-webpack-size": "^1.0.0",
     "gatsby-remark-prismjs": "3.5.4",
@@ -28,12 +28,13 @@
     "lodash-es": "^4.17.15",
     "netlify-cms-app": "^2.12.15",
     "preact": "^10.4.4",
-    "prismjs": "^1.20.0",
+    "prismjs": "^1.21.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-helmet": "^6.0.0",
     "react-recaptcha": "^2.3.10",
-    "react-visibility-sensor": "^5.0.2"
+    "react-visibility-sensor": "^5.0.2",
+    "snyk": "^1.384.0"
   },
   "keywords": [
     "gatsby"
@@ -50,7 +51,9 @@
     "lint": "eslint src",
     "prettier": "prettier \"src/**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql)\"",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "devDependencies": {
     "@babel/core": "7.9.6",
@@ -95,5 +98,6 @@
   },
   "engines": {
     "node": ">=12.16.3"
-  }
+  },
+  "snyk": true
 }
