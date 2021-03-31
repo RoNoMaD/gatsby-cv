@@ -34,7 +34,7 @@
     "react-helmet": "^6.1.0",
     "react-recaptcha": "^2.3.10",
     "react-visibility-sensor": "^5.1.1",
-    "snyk": "^1.487.0"
+    "snyk": "^1.518.0"
   },
   "keywords": [
     "gatsby"
