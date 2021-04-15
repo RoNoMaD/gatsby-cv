@@ -1,8 +1,15 @@
 {
   "workExperience": [
     {
+      "startDate": "2020-05",
+      "endDate": "2020-09",
+      "title": "Développeur Front End Senior Freelance",
+      "subtitle": "Valwin",
+      "description": "Développeur Front End Senior ⚛️(P)react d’outils de numérisation des pharmacies."
+    },
+    {
       "startDate": "2020-03",
-      "title": "Développeur Front End Senior",
+      "title": "Développeur Front End Senior Freelance",
       "description": "Développeur Front End Senior ⚛️React d’un frontal ecommerce de location de matériel.",
       "subtitle": "Lizee / Quechua location",
       "endDate": "2020-04"
