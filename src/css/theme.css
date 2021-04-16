@@ -2,8 +2,8 @@
 :root {
   --color-semantic-error: var(--color-light-semantic-error);
   --color-semantic-success: var(--color-light-semantic-success);
-  --color-background-secondary: (var--color-light-background-secondary);
-  --color-background-primary: (var--color-light-background-primary);
+  --color-background-secondary: var(--color-light-background-secondary);
+  --color-background-primary: var(--color-light-background-primary);
   --color-text-disabled: var(--color-light-text-disabled);
   --color-text-secondary: var(--color-light-text-secondary);
   --color-text-primary: var(--color-light-text-primary);
@@ -20,8 +20,8 @@
   :root:not([data-theme="light"]) {
     --color-semantic-error: var(--color-light-semantic-error);
     --color-semantic-success: var(--color-light-semantic-success);
-    --color-background-secondary: (var--color-light-background-secondary);
-    --color-background-primary: (var--color-light-background-primary);
+    --color-background-secondary: var(--color-light-background-secondary);
+    --color-background-primary: var(--color-light-background-primary);
     --color-text-disabled: var(--color-light-text-disabled);
     --color-text-secondary: var(--color-light-text-secondary);
     --color-text-primary: var(--color-light-text-primary);
