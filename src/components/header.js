@@ -6,7 +6,7 @@ import { css } from "linaria";
 import useDocumentScrollThrottled from "./useDocumentScrollThrottled";
 import ThemeToggle from "./theme-toggle";
 
-import NewspaperIcon from "../images/newspaper.svg";
+// import NewspaperIcon from "../images/newspaper.svg";
 import EnvelopeIcon from "../images/envelope.svg";
 
 const header = css`
