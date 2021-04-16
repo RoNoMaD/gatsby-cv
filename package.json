@@ -3,6 +3,33 @@
   "description": "Romain Lebascle CV",
   "version": "1.0.0",
   "author": "Romain Lebascle<romain.lebascle@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RoNoMaD/gatsby-cv.git"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.16.3"
+  },
+  "snyk": true,
+  "scripts": {
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "develop": "gatsby develop",
+    "start": "yarn run develop",
+    "clean": "gatsby clean",
+    "format": "yarn prettier -- --write",
+    "test": "jest",
+    "stylelint": "stylelint src",
+    "lint": "eslint src",
+    "prettier": "prettier \"src/**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql)\"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
+  },
   "dependencies": {
     "@reach/skip-nav": "^0.11.2",
     "babel-preset-gatsby": "^0.5.8",
@@ -35,25 +62,6 @@
     "react-recaptcha": "^2.3.10",
     "react-visibility-sensor": "^5.1.1",
     "snyk": "^1.487.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
-    "develop": "gatsby develop",
-    "start": "yarn run develop",
-    "clean": "gatsby clean",
-    "format": "yarn prettier -- --write",
-    "test": "jest",
-    "stylelint": "stylelint src",
-    "lint": "eslint src",
-    "prettier": "prettier \"src/**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql)\"",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "snyk-protect": "snyk protect",
-    "prepare": "yarn run snyk-protect"
   },
   "devDependencies": {
     "@babel/core": "7.11.6",
@@ -92,13 +100,5 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-webpack-plugin": "^2.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/RoNoMaD/gatsby-cv.git"
-  },
-  "engines": {
-    "node": ">=12.16.3"
-  },
-  "snyk": true
+  }
 }

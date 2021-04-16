@@ -93,8 +93,8 @@
   * Used to space grids and body padding
   */
   --spacing: 1rem; /* 16px */
-  --spacing-small: calc(0.5 * var(--spacing)); /* 8px */
   --spacing-xs: calc(0.25 * var(--spacing)); /* 4px */
+  --spacing-small: calc(0.5 * var(--spacing)); /* 8px */
   --spacing-medium: calc(1.25 * var(--spacing)); /* 20px */
   --spacing-large: calc(2 * var(--spacing)); /* 32px */
   --spacing-xl: calc(4 * var(--spacing)); /* 64px */
