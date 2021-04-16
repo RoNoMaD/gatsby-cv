@@ -131,7 +131,10 @@ module.exports = {
     },
     {
       resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
-      options: { analyzerMode: process.env.NETLIFY ? "disabled" : "server" },
+      options: {
+        analyzerMode:
+          process.env.NETLIFY || process.env.CI ? "disabled" : "server",
+      },
     },
     "gatsby-plugin-webpack-size",
     "gatsby-plugin-sitemap",

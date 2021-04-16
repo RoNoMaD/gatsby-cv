@@ -162,12 +162,12 @@ const Header = () => {
       </Link>
       <nav className={nav}>
         <ul className={navList}>
-          <li>
+          {/* <li>
             <Link to="/blog" className={link} activeClassName={activeLink}>
               <NewspaperIcon className={linkIcon} />
               <span className={linkText}>Blog</span>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/contact" className={link} activeClassName={activeLink}>
               <EnvelopeIcon className={linkIcon} />

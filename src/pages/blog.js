@@ -22,8 +22,8 @@ const IndexPage = ({
     <Layout>
       <main className={main}>
         {edges
-          .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-          .map(edge => (
+          .filter((edge) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+          .map((edge) => (
             <PostLink key={edge.node.id} post={edge.node} location={location} />
           ))}
       </main>
