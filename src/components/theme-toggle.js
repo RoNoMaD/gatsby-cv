@@ -29,7 +29,11 @@ const DarkToggle = () => {
 
   return (
     <div className={checkboxContainer}>
+      <label htmlFor="theme-toggle" className="visually-hidden">
+        Activer le thème sombre
+      </label>
       <input
+        id="theme-toggle"
         type="checkbox"
         className={checkbox}
         checked={colorMode === "dark"}
@@ -38,9 +42,9 @@ const DarkToggle = () => {
         }}
       />
       {colorMode === "dark" ? (
-        <SunIcon aria-hidden="true" role="presentation" />
+        <SunIcon aria-hidden="true" focusable="false" role="presentation" />
       ) : (
-        <MoonIcon aria-hidden="true" role="presentation" />
+        <MoonIcon aria-hidden="true" focusable="false" role="presentation" />
       )}
     </div>
   );
