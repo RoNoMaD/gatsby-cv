@@ -5,7 +5,11 @@ import { css } from "linaria";
 import { Link } from "gatsby";
 
 const link = css`
-  min-width: 44pt;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
   padding: 10px 30px;
   color: var(--color-text-primary);
   font-size: 12pt;
@@ -30,7 +34,7 @@ const link = css`
   }
 
   &:hover:not([disabled]) {
-    color: hsla(0, 0%, 19%, 1);
+    color: var(--color-background-primary);
     background: var(--color-text-primary);
   }
 
