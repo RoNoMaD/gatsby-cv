@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Romain Lebascle",
-    siteUrl: "https://stoic-austin-186a1f.netlify.com",
+    siteUrl: "https://romainlebascle.netlify.app",
   },
   plugins: [
     "gatsby-plugin-preact",
