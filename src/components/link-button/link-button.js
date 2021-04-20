@@ -5,14 +5,18 @@ import { css } from "linaria";
 import { Link } from "gatsby";
 
 const link = css`
-  min-width: 44pt;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
   padding: 10px 30px;
-  color: var(--color-neutral-white);
+  color: var(--color-text-primary);
   font-size: 12pt;
   text-transform: uppercase;
   text-decoration: none;
   background: transparent;
-  border: 2px solid var(--color-neutral-white);
+  border: 2px solid var(--color-text-primary);
   border-radius: 40px;
   outline: 0;
   cursor: pointer;
@@ -26,12 +30,12 @@ const link = css`
 
   &:focus {
     outline: 0; /* Removes the default blue ring */
-    box-shadow: 0 0 5px var(--color-neutral-white); /* our own focus style */
+    box-shadow: 0 0 5px var(--color-text-primary); /* our own focus style */
   }
 
   &:hover:not([disabled]) {
-    color: hsla(0, 0%, 19%, 1);
-    background: var(--color-neutral-white);
+    color: var(--color-background-primary);
+    background: var(--color-text-primary);
   }
 
   /* remove focus style on click */

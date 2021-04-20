@@ -11,7 +11,7 @@ const notFound = css`
 `;
 
 const title = css`
-  color: var(--color-brand-green);
+  color: var(--color-brand-primary);
 `;
 
 const NotFoundPage = () => (

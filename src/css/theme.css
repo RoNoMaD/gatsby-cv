@@ -1,0 +1,59 @@
+/* Our automatic and user specified light theme */
+:root {
+  --color-semantic-error: var(--color-light-semantic-error);
+  --color-semantic-success: var(--color-light-semantic-success);
+  --color-background-tertiary: var(--color-light-background-tertiary);
+  --color-background-secondary: var(--color-light-background-secondary);
+  --color-background-primary: var(--color-light-background-primary);
+  --color-text-disabled: var(--color-light-text-disabled);
+  --color-text-secondary: var(--color-light-text-secondary);
+  --color-text-primary: var(--color-light-text-primary);
+  --color-neutral-grey: var(--color-light-neutral-grey);
+  --color-neutral-black: var(--color-light-neutral-black);
+  --color-neutral-white: var(--color-light-neutral-white);
+  --color-brand-accent: var(--color-light-brand-accent);
+  --color-brand-primary: var(--color-light-brand-primary);
+  --gradient-primary: var(--gradient-light-primary);
+  /* TODO add elevation and radius in Figma design tokens */
+  --elevation: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --border-radius: 4px;
+}
+
+/* Our automatic dark theme */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-semantic-error: var(--color-dark-semantic-error);
+    --color-semantic-success: var(--color-dark-semantic-success);
+    --color-background-tertiary: var(--color-dark-background-tertiary);
+    --color-background-secondary: var(--color-dark-background-secondary);
+    --color-background-primary: var(--color-dark-background-primary);
+    --color-text-disabled: var(--color-dark-text-disabled);
+    --color-text-secondary: var(--color-dark-text-secondary);
+    --color-text-primary: var(--color-dark-text-primary);
+    --color-neutral-grey: var(--color-dark-neutral-grey);
+    --color-neutral-black: var(--color-dark-neutral-black);
+    --color-neutral-white: var(--color-dark-neutral-white);
+    --color-brand-accent: var(--color-dark-brand-accent);
+    --color-brand-primary: var(--color-dark-brand-primary);
+    --gradient-primary: var(--gradient-dark-primary);
+  }
+}
+
+/* Our dark theme specified by the user */
+:root[data-theme="dark"] {
+  --color-semantic-error: var(--color-dark-semantic-error);
+  --color-semantic-success: var(--color-dark-semantic-success);
+  --color-background-tertiary: var(--color-dark-background-tertiary);
+  --color-background-secondary: var(--color-dark-background-secondary);
+  --color-background-primary: var(--color-dark-background-primary);
+  --color-text-disabled: var(--color-dark-text-disabled);
+  --color-text-secondary: var(--color-dark-text-secondary);
+  --color-text-primary: var(--color-dark-text-primary);
+  --color-neutral-grey: var(--color-dark-neutral-grey);
+  --color-neutral-black: var(--color-dark-neutral-black);
+  --color-neutral-white: var(--color-dark-neutral-white);
+  --color-brand-accent: var(--color-dark-brand-accent);
+  --color-brand-primary: var(--color-dark-brand-primary);
+  --gradient-primary: var(--gradient-dark-primary);
+}

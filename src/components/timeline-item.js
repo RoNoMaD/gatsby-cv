@@ -29,7 +29,7 @@ const timelineItemDefaultIcon = css`
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: var(--color-brand-green);
+  background-color: var(--color-brand-primary);
   border-radius: 50%;
 `;
 
@@ -44,7 +44,7 @@ const timelineItemBottomLine = css`
 `;
 
 const timelineItemTitle = css`
-  color: var(--color-brand-green);
+  color: var(--color-brand-primary);
 `;
 
 const timelineItemText = css`

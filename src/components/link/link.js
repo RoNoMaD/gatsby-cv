@@ -5,20 +5,20 @@ import { css } from "linaria";
 import { Link as GatsbyLink } from "gatsby";
 
 const link = css`
-  color: var(--color-neutral-white);
+  color: var(--color-text-primary);
   text-decoration: underline;
 
   &:hover {
-    color: var(--color-brand-green);
+    color: var(--color-brand-primary);
   }
 
   &:active {
-    color: var(--color-brand-green);
+    color: var(--color-brand-primary);
   }
 `;
 
 const activeLink = css`
-  color: var(--color-brand-green);
+  color: var(--color-brand-primary);
 `;
 
 const Link = ({ children, to, className, disabled = false }) => {

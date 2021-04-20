@@ -12,12 +12,7 @@ const homeSection = css`
   height: 100vh;
   margin-top: calc(var(--header-height) * -1);
   padding: var(--spacing);
-  background: linear-gradient(
-    135deg,
-    rgba(33, 33, 33, 1) 0%,
-    rgba(48, 48, 48, 1) 35%,
-    rgba(66, 66, 66, 1) 100%
-  );
+  background: var(--gradient-primary);
 
   & > * + * {
     margin-top: var(--spacing);
@@ -36,11 +31,11 @@ const homeAnimatedName = css`
   height: 45px;
   margin: inherit auto; /* Gives that scrolling effect as the typing happens */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  color: var(--color-brand-green);
+  color: var(--color-brand-primary);
   font-size: var(--font-size-xl-number);
   line-height: 1.1;
   white-space: nowrap; /* Keeps the content on a single line */
-  border-right: 0.15em solid var(--color-brand-green); /* The typwriter cursor */
+  border-right: 0.15em solid var(--color-brand-primary); /* The typwriter cursor */
   animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
 
   /* The typing effect */
@@ -60,7 +55,7 @@ const homeAnimatedName = css`
       border-color: transparent;
     }
     50% {
-      border-color: var(--color-brand-green);
+      border-color: var(--color-brand-primary);
     }
   }
 `;
@@ -76,7 +71,7 @@ const quoteContainer = css`
 
 const quoteIcon = css`
   width: 50px;
-  fill: var(--color-brand-green);
+  fill: var(--color-brand-primary);
 `;
 
 const quoteText = css`

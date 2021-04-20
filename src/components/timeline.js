@@ -12,7 +12,7 @@ const timelineTitleIcon = css`
   height: 50px;
   margin-top: var(--spacing-xl);
   margin-right: 8px;
-  background-color: var(--color-brand-green);
+  background-color: var(--color-brand-primary);
   border-radius: 50%;
 `;
 

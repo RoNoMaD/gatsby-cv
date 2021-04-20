@@ -1,0 +1,106 @@
+{
+  "color": {
+    "dark": {
+      "semantic": {
+        "error": {
+          "value": "rgba(208, 0, 0, 1)"
+        },
+        "success": {
+          "value": "rgba(131, 184, 46, 1)"
+        }
+      },
+      "background": {
+        "tertiary": {
+          "value": "rgba(66, 66, 66, 1)"
+        },
+        "secondary": {
+          "value": "rgba(33, 33, 33, 1)"
+        },
+        "primary": {
+          "value": "rgba(48, 48, 48, 1)"
+        }
+      },
+      "text": {
+        "disabled": {
+          "value": "rgba(204, 204, 204, 1)"
+        },
+        "secondary": {
+          "value": "rgba(255, 255, 255, 1)"
+        },
+        "primary": {
+          "value": "rgba(255, 255, 255, 1)"
+        }
+      },
+      "neutral": {
+        "grey": {
+          "value": "rgba(117, 117, 117, 1)"
+        },
+        "black": {
+          "value": "rgba(0, 0, 0, 1)"
+        },
+        "white": {
+          "value": "rgba(255, 255, 255, 1)"
+        }
+      },
+      "brand": {
+        "accent": {
+          "value": "rgba(222, 236, 66, 1)"
+        },
+        "primary": {
+          "value": "rgba(131, 184, 46, 1)"
+        }
+      }
+    },
+    "light": {
+      "semantic": {
+        "error": {
+          "value": "rgba(208, 0, 0, 1)"
+        },
+        "success": {
+          "value": "rgba(131, 184, 46, 1)"
+        }
+      },
+      "background": {
+        "tertiary": {
+          "value": "rgba(255, 255, 255, 1)"
+        },
+        "secondary": {
+          "value": "rgba(255, 255, 255, 1)"
+        },
+        "primary": {
+          "value": "rgba(255, 255, 255, 1)"
+        }
+      },
+      "text": {
+        "disabled": {
+          "value": "rgba(204, 204, 204, 1)"
+        },
+        "secondary": {
+          "value": "rgba(117, 117, 117, 1)"
+        },
+        "primary": {
+          "value": "rgba(0, 0, 0, 1)"
+        }
+      },
+      "neutral": {
+        "grey": {
+          "value": "rgba(117, 117, 117, 1)"
+        },
+        "black": {
+          "value": "rgba(0, 0, 0, 1)"
+        },
+        "white": {
+          "value": "rgba(255, 255, 255, 1)"
+        }
+      },
+      "brand": {
+        "accent": {
+          "value": "rgba(222, 236, 66, 1)"
+        },
+        "primary": {
+          "value": "rgba(131, 184, 46, 1)"
+        }
+      }
+    }
+  }
+}
