@@ -1,11 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Fri, 08 May 2020 09:33:16 GMT
+ * Generated on Mon, 19 Apr 2021 07:41:54 GMT
  */
 
 :root {
   --color-dark-semantic-error: hsl(0, 100%, 41%);
   --color-dark-semantic-success: hsl(83, 60%, 45%);
+  --color-dark-background-tertiary: hsl(0, 0%, 26%);
   --color-dark-background-secondary: hsl(0, 0%, 13%);
   --color-dark-background-primary: hsl(0, 0%, 19%);
   --color-dark-text-disabled: hsl(0, 0%, 80%);
@@ -18,6 +19,7 @@
   --color-dark-brand-primary: hsl(83, 60%, 45%);
   --color-light-semantic-error: hsl(0, 100%, 41%);
   --color-light-semantic-success: hsl(83, 60%, 45%);
+  --color-light-background-tertiary: hsl(0, 0%, 100%);
   --color-light-background-secondary: hsl(0, 0%, 100%);
   --color-light-background-primary: hsl(0, 0%, 100%);
   --color-light-text-disabled: hsl(0, 0%, 80%);
