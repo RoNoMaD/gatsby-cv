@@ -21,7 +21,6 @@ export const onRouteUpdate = ({ location, prevLocation }) => {
 
     if (skipLink) {
       skipLink.tabIndex = -1;
-      console.log("#reach-skip-nav", skipLink);
       skipLink.focus();
     }
   }
