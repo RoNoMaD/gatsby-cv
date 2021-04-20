@@ -1,4 +1,4 @@
-<img src="./images/logo.sample.png" alt="Logo of the project" align="right">
+<img src="./images/logo.sample.png" alt="Romain Lebascle Logo" align="right">
 
 # Romain Lebascle &middot; [![CircleCI](https://circleci.com/gh/RoNoMaD/gatsby-cv.svg?style=svg)](https://circleci.com/gh/RoNoMaD/gatsby-cv) [![Netlify Status](https://api.netlify.com/api/v1/badges/99800f3e-5fb3-42cf-8e01-3da152843bcb/deploy-status)](https://app.netlify.com/sites/stoic-austin-186a1f/deploys) [![dependencies Status](https://david-dm.org/RoNoMaD/gatsby-cv/status.svg)](https://david-dm.org/RoNoMaD/gatsby-cv) [![Known Vulnerabilities](https://snyk.io/test/github/RoNoMaD/gatsby-cv/badge.svg)](https://snyk.io/test/github/RoNoMaD/gatsby-cv) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 
@@ -10,7 +10,7 @@ Website presenting my experience and realisations aswell as my technical writing
 
 ### Built With
 
-List main libraries, frameworks used including versions (React, Angular etc...)
+List main libraries, frameworks used
 
 - [Gatsby](https://www.gatsbyjs.com/) : build incredible websites using a React-based framework and innovative data layer that makes integrating different CMS's, APIs, and services into one web experience incredibly easy.
 - [NetlifyCMS](https://www.netlifycms.org/) : Open source content management for your Git workflow
