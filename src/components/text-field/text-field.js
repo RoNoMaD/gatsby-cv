@@ -13,17 +13,17 @@ const inputText = css`
   width: calc(320px - 64px);
   margin-top: var(--spacing-small);
   padding: var(--spacing-small) var(--spacing);
-  color: white;
-  background: rgba(33, 33, 33, 1);
-  border: 0;
+  color: var(--color-text-primary);
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-text-secondary);
 
   &:focus {
     outline: 0; /* Removes the default blue ring */
-    box-shadow: 0 0 5px var(--color-neutral-white); /* our own focus style */
+    box-shadow: 0 0 5px var(--color-text-primary); /* our own focus style */
   }
 `;
 
-const InputText = ({
+const TextField = ({
   type,
   inputMode,
   value,
@@ -55,7 +55,7 @@ const InputText = ({
   );
 };
 
-InputText.propTypes = {
+TextField.propTypes = {
   type: PropTypes.oneOf([
     "text",
     "number",
@@ -67,7 +67,7 @@ InputText.propTypes = {
     "url",
   ]),
   inputMode: PropTypes.string,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   className: PropTypes.string,
@@ -78,4 +78,4 @@ InputText.propTypes = {
   onChange: PropTypes.func,
 };
 
-export default InputText;
+export default TextField;

@@ -1,16 +1,16 @@
-<img src="./images/logo.sample.png" alt="Logo of the project" align="right">
+<img src="./images/logo.sample.png" alt="Romain Lebascle Logo" align="right">
 
 # Romain Lebascle &middot; [![CircleCI](https://circleci.com/gh/RoNoMaD/gatsby-cv.svg?style=svg)](https://circleci.com/gh/RoNoMaD/gatsby-cv) [![Netlify Status](https://api.netlify.com/api/v1/badges/99800f3e-5fb3-42cf-8e01-3da152843bcb/deploy-status)](https://app.netlify.com/sites/stoic-austin-186a1f/deploys) [![dependencies Status](https://david-dm.org/RoNoMaD/gatsby-cv/status.svg)](https://david-dm.org/RoNoMaD/gatsby-cv) [![Known Vulnerabilities](https://snyk.io/test/github/RoNoMaD/gatsby-cv/badge.svg)](https://snyk.io/test/github/RoNoMaD/gatsby-cv) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 
 > Romain Lebascle resume and blog
 
-Website showing my skills, work experience, a contact form and a draft blog.
+Website presenting my experience and realisations aswell as my technical writings.
 
 ## Developing
 
 ### Built With
 
-List main libraries, frameworks used including versions (React, Angular etc...)
+List main libraries, frameworks used
 
 - [Gatsby](https://www.gatsbyjs.com/) : build incredible websites using a React-based framework and innovative data layer that makes integrating different CMS's, APIs, and services into one web experience incredibly easy.
 - [NetlifyCMS](https://www.netlifycms.org/) : Open source content management for your Git workflow
@@ -58,11 +58,15 @@ yarn develop
 yarn build
 ```
 
-### Deploying / Publishing
+### 💫 Deploying
 
 Every change push on the main branch to the remote repository will trigger a build and deploy on Netlify.
 You can access Netlify dashboard here :
 https://app.netlify.com/sites/romainlebascle/overview
+
+### Publishing
+
+To publish new content you can use NetlifyCMS.
 
 ## Versioning
 
@@ -83,11 +87,17 @@ SITE_RECAPTCHA_KEY=
 
 ## Tests
 
+As this website is mainly static, we are not doing so much tests.
+
+The only thing we really test is the Contact form as it implies user interactions, front and back end validations.
+
+Run the following command to run the tests :
+
 ```shell
 yarn test
 ```
 
-This will run the unit and integration tests with Jest and react-testing-library. As this project is fairly simple we only use test for the contact form at the moment.
+This will run the unit and integration tests with Jest and react-testing-library.
 
 ## Style guide
 
@@ -102,6 +112,17 @@ yarn prettier
 
 We use Netlify CMS, a Git based headless CMS.
 It provide an interface to edit markdown files, commit them to the git repository and trigger and new build.
+
+## CI
+
+[CircleCI Dashboard](https://app.circleci.com/pipelines/github/RoNoMaD/gatsby-cv)
+
+CI is running the following steps on every PR :
+
+- check formatting (via Prettier)
+- linting (via ESLint and Stylelint)
+- run unit and integration tests (via Jest and testing-library)
+- run performance audit (via Lighthouse CI)
 
 ## Licensing
 

@@ -51,6 +51,7 @@ const scaleOutCenter = css`
 `;
 
 const Card = styled.div`
+  aspect-ratio: 1;
   display: grid;
   grid-template-rows: auto auto minmax(24px, auto);
   grid-template-columns: 1fr;
@@ -58,7 +59,9 @@ const Card = styled.div`
   box-sizing: border-box;
   height: 100%;
   padding-top: 0.5rem;
-  background-color: var(--color-brand-grey-light);
+  background-color: var(--color-background-tertiary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--elevation);
 `;
 
 const CardIcon = styled.div`

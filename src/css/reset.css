@@ -1,4 +1,5 @@
 /* Box sizing rules */
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -29,14 +30,19 @@ dd {
   margin: 0;
 }
 
+/* Set core root defaults */
+/* html:focus-within { */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  color: var(--color-neutral-white);
-  background-color: var(--color-brand-grey);
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
   font-family: var(--font-primary);
   line-height: var(--line-height);
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
 
@@ -72,7 +78,12 @@ select {
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  * {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
