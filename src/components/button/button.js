@@ -4,11 +4,12 @@ import clsx from "clsx";
 import { css } from "linaria";
 
 const button = css`
-  min-width: 44pt;
-  min-height: 44pt;
+  min-width: 44px;
+  min-height: 44px;
   padding: 10px 30px;
   color: var(--color-text-primary);
   font-size: 12pt;
+  font-family: inherit;
   background: transparent;
   border: 2px solid var(--color-text-primary);
   border-radius: 40px;
