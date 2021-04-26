@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Romain Lebascle",
-    siteUrl: "https://stoic-austin-186a1f.netlify.com",
+    siteUrl: "https://romainlebascle.netlify.app",
   },
   plugins: [
     "gatsby-plugin-preact",
@@ -124,10 +124,6 @@ module.exports = {
           include: `${__dirname}/src/images`,
         },
       },
-    },
-    {
-      resolve: "gatsby-plugin-stylelint",
-      options: { files: ["src/**/*.{js,jsx,css}"] },
     },
     {
       resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
