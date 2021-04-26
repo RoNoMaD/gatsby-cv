@@ -45,6 +45,6 @@ jobs:
       # run tests!
       - run: yarn test
       # install lighthouse-ci
-      - run: sudo npm install -g @lhci/cli@0.3.x
+      - run: sudo npm install -g @lhci/cli@0.7.x
       # run lighthouse analysis
       - run: lhci autorun
