@@ -126,10 +126,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-stylelint",
-      options: { files: ["src/**/*.{js,jsx,css}"] },
-    },
-    {
       resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
       options: {
         analyzerMode:
