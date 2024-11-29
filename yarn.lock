@@ -2604,11 +2604,6 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@sindresorhus/is@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-2.1.1.tgz#ceff6a28a5b4867c2dd4a1ba513de278ccbe8bb1"
-  integrity sha512-/aPsuoj/1Dw/kzhkgz+ES6TxG0zfTMGLwuK2ZG00k/iJzYHTLCE8mVU8EPqEOp/lmxPoq1C1C9RYToRKb2KEfg==
-
 "@sindresorhus/is@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.0.0.tgz#2ff674e9611b45b528896d820d3d7a812de2f0e4"
@@ -2670,15 +2665,16 @@
     js-yaml "^3.13.1"
     tslib "^1.10.0"
 
-"@snyk/code-client@3.4.1":
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/@snyk/code-client/-/code-client-3.4.1.tgz#b9d025897cd586e0aef903162ac0407d0bffc3cd"
-  integrity sha512-XJ7tUdX1iQyzN/BmHac7p+Oyw1SyTcqSkCNExwBJxyQdlnUAKK6QKIWLXS81tTpZ79FgCdT+0fdS0AjsyS99eA==
+"@snyk/code-client@3.5.1":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@snyk/code-client/-/code-client-3.5.1.tgz#d61684ced448de53c4c15b3d9f4b7ab83d7a0483"
+  integrity sha512-hiDIs1tAuObQr8GwebUT1OH1S27odf23HArOHlcz/ddVHaZrRxreF64sflS4urdIxKVK39AYgMpc5M/QD0cgOg==
   dependencies:
     "@deepcode/dcignore" "^1.0.2"
     "@snyk/fast-glob" "^3.2.6-patch"
     "@types/flat-cache" "^2.0.0"
     "@types/lodash.chunk" "^4.2.6"
+    "@types/lodash.difference" "^4.5.6"
     "@types/lodash.omit" "^4.5.6"
     "@types/lodash.union" "^4.6.6"
     "@types/micromatch" "^4.0.1"
@@ -2687,6 +2683,7 @@
     axios "^0.21.1"
     ignore "^5.1.8"
     lodash.chunk "^4.2.0"
+    lodash.difference "^4.5.0"
     lodash.omit "^4.5.0"
     lodash.union "^4.6.0"
     micromatch "^4.0.2"
@@ -2774,15 +2771,31 @@
     micromatch "^4.0.2"
     picomatch "^2.2.1"
 
-"@snyk/fix@1.554.0":
-  version "1.554.0"
-  resolved "https://registry.yarnpkg.com/@snyk/fix/-/fix-1.554.0.tgz#7ae786882e0ffea5e7f10d0b41e3d593b65555c4"
-  integrity sha512-q2eRVStgspPeI2wZ2EQGLpiWZMRg7o+4tsCk6m/kHZgQGDN4Bb7L3xslFW3OgF0+ZksYSaHl2cW2HmGiLRaYcA==
+"@snyk/fix-pipenv-pipfile@0.3.5":
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/@snyk/fix-pipenv-pipfile/-/fix-pipenv-pipfile-0.3.5.tgz#762d1d01f5dac95cad0ff39e7205aa09e3d19483"
+  integrity sha512-Kqe9wqUrSSGB0+QFrJjCy5ub7bNg10F5I/avJK95RY/2g9cXpQnkdkTexRmVdOl+IF5z3JBXRjBnIQb6buvp6w==
+  dependencies:
+    bottleneck "2.19.5"
+    debug "4.3.1"
+    source-map-support "^0.5.16"
+    tslib "^1.10.0"
+
+"@snyk/fix@1.601.0":
+  version "1.601.0"
+  resolved "https://registry.yarnpkg.com/@snyk/fix/-/fix-1.601.0.tgz#ff16c67e7e5643be16c6ac092d9de1ba162ce7f3"
+  integrity sha512-0Fz0nC547Qkg0FGpmvzDIPrrXvisQN6c07JM0RReM8Xb47p1o51O/MPsWdHIFJasIT5HkshyOaV5rjGQmfwHtQ==
   dependencies:
     "@snyk/dep-graph" "^1.21.0"
+    "@snyk/fix-pipenv-pipfile" "0.3.5"
+    bottleneck "2.19.5"
     chalk "4.1.0"
+    child_process "1.0.2"
     debug "^4.3.1"
-    ora "5.3.0"
+    lodash.groupby "4.6.0"
+    lodash.orderby "^4.6.0"
+    lodash.sortby "^4.7.0"
+    ora "5.4.0"
     p-map "^4.0.0"
     strip-ansi "6.0.0"
 
@@ -2856,10 +2869,10 @@
     strip-ansi "^6.0.0"
     through "^2.3.6"
 
-"@snyk/java-call-graph-builder@1.19.1":
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/@snyk/java-call-graph-builder/-/java-call-graph-builder-1.19.1.tgz#1d579d782df3bb5f9d5171cc35180596cd90aa8b"
-  integrity sha512-bxjHef5Qm3pNc+BrFlxMudmSSbOjA395ZqBddc+dvsFHoHeyNbiY56Y1JSGUlTgjRM+PKNPBiCuELTSMaROeZg==
+"@snyk/java-call-graph-builder@1.20.0":
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/@snyk/java-call-graph-builder/-/java-call-graph-builder-1.20.0.tgz#ffca734cf7ce276a69277963149358190eaac3e5"
+  integrity sha512-NX8bpIu7oG5cuSSm6WvtxqcCuJs2gRjtKhtuSeF1p5TYXyESs3FXQ0nHjfY90LiyTTc+PW/UBq6SKbBA6bCBww==
   dependencies:
     "@snyk/graphlib" "2.1.9-patch.3"
     ci-info "^2.0.0"
@@ -2875,10 +2888,10 @@
     tslib "^1.9.3"
     xml-js "^1.6.11"
 
-"@snyk/java-call-graph-builder@1.20.0":
-  version "1.20.0"
-  resolved "https://registry.yarnpkg.com/@snyk/java-call-graph-builder/-/java-call-graph-builder-1.20.0.tgz#ffca734cf7ce276a69277963149358190eaac3e5"
-  integrity sha512-NX8bpIu7oG5cuSSm6WvtxqcCuJs2gRjtKhtuSeF1p5TYXyESs3FXQ0nHjfY90LiyTTc+PW/UBq6SKbBA6bCBww==
+"@snyk/java-call-graph-builder@1.21.0":
+  version "1.21.0"
+  resolved "https://registry.yarnpkg.com/@snyk/java-call-graph-builder/-/java-call-graph-builder-1.21.0.tgz#0b0b129c2547d54a3d8ab4d4b897e008033179b0"
+  integrity sha512-i0c4N0+pYjpXEgqAkFniM3Q9YANvy+RtbbkQMPIvdEw41+XJISfEHzZ968ZmGWcoi480cgo5t9oxZEadFuHzyg==
   dependencies:
     "@snyk/graphlib" "2.1.9-patch.3"
     ci-info "^2.0.0"
@@ -3955,6 +3968,13 @@
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/@types/lodash.chunk/-/lodash.chunk-4.2.6.tgz#9d35f05360b0298715d7f3d9efb34dd4f77e5d2a"
   integrity sha512-SPlusB7jxXyGcTXYcUdWr7WmhArO/rmTq54VN88iKMxGUhyg79I4Q8n4riGn3kjaTjOJrVlHhxgX/d7woak5BQ==
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash.difference@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@types/lodash.difference/-/lodash.difference-4.5.6.tgz#41ec5c4e684eeacf543848a9a1b2a4856ccf9853"
+  integrity sha512-wXH53r+uoUCrKhmh7S5Gf6zo3vpsx/zH2R4pvkmDlmopmMTCROAUXDpPMXATGCWkCjE6ik3VZzZUxBgMjZho9Q==
   dependencies:
     "@types/lodash" "*"
 
@@ -5176,6 +5196,11 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
+argparse@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
+  integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
+
 aria-query@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/aria-query/-/aria-query-4.2.2.tgz"
@@ -5928,7 +5953,7 @@ bl@^4.0.0, bl@^4.0.1:
     inherits "^2.0.4"
     readable-stream "^3.4.0"
 
-bl@^4.0.3:
+bl@^4.0.3, bl@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/bl/-/bl-4.1.0.tgz#451535264182bec2fbbc83a62ab98cf11d9f7b3a"
   integrity sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==
@@ -5989,6 +6014,11 @@ boolean@^3.0.1:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/boolean/-/boolean-3.0.3.tgz#0fee0c9813b66bef25a8a6a904bb46736d05f024"
   integrity sha512-EqrTKXQX6Z3A2nRmMEIlAIfjQOgFnVO2nqZGpbcsPnYGWBwpFqzlrozU1dy+S2iqfYDLh26ef4KrgTxu9xQrxA==
+
+bottleneck@2.19.5:
+  version "2.19.5"
+  resolved "https://registry.yarnpkg.com/bottleneck/-/bottleneck-2.19.5.tgz#5df0b90f59fd47656ebe63c78a98419205cadd91"
+  integrity sha512-VHiNCbI1lKdl44tGrhNfU3lup0Tj/ZBMJB5/2ZbNXRCPuRCO7ed2mgcK4r17y+KB2EfuYuRaVlwNbAeaWGSpbw==
 
 boxen@^4.2.0:
   version "4.2.0"
@@ -6558,6 +6588,11 @@ child-process@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/child-process/-/child-process-1.0.2.tgz#98974dc7ed1ee4c6229f8e305fa7313a6885a7f2"
   integrity sha1-mJdNx+0e5MYin44wX6cxOmiFp/I=
+
+child_process@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/child_process/-/child_process-1.0.2.tgz#b1f7e7fc73d25e7fd1d455adc94e143830182b5a"
+  integrity sha1-sffn/HPSXn/R1FWtyU4UODAYK1o=
 
 chokidar@^2.1.8:
   version "2.1.8"
@@ -7725,6 +7760,13 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
+debug@4.3.1, debug@^4.2.0, debug@^4.3.1, debug@~4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
+  integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
+  dependencies:
+    ms "2.1.2"
+
 debug@^3.0.0, debug@^3.1.0, debug@^3.1.1, debug@^3.2.6:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz"
@@ -7745,13 +7787,6 @@ debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
   dependencies:
     ms "^2.1.1"
-
-debug@^4.2.0, debug@^4.3.1, debug@~4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
-  integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
-  dependencies:
-    ms "2.1.2"
 
 decamelize-keys@^1.0.0, decamelize-keys@^1.1.0:
   version "1.1.0"
@@ -10779,13 +10814,6 @@ global-agent@^2.1.12:
     semver "^7.3.2"
     serialize-error "^7.0.1"
 
-global-dirs@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/global-dirs/-/global-dirs-2.0.1.tgz"
-  integrity sha512-5HqUqdhkEovj2Of/ms3IeS/EekcO54ytHRLV4PEY2rhRwrHXLQjeVEES0Lhka0xwNDtGYn58wyC4s5+MHsOO6A==
-  dependencies:
-    ini "^1.3.5"
-
 global-dirs@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/global-dirs/-/global-dirs-3.0.0.tgz#70a76fe84ea315ab37b1f5576cbde7d48ef72686"
@@ -10932,19 +10960,19 @@ good-listener@^1.2.2:
   dependencies:
     delegate "^3.1.2"
 
-got@11.4.0:
-  version "11.4.0"
-  resolved "https://registry.yarnpkg.com/got/-/got-11.4.0.tgz#1f0910310572af4efcc6890e1dacd7affb710b39"
-  integrity sha512-XysJZuZNVpaQ37Oo2LV90MIkPeYITehyy1A0QzO1JwOXm8EWuEf9eeGk2XuHePvLEGnm9AVOI37bHwD6KYyBtg==
+got@11.8.2, got@^11.7.0:
+  version "11.8.2"
+  resolved "https://registry.yarnpkg.com/got/-/got-11.8.2.tgz#7abb3959ea28c31f3576f1576c1effce23f33599"
+  integrity sha512-D0QywKgIe30ODs+fm8wMZiAcZjypcCodPNuMz5H9Mny7RJ+IjJ10BdmGW7OM7fHXP+O7r6ZwapQ/YQmMSvB0UQ==
   dependencies:
-    "@sindresorhus/is" "^2.1.1"
+    "@sindresorhus/is" "^4.0.0"
     "@szmarczak/http-timer" "^4.0.5"
     "@types/cacheable-request" "^6.0.1"
     "@types/responselike" "^1.0.0"
     cacheable-lookup "^5.0.3"
     cacheable-request "^7.0.1"
     decompress-response "^6.0.0"
-    http2-wrapper "^1.0.0-beta.4.5"
+    http2-wrapper "^1.0.0-beta.5.2"
     lowercase-keys "^2.0.0"
     p-cancelable "^2.0.0"
     responselike "^2.0.0"
@@ -10971,23 +10999,6 @@ got@8.3.2:
     timed-out "^4.0.1"
     url-parse-lax "^3.0.0"
     url-to-options "^1.0.1"
-
-got@^11.7.0:
-  version "11.8.2"
-  resolved "https://registry.yarnpkg.com/got/-/got-11.8.2.tgz#7abb3959ea28c31f3576f1576c1effce23f33599"
-  integrity sha512-D0QywKgIe30ODs+fm8wMZiAcZjypcCodPNuMz5H9Mny7RJ+IjJ10BdmGW7OM7fHXP+O7r6ZwapQ/YQmMSvB0UQ==
-  dependencies:
-    "@sindresorhus/is" "^4.0.0"
-    "@szmarczak/http-timer" "^4.0.5"
-    "@types/cacheable-request" "^6.0.1"
-    "@types/responselike" "^1.0.0"
-    cacheable-lookup "^5.0.3"
-    cacheable-request "^7.0.1"
-    decompress-response "^6.0.0"
-    http2-wrapper "^1.0.0-beta.5.2"
-    lowercase-keys "^2.0.0"
-    p-cancelable "^2.0.0"
-    responselike "^2.0.0"
 
 got@^9.6.0:
   version "9.6.0"
@@ -11784,7 +11795,7 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-http2-wrapper@^1.0.0-beta.4.5, http2-wrapper@^1.0.0-beta.5.2:
+http2-wrapper@^1.0.0-beta.5.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/http2-wrapper/-/http2-wrapper-1.0.3.tgz#b8f55e0c1f25d4ebd08b3b0c2c079f9590800b3d"
   integrity sha512-V+23sDMr12Wnz7iTcDeJr3O6AIxlnvT/bmaAAAP/Xda35C90p9599p0F1eHR/N1KILWSoWVAiOMFjBBXaXSMxg==
@@ -12397,14 +12408,6 @@ is-in-browser@^1.1.3:
   resolved "https://registry.yarnpkg.com/is-in-browser/-/is-in-browser-1.1.3.tgz"
   integrity sha1-Vv9NtoOgeMYILrldrX3GLh0E+DU=
 
-is-installed-globally@^0.3.1:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/is-installed-globally/-/is-installed-globally-0.3.2.tgz"
-  integrity sha512-wZ8x1js7Ia0kecP/CHM/3ABkAmujX7WPvQk6uu3Fly/Mk44pySulQpnHG46OMjHGXApINnV4QhY3SWnECO2z5g==
-  dependencies:
-    global-dirs "^2.0.1"
-    is-path-inside "^3.0.1"
-
 is-installed-globally@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/is-installed-globally/-/is-installed-globally-0.4.0.tgz#9a0fd407949c30f86eb6959ef1b7994ed0b7b520"
@@ -12434,11 +12437,6 @@ is-negative-zero@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/is-negative-zero/-/is-negative-zero-2.0.1.tgz#3de746c18dda2319241a53675908d8f766f11c24"
   integrity sha512-2z6JzQvZRa9A2Y7xC6dQQm4FSTSTNWjKIYYTt4246eMTJmIo0Q+ZyOsU66X8lxK1AbB92dFeglPLrhwpeRKO6w==
-
-is-npm@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/is-npm/-/is-npm-4.0.0.tgz"
-  integrity sha512-96ECIfh9xtDDlPylNPXhzjsykHsMJZ18ASpaWzQyBr4YRTcVjUvzaHayDAES2oU/3KpljhHUjtSRNiDwi0F0ig==
 
 is-npm@^5.0.0:
   version "5.0.0"
@@ -13344,6 +13342,13 @@ js-yaml@^3.10.0, js-yaml@^3.11.0, js-yaml@^3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
+js-yaml@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
+  integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
+  dependencies:
+    argparse "^2.0.1"
+
 jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz"
@@ -13645,7 +13650,7 @@ language-tags@^1.0.5:
   dependencies:
     language-subtag-registry "~0.3.2"
 
-latest-version@5.1.0, latest-version@^5.0.0, latest-version@^5.1.0:
+latest-version@5.1.0, latest-version@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/latest-version/-/latest-version-5.1.0.tgz"
   integrity sha512-weT+r0kTkRQdCdYCNtkMwWXQTMEswKrFBkm4ckQOMVhhqhIMI1UT2hMj+1iigIhgSZm5gTmrRXBNoGUgaTY1xA==
@@ -13945,10 +13950,10 @@ lodash.defaults@^4.2.0:
   resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
   integrity sha1-0JF4cW/+pN3p5ft7N/bwgCJ0WAw=
 
-lodash.endswith@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/lodash.endswith/-/lodash.endswith-4.2.1.tgz#fed59ac1738ed3e236edd7064ec456448b37bc09"
-  integrity sha1-/tWawXOO0+I27dcGTsRWRIs3vAk=
+lodash.difference@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.difference/-/lodash.difference-4.5.0.tgz#9ccb4e505d486b91651345772885a2df27fd017c"
+  integrity sha1-nMtOUF1Ia5FlE0V3KIWi3yf9AXw=
 
 lodash.every@^4.6.0:
   version "4.6.0"
@@ -14000,7 +14005,7 @@ lodash.get@^4, lodash.get@^4.0, lodash.get@^4.4.2:
   resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
 
-lodash.groupby@^4.6.0:
+lodash.groupby@4.6.0, lodash.groupby@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.groupby/-/lodash.groupby-4.6.0.tgz#0b08a1dcf68397c397855c3239783832df7403d1"
   integrity sha1-Cwih3PaDl8OXhVwyOXg4Mt90A9E=
@@ -16211,17 +16216,18 @@ optionator@^0.9.1:
     type-check "^0.4.0"
     word-wrap "^1.2.3"
 
-ora@5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/ora/-/ora-5.3.0.tgz#fb832899d3a1372fe71c8b2c534bbfe74961bb6f"
-  integrity sha512-zAKMgGXUim0Jyd6CXK9lraBnD3H5yPGBPPOkC23a2BG6hsm4Zu6OQSjQuEtV0BHDf4aKHcUFvJiGRrFuW3MG8g==
+ora@5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/ora/-/ora-5.4.0.tgz#42eda4855835b9cd14d33864c97a3c95a3f56bf4"
+  integrity sha512-1StwyXQGoU6gdjYkyVcqOLnVlbKj+6yPNNOxJVgpt9t4eksKjiriiHuxktLYkgllwk+D6MbC4ihH84L1udRXPg==
   dependencies:
-    bl "^4.0.3"
+    bl "^4.1.0"
     chalk "^4.1.0"
     cli-cursor "^3.1.0"
     cli-spinners "^2.5.0"
     is-interactive "^1.0.0"
-    log-symbols "^4.0.0"
+    is-unicode-supported "^0.1.0"
+    log-symbols "^4.1.0"
     strip-ansi "^6.0.0"
     wcwidth "^1.0.1"
 
@@ -17731,13 +17737,6 @@ punycode@^2.1.0, punycode@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
-
-pupa@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/pupa/-/pupa-2.0.1.tgz"
-  integrity sha512-hEJH0s8PXLY/cdXh66tNEQGndDrIKNqNC5xmrysZy3i5C3oEoLna7YAOad+7u125+zH1HNXUmGEkrhb3c2VriA==
-  dependencies:
-    escape-goat "^2.0.0"
 
 pupa@^2.1.1:
   version "2.1.1"
@@ -19952,12 +19951,12 @@ snyk-cpp-plugin@2.2.1:
     hosted-git-info "^3.0.7"
     tslib "^2.0.0"
 
-snyk-docker-plugin@4.19.3:
-  version "4.19.3"
-  resolved "https://registry.yarnpkg.com/snyk-docker-plugin/-/snyk-docker-plugin-4.19.3.tgz#14569f25c52a3fc71a20f80f5beac4ccdc326c11"
-  integrity sha512-5WkXyT7uY5NrTOvEqxeMqb6dDcskT3c/gbHUTOyPuvE6tMut+OOYK8RRXbwZFeLzpS8asq4e1R7U7syYG3VXwg==
+snyk-docker-plugin@4.20.2:
+  version "4.20.2"
+  resolved "https://registry.yarnpkg.com/snyk-docker-plugin/-/snyk-docker-plugin-4.20.2.tgz#6375eb262ae85cdcbccad5088b1836c686ab6462"
+  integrity sha512-cxRU6lNybAJgOs1RPDTk3fJh7rS0BkXSAw/8/GFGTeJlQ+dNhEnCWni7PKmaZT9phFNOqLQcDd8+oOZZB5UQnw==
   dependencies:
-    "@snyk/dep-graph" "^1.21.0"
+    "@snyk/dep-graph" "^1.28.0"
     "@snyk/rpm-parser" "^2.0.0"
     "@snyk/snyk-docker-pull" "3.2.3"
     chalk "^2.4.2"
@@ -19969,7 +19968,7 @@ snyk-docker-plugin@4.19.3:
     gunzip-maybe "^1.4.2"
     mkdirp "^1.0.4"
     semver "^7.3.4"
-    snyk-nodejs-lockfile-parser "1.30.2"
+    snyk-nodejs-lockfile-parser "1.33.0"
     tar-stream "^2.1.0"
     tmp "^0.2.1"
     tslib "^1"
@@ -19995,10 +19994,10 @@ snyk-go-plugin@1.17.0:
     tmp "0.2.1"
     tslib "^1.10.0"
 
-snyk-gradle-plugin@3.14.2:
-  version "3.14.2"
-  resolved "https://registry.yarnpkg.com/snyk-gradle-plugin/-/snyk-gradle-plugin-3.14.2.tgz#898b051f679e681b6d859f0ca84a500ac028af7d"
-  integrity sha512-l/nivKDZz7e2wymrwP6g2WQD8qgaYeE22SnbZrfIpwGolif81U28A9FsRedwkxKyB/shrM0vGEoD3c3zI8NLBw==
+snyk-gradle-plugin@3.14.5:
+  version "3.14.5"
+  resolved "https://registry.yarnpkg.com/snyk-gradle-plugin/-/snyk-gradle-plugin-3.14.5.tgz#f2c1c370c811515a0c2c9b75f9bb97a2c55cbdb2"
+  integrity sha512-dOT4KZUC7AIR08xMUOAMNC5um5nlqjwLJCNz7AAgZHzJfNe93nbMcTN8Y5TiItCkAqNlJ/V4eI3uzVZJvOQoLw==
   dependencies:
     "@snyk/cli-interface" "2.11.0"
     "@snyk/dep-graph" "^1.28.0"
@@ -20017,29 +20016,30 @@ snyk-module@3.1.0, snyk-module@^3.0.0, snyk-module@^3.1.0:
     debug "^4.1.1"
     hosted-git-info "^3.0.4"
 
-snyk-mvn-plugin@2.25.3:
-  version "2.25.3"
-  resolved "https://registry.yarnpkg.com/snyk-mvn-plugin/-/snyk-mvn-plugin-2.25.3.tgz#fb7f6fa1d565b9f07c032e8b34e6308c310b2a27"
-  integrity sha512-JAxOThX51JDbgMMjp3gQDVi07G9VgTYSF06QC7f5LNA0zoXNr743e2rm78RGw5bqE3JRjZxEghiLHPPuvS5DDg==
+snyk-mvn-plugin@2.26.0:
+  version "2.26.0"
+  resolved "https://registry.yarnpkg.com/snyk-mvn-plugin/-/snyk-mvn-plugin-2.26.0.tgz#a4ce4aecf6b6f20f0b9797f2a7680982fa1fe5b5"
+  integrity sha512-LxYNWXPJxcwbkCK+vE7t437RttEDcbsS2KJJYzFtrr6u7g26c51u9aMHYPCDAEmwjI1A28zSrh7Wp45JW4YOqg==
   dependencies:
     "@snyk/cli-interface" "2.11.0"
     "@snyk/dep-graph" "^1.23.1"
-    "@snyk/java-call-graph-builder" "1.19.1"
+    "@snyk/java-call-graph-builder" "1.21.0"
     debug "^4.1.1"
     glob "^7.1.6"
     needle "^2.5.0"
     tmp "^0.1.0"
     tslib "1.11.1"
 
-snyk-nodejs-lockfile-parser@1.30.2:
-  version "1.30.2"
-  resolved "https://registry.yarnpkg.com/snyk-nodejs-lockfile-parser/-/snyk-nodejs-lockfile-parser-1.30.2.tgz#8dbb64c42382aeaf4488c36e48c1e48eb75a1584"
-  integrity sha512-wI3VXVYO/ok0uaQm5i+Koo4rKBNilYC/QRIQFlyGbZXf+WBdRcTBKVDfTy8uNfUhMRSGzd84lNclMnetU9Y+vw==
+snyk-nodejs-lockfile-parser@1.33.0:
+  version "1.33.0"
+  resolved "https://registry.yarnpkg.com/snyk-nodejs-lockfile-parser/-/snyk-nodejs-lockfile-parser-1.33.0.tgz#1d426e78edbfe275a04a6b103bd4a57d922cbb97"
+  integrity sha512-pgzTBwYa02M25LLuGwmkxAtbdj3ByFlVZonsgOAYnFOXZb1CrQNF3Z9RWW0sXD9n2pxjqYXy9hdp5CMpwa/6jg==
   dependencies:
     "@snyk/graphlib" "2.1.9-patch.3"
+    "@yarnpkg/core" "^2.4.0"
     "@yarnpkg/lockfile" "^1.1.0"
     event-loop-spinner "^2.0.0"
-    got "11.4.0"
+    got "11.8.2"
     lodash.clonedeep "^4.5.0"
     lodash.flatmap "^4.5.0"
     lodash.isempty "^4.4.0"
@@ -20051,16 +20051,17 @@ snyk-nodejs-lockfile-parser@1.30.2:
     uuid "^8.3.0"
     yaml "^1.9.2"
 
-snyk-nodejs-lockfile-parser@1.32.0:
-  version "1.32.0"
-  resolved "https://registry.yarnpkg.com/snyk-nodejs-lockfile-parser/-/snyk-nodejs-lockfile-parser-1.32.0.tgz#2e25ea8622ef03ae7457a93ae70e156d6c46c2ef"
-  integrity sha512-FdYa/7NibnJPqBfobyw5jgI1/rd0LpMZf2W4WYYLRc2Hz7LZjKAByPjIX6qoA+lB9SC7yk5HYwWj2n4Fbg/DDw==
+snyk-nodejs-lockfile-parser@1.34.2:
+  version "1.34.2"
+  resolved "https://registry.yarnpkg.com/snyk-nodejs-lockfile-parser/-/snyk-nodejs-lockfile-parser-1.34.2.tgz#31328b10c028c57caf538d860175b106c47e5f68"
+  integrity sha512-evLJmX+ZOs5fw0LTVXFkzxfUnI1GcFSBYEXgbD3AbWBpo5Qqsxr33rKlPvbpJ98sOXHfv1vPkY1WloGVTNF84w==
   dependencies:
     "@snyk/graphlib" "2.1.9-patch.3"
     "@yarnpkg/core" "^2.4.0"
     "@yarnpkg/lockfile" "^1.1.0"
     event-loop-spinner "^2.0.0"
-    got "11.4.0"
+    got "11.8.2"
+    js-yaml "^4.1.0"
     lodash.clonedeep "^4.5.0"
     lodash.flatmap "^4.5.0"
     lodash.isempty "^4.4.0"
@@ -20070,7 +20071,6 @@ snyk-nodejs-lockfile-parser@1.32.0:
     snyk-config "^4.0.0-rc.2"
     tslib "^1.9.3"
     uuid "^8.3.0"
-    yaml "^1.9.2"
 
 snyk-nuget-plugin@1.21.1:
   version "1.21.1"
@@ -20126,10 +20126,10 @@ snyk-policy@1.19.0:
     snyk-resolve "^1.1.0"
     snyk-try-require "^2.0.0"
 
-snyk-python-plugin@1.19.8:
-  version "1.19.8"
-  resolved "https://registry.yarnpkg.com/snyk-python-plugin/-/snyk-python-plugin-1.19.8.tgz#9e4dfa8ed7e16ef2752f934b786d2e033de62ce0"
-  integrity sha512-LMKVnv0J4X/qHMoKB17hMND0abWtm9wdgI4xVzrOcf2Vtzs3J87trRhwLxQA2lMoBW3gcjtTeBUvNKaxikSVeQ==
+snyk-python-plugin@1.19.9:
+  version "1.19.9"
+  resolved "https://registry.yarnpkg.com/snyk-python-plugin/-/snyk-python-plugin-1.19.9.tgz#9cab88b72b07752bb5331d15e3a0c388038ab602"
+  integrity sha512-vkqBJP+wOtrBKpqrFRP5EfAs5wZ/fGNI14Mb+EMnmu+ebP1ze9AnHxfiqMl/+ITzeYElZ2H5DX9sXXiqpJRhRg==
   dependencies:
     "@snyk/cli-interface" "^2.0.3"
     snyk-poetry-lockfile-parser "^1.1.6"
@@ -20201,17 +20201,17 @@ snyk-try-require@^2.0.0:
     lodash.clonedeep "^4.3.0"
     lru-cache "^5.1.1"
 
-snyk@^1.564.0:
-  version "1.564.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.564.0.tgz#c8c511128351f8b8fe239b010b6799f40bb659c5"
-  integrity sha512-Fh4YusvJ9XdQfyz8JH9J8mBbipfgGLiF60MW9DYhQgP6h8z5uckAfd+S/uFMwPOVOIoe00fFo7aCLxFUuPcVJQ==
+snyk@^1.574.0:
+  version "1.605.0"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.605.0.tgz#1aff8975214e2a2f8b5f5d1cb62f948e97d00f35"
+  integrity sha512-Z7WXI/U4oa/vWzHcuNYXOwJgRyJ0Xzn2c4fZsbb64dYmmcaROBVPCO99XpyKixcnfqlodNw90CjvTTo4grYtXw==
   dependencies:
     "@open-policy-agent/opa-wasm" "^1.2.0"
     "@snyk/cli-interface" "2.11.0"
     "@snyk/cloud-config-parser" "^1.9.2"
-    "@snyk/code-client" "3.4.1"
+    "@snyk/code-client" "3.5.1"
     "@snyk/dep-graph" "^1.27.1"
-    "@snyk/fix" "1.554.0"
+    "@snyk/fix" "1.601.0"
     "@snyk/gemfile" "1.2.0"
     "@snyk/graphlib" "^2.1.9-patch.3"
     "@snyk/inquirer" "^7.3.3-patch"
@@ -20228,7 +20228,6 @@ snyk@^1.564.0:
     lodash.assign "^4.2.0"
     lodash.camelcase "^4.3.0"
     lodash.clonedeep "^4.5.0"
-    lodash.endswith "^4.2.1"
     lodash.flatten "^4.4.0"
     lodash.flattendeep "^4.4.0"
     lodash.get "^4.4.2"
@@ -20245,7 +20244,7 @@ snyk@^1.564.0:
     micromatch "4.0.2"
     needle "2.6.0"
     open "^7.0.3"
-    ora "5.3.0"
+    ora "5.4.0"
     os-name "^3.0.0"
     promise-queue "^2.2.5"
     proxy-from-env "^1.0.0"
@@ -20253,16 +20252,16 @@ snyk@^1.564.0:
     semver "^6.0.0"
     snyk-config "4.0.0"
     snyk-cpp-plugin "2.2.1"
-    snyk-docker-plugin "4.19.3"
+    snyk-docker-plugin "4.20.2"
     snyk-go-plugin "1.17.0"
-    snyk-gradle-plugin "3.14.2"
+    snyk-gradle-plugin "3.14.5"
     snyk-module "3.1.0"
-    snyk-mvn-plugin "2.25.3"
-    snyk-nodejs-lockfile-parser "1.32.0"
+    snyk-mvn-plugin "2.26.0"
+    snyk-nodejs-lockfile-parser "1.34.2"
     snyk-nuget-plugin "1.21.1"
     snyk-php-plugin "1.9.2"
     snyk-policy "1.19.0"
-    snyk-python-plugin "1.19.8"
+    snyk-python-plugin "1.19.9"
     snyk-resolve "1.1.0"
     snyk-resolve-deps "4.7.2"
     snyk-sbt-plugin "2.11.0"
@@ -20272,7 +20271,7 @@ snyk@^1.564.0:
     strip-ansi "^5.2.0"
     tar "^6.1.0"
     tempfile "^2.0.0"
-    update-notifier "^4.1.0"
+    update-notifier "^5.1.0"
     uuid "^3.3.2"
     wrap-ansi "^5.1.0"
 
@@ -22363,26 +22362,7 @@ upath@^1.1.1:
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.2.0.tgz"
   integrity sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==
 
-update-notifier@^4.1.0:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/update-notifier/-/update-notifier-4.1.1.tgz"
-  integrity sha512-9y+Kds0+LoLG6yN802wVXoIfxYEwh3FlZwzMwpCZp62S2i1/Jzeqb9Eeeju3NSHccGGasfGlK5/vEHbAifYRDg==
-  dependencies:
-    boxen "^4.2.0"
-    chalk "^3.0.0"
-    configstore "^5.0.1"
-    has-yarn "^2.1.0"
-    import-lazy "^2.1.0"
-    is-ci "^2.0.0"
-    is-installed-globally "^0.3.1"
-    is-npm "^4.0.0"
-    is-yarn-global "^0.3.0"
-    latest-version "^5.0.0"
-    pupa "^2.0.1"
-    semver-diff "^3.1.1"
-    xdg-basedir "^4.0.0"
-
-update-notifier@^5.0.1:
+update-notifier@^5.0.1, update-notifier@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/update-notifier/-/update-notifier-5.1.0.tgz#4ab0d7c7f36a231dd7316cf7729313f0214d9ad9"
   integrity sha512-ItnICHbeMh9GqUy31hFPrD1kcuZ3rpxDZbf4KUDavXwS0bW5m7SLbDQpGX3UYr072cbrF5hFUs3r5tUsPwjfHw==
